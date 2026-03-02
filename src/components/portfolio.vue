@@ -12,17 +12,19 @@
         :key="project.title"
       >
         <v-card>
-          <v-img :src="project.image" height="200px" cover></v-img>
+          <v-img :src="project.image" height="200px" cover />
 
-          <v-card-title class="font-weight-bold">{{
-            project.title
-          }}</v-card-title>
+          <v-card-title class="font-weight-bold">
+            {{ project.title }}
+          </v-card-title>
+
           <v-card-text>{{ project.description }}</v-card-text>
 
           <v-card-actions>
             <v-btn
               :href="project.link"
               target="_blank"
+              rel="noopener"
               color="primary"
               variant="text"
             >
@@ -37,25 +39,29 @@
 </template>
 
 <script lang="ts" setup>
+const quizImg = new URL('../assets/img/quiz.jpeg', import.meta.url).href;
+const pokemonImg = new URL('../assets/img/pokemon.jpeg', import.meta.url).href;
+const firstWebsiteImg = new URL('../assets/img/f-w.jpeg', import.meta.url).href;
+
 const projects = [
   {
     title: 'Quiz App',
     description:
       'Responsive quiz app with UI components and animated interactions.',
-    image: '/src/assets/img/quiz.jpeg',
+    image: quizImg,
     link: 'https://robbhedonic.github.io/JavascriptQuiz1/',
   },
   {
     title: 'Pokémon App',
     description: 'Interactive app with Pokémon info and API integration.',
-    image: '/src/assets/img/pokemon.jpeg',
+    image: pokemonImg,
     link: 'https://robbhedonic.github.io/Pokemon-Application/',
   },
   {
     title: 'First Website',
     description:
       'My first responsive website with animations and layout skills.',
-    image: '/src/assets/img/f-w.jpeg',
+    image: firstWebsiteImg,
     link: 'https://robbhedonic.github.io/index.html',
   },
 ];

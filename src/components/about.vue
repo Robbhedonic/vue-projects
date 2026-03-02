@@ -5,7 +5,6 @@
         <h2 class="text-h4 font-weight-bold mb-2">About Me</h2>
         <span class="text-subtitle-1 mb-6 d-block">My introduction</span>
 
-        <!-- ✅ Imagen corregida (Vite safe) -->
         <v-img
           :src="aboutImg"
           alt="About image"
@@ -71,7 +70,6 @@
               </v-btn>
             </v-toolbar>
 
-            <!-- ✅ PDF corregido (Vite safe) -->
             <v-card-text style="flex: 1; overflow: hidden; padding: 0">
               <iframe
                 :src="cvPdf"
@@ -112,10 +110,6 @@ function toggleFullscreen() {
   isFullScreen.value = !isFullScreen.value;
 }
 
-/**
- * ✅ Vite-safe asset URLs
- * Ajusta ../assets/... si este componente no está justo en src/components/
- */
 const aboutImg = new URL('../assets/img/jungle.png', import.meta.url).href;
 const cvPdf = new URL('../assets/pdf/Roberto.Carcamo-CV.pdf', import.meta.url).href;
 </script>

@@ -44,7 +44,7 @@
 
         <div v-if="submitted" class="text-center mt-6">
           <v-alert type="success" border="start" elevation="2" variant="tonal">
-            ✅ Thank you for reaching out. I’ll get back to you soon!
+            Thank you for reaching out. I’ll get back to you soon!
           </v-alert>
         </div>
       </v-col>

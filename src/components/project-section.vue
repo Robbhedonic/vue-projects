@@ -6,22 +6,29 @@
         <p class="text-subtitle-1 mb-6">
           Contact me now and get a free consult.
         </p>
+
         <v-btn color="white" variant="outlined" href="#contact">
           Contact Me
           <v-icon end>mdi-message</v-icon>
         </v-btn>
       </v-col>
+
       <v-col cols="12" md="6" class="text-center">
         <v-img
-          src="/src/assets/img/hidden.png"
+          :src="projectImg"
           alt="Project Image"
           max-width="300"
           class="mx-auto"
-        ></v-img>
+          cover
+        />
       </v-col>
     </v-row>
   </v-container>
 </template>
+
+<script lang="ts" setup>
+const projectImg = new URL('../assets/img/hidden.png', import.meta.url).href;
+</script>
 
 <style scoped>
 .project-bg {
