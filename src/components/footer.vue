@@ -4,7 +4,7 @@
       <v-row justify="center" class="mb-4">
         <v-col cols="12">
           <v-avatar size="80" class="mb-2">
-            <v-img src="/src/assets/img/logo.jpeg" alt="logo" />
+            <v-img :src="logoImg" alt="logo" />
           </v-avatar>
           <div class="font-weight-bold text-h6">New Thinking Technology</div>
           <div class="text-subtitle-2">Roberto C.C. — Frontend Developer</div>
@@ -34,6 +34,8 @@
 </template>
 
 <script lang="ts" setup>
+const logoImg = new URL('../assets/img/logo.jpeg', import.meta.url).href;
+
 const socialLinks = [
   {
     icon: 'mdi-linkedin',

@@ -5,7 +5,7 @@
         <!-- Logo -->
         <v-col cols="auto">
           <v-img
-            src="/src/assets/img/logo.jpeg"
+            :src="logoImg"
             alt="Logo"
             height="50"
             width="50"
@@ -73,6 +73,9 @@
 import { ref } from 'vue';
 import { useTheme } from 'vuetify';
 
+const logoImg = new URL('../assets/img/logo.jpeg', import.meta.url).href;
+const cvPdfUrl = new URL('../assets/pdf/Roberto.Carcamo-CV.pdf', import.meta.url).href;
+
 const drawer = ref(false);
 const { global: theme } = useTheme();
 const isDark = ref(theme.name.value === 'dark');
@@ -92,7 +95,7 @@ const navLinks = [
   {
     id: 7,
     label: 'CV',
-    href: '/src/assets/pdf/Roberto.Carcamo-CV.pdf',
+    href: cvPdfUrl,
     icon: 'mdi-file-pdf',
     external: true,
   },

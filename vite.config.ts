@@ -6,6 +6,7 @@ import { fileURLToPath, URL } from 'node:url'
 import vuetify from 'vite-plugin-vuetify'
 
 // https://vite.dev/config/
+// base must match GitHub repo name for Pages: https://<user>.github.io/<repo>/
 export default defineConfig({
   base: '/vue-projects/',
   plugins: [vue(), vuetify({ autoImport: true })],

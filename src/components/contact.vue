@@ -71,14 +71,15 @@ const rules = {
   email: (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid',
 };
 
-const submitForm = () => {
-  if (formRef.value?.validate()) {
+const submitForm = async () => {
+  const result = await formRef.value?.validate();
+  if (result?.valid) {
     console.log('Submitted form:', form.value);
     submitted.value = true;
     setTimeout(() => {
       submitted.value = false;
       form.value = { name: '', email: '', subject: '', message: '' };
-      formRef.value.reset();
+      formRef.value?.reset();
     }, 4000);
   }
 };

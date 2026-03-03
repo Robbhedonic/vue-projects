@@ -69,7 +69,7 @@ const testimonials = [
 ];
 </script>
 
-<style>
+<style scoped>
 .color {
   color: white;
   background: linear-gradient(135deg, #3f51b5, #1e88e5);

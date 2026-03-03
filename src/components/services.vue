@@ -25,17 +25,15 @@
           selected?.title
         }}</v-card-title>
         <v-card-text>
-          <v-list dense>
+          <v-list density="compact">
             <v-list-item
               v-for="(item, index) in selected?.details"
               :key="index"
             >
-              <v-list-item-icon
-                ><v-icon color="primary"
-                  >mdi-check-circle</v-icon
-                ></v-list-item-icon
-              >
-              <v-list-item-content>{{ item }}</v-list-item-content>
+              <template v-slot:prepend>
+                <v-icon color="primary">mdi-check-circle</v-icon>
+              </template>
+              {{ item }}
             </v-list-item>
           </v-list>
         </v-card-text>
