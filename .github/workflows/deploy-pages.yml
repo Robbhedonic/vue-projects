@@ -32,13 +32,7 @@ jobs:
       - name: Add .nojekyll
         run: touch docs/.nojekyll
 
-      - name: Deploy to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          force_orphan: true
-
+      # Push docs to main first (Settings → Pages: Branch main, Folder docs). Survives GitHub 500 on gh-pages.
       - name: Deploy to main branch (docs folder)
         run: |
           git config user.name "github-actions[bot]"
@@ -46,3 +40,12 @@ jobs:
           git add docs
           git diff --staged --quiet || git commit -m "Deploy to docs [skip ci]"
           git push
+
+      # Optional: also update gh-pages (if GitHub returns 500, job still succeeds)
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          force_orphan: true
+        continue-on-error: true
