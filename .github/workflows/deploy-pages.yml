@@ -1,3 +1,6 @@
+# Deploy to GitHub Pages (built site only).
+# Option A: Settings → Pages → Source = "GitHub Actions" (uses the artifact).
+# Option B: Source = "Deploy from a branch" → Branch: gh-pages, Folder: / (this workflow pushes the build there).
 name: Deploy to GitHub Pages
 
 on:
@@ -6,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write   # needed for peaceiris/actions-gh-pages to push to gh-pages branch
   pages: write
   id-token: write
 
@@ -33,6 +36,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Add .nojekyll for GitHub Pages
+        run: touch docs/.nojekyll
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
@@ -40,6 +46,14 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+
+      # Push build to gh-pages so "Deploy from a branch" can serve it (avoids .ts → video/mp2t)
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          force_orphan: true
 
   deploy:
     environment:

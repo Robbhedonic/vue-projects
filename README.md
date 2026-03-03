@@ -8,7 +8,15 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 
 The app must be deployed as a **built** site (HTML + JS), not the source. If you see "video/mp2t" or a blank page, the server is serving the source and requesting `.ts` files, which many servers treat as video.
 
-1. In your repo: **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not "Deploy from a branch").
-3. Push to `main`. The workflow builds the app and deploys the `docs` folder; the live site will serve `.js` assets only.
-4. Open the site at the URL shown in Settings → Pages (e.g. `https://<user>.github.io/<repo>/`).
+**Option A (recommended)**  
+1. In your repo: **Settings → Pages**.  
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.  
+3. Push to `main`. The workflow uploads the build and deploys it.
+
+**Option B (branch)**  
+1. In your repo: **Settings → Pages**.  
+2. Set **Source** to **Deploy from a branch**.  
+3. Choose **Branch**: `gh-pages`, **Folder**: `/` (root). Save.  
+4. Push to `main`. The workflow builds the app and pushes the result to the `gh-pages` branch; that branch is what the site serves.
+
+Site URL: e.g. `https://<user>.github.io/vue-projects/`
