@@ -9,23 +9,19 @@
             I’m a motivated student currently seeking an internship opportunity
             to apply my skills and continue learning in a dynamic environment.
           </p>
-
           <v-btn href="#contact" color="primary" variant="flat">
             Contact Me
             <v-icon end>mdi-email</v-icon>
           </v-btn>
         </div>
       </v-col>
-
       <v-col cols="12" md="6" class="d-flex justify-center">
-        <!-- ✅ Imagen corregida para Vite -->
         <v-img
-          :src="profileImg"
+          src="/src/assets/img/profile1.png"
           alt="Profile"
           max-width="300"
           class="rounded-circle"
-          cover
-        />
+        ></v-img>
       </v-col>
     </v-row>
 
@@ -46,22 +42,13 @@
 </template>
 
 <script lang="ts" setup>
-
-const profileImg = new URL('../assets/img/profile1.png', import.meta.url).href;
-
 const socialLinks = [
   {
     icon: 'mdi-linkedin',
     url: 'https://www.linkedin.com/in/roberto-carcamo-colivoro-0344b118a/',
   },
-  {
-    icon: 'mdi-instagram',
-    url: 'https://www.instagram.com/',
-  },
-  {
-    icon: 'mdi-github',
-    url: 'https://github.com/Robbhedonic',
-  },
+  { icon: 'mdi-instagram', url: 'https://www.instagram.com/' },
+  { icon: 'mdi-github', url: 'https://github.com/Robbhedonic' },
 ];
 </script>
 

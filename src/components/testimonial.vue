@@ -14,24 +14,15 @@
           <v-row align="center">
             <v-col cols="12" md="4" class="text-center">
               <v-avatar size="100">
-                <v-img :src="testimonial.image" cover />
+                <v-img :src="testimonial.image" />
               </v-avatar>
             </v-col>
-
             <v-col cols="12" md="8">
-              <div class="text-h6 font-weight-bold">
-                {{ testimonial.name }}
-              </div>
-              <div class="text-subtitle-2 mb-2">
-                {{ testimonial.role }}
-              </div>
-
+              <div class="text-h6 font-weight-bold">{{ testimonial.name }}</div>
+              <div class="text-subtitle-2 mb-2">{{ testimonial.role }}</div>
               <div class="mb-2">
-                <v-icon v-for="n in 5" :key="n" color="amber">
-                  mdi-star
-                </v-icon>
+                <v-icon v-for="n in 5" :key="n" color="amber">mdi-star</v-icon>
               </div>
-
               <p>{{ testimonial.text }}</p>
             </v-col>
           </v-row>
@@ -42,28 +33,23 @@
 </template>
 
 <script setup lang="ts">
-
-const barbaraImg = new URL('../assets/img/barbara.JPG', import.meta.url).href;
-const camilaImg = new URL('../assets/img/camila.JPG', import.meta.url).href;
-const gabrielaImg = new URL('../assets/img/gabriel.JPG', import.meta.url).href;
-
 const testimonials = [
   {
     name: 'Barbara Haniecka',
     role: 'Employer - Hawaii Poke',
-    image: barbaraImg,
+    image: '/src/assets/img/barbara.JPG',
     text: 'Roberto is an excellent worker; I have a very good impression of him. He consistently shows responsibility in his duties at the company.',
   },
   {
     name: 'Camila Aguila',
     role: 'Supervisor - Caja los Andes',
-    image: camilaImg,
+    image: '/src/assets/img/camila.JPG',
     text: 'Roberto demonstrated motivation and a positive attitude. He showed strong skills in client relations, particularly in critical areas such as debt collections.',
   },
   {
     name: 'Gabriela Marzan',
     role: 'Employer - Walmart',
-    image: gabrielaImg,
+    image: '/src/assets/img/gabriel.JPG',
     text: 'Roberto has always been responsible and stood out among his colleagues. He worked at Walmart for four years to finance his studies.',
   },
 ];
