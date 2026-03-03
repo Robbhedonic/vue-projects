@@ -32,34 +32,67 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import QualificationCard from './QualificationCard.vue';
+import QualificationCard from './qualificationCard.vue';
 
 const activeTab = ref<'education' | 'work'>('education');
 
 const tabs = [
   { id: 'education', label: 'Education', icon: 'mdi-school' },
   { id: 'work', label: 'Work', icon: 'mdi-briefcase' },
-];
+] as const;
 
 const education = [
-  { title: 'Frontend Developer', subtitle: 'Sweden - Nackademin', date: '2024 - 2025' },
-  { title: 'Swedish Language', subtitle: 'Sweden - Komvux Jensen, ABF-Skolan', date: '2022 - 2024' },
-  { title: 'English Language', subtitle: 'Sweden - Komvux-Jensen', date: '2021 - 2022' },
-  { title: 'Business Administration Management Finance', subtitle: 'Universidad Tecnológica de Chile, INACAP', date: '2013 - 2016' },
+  {
+    title: 'Frontend Developer',
+    subtitle: 'Sweden - Nackademin',
+    date: '2024 - 2025',
+  },
+  {
+    title: 'Swedish Language',
+    subtitle: 'Sweden - Komvux Jensen, ABF-Skolan',
+    date: '2022 - 2024',
+  },
+  {
+    title: 'English Language',
+    subtitle: 'Sweden - Komvux-Jensen',
+    date: '2021 - 2022',
+  },
+  {
+    title: 'Business Administration Management Finance',
+    subtitle: 'Universidad Tecnológica de Chile, INACAP',
+    date: '2013 - 2016',
+  },
 ];
 
 const work = [
-  { title: 'Multitask Restaurant Worker', subtitle: 'Sweden - Hawaii Poke', date: '2022 - 2024' },
-  { title: 'Food Runner', subtitle: 'Sweden - BallBreaker', date: '2021 - 2022' },
-  { title: 'Sales Executive', subtitle: 'Chile - Caja Los Andes', date: '2018 - 2019' },
-  { title: 'Administrator and Store Manager', subtitle: 'Chile - El Dolar Beauty Store', date: '2018' },
+  {
+    title: 'Multitask Restaurant Worker',
+    subtitle: 'Sweden - Hawaii Poke',
+    date: '2022 - 2024',
+  },
+  {
+    title: 'Food Runner',
+    subtitle: 'Sweden - BallBreaker',
+    date: '2021 - 2022',
+  },
+  {
+    title: 'Sales Executive',
+    subtitle: 'Chile - Caja Los Andes',
+    date: '2018 - 2019',
+  },
+  {
+    title: 'Administrator and Store Manager',
+    subtitle: 'Chile - El Dolar Beauty Store',
+    date: '2018',
+  },
 ];
 
-const activeList = computed(() => (activeTab.value === 'education' ? education : work));
+const activeList = computed(() =>
+  activeTab.value === 'education' ? education : work,
+);
 </script>
 
 <style scoped>
-
 .q-timeline {
   position: relative;
   max-width: 900px;
