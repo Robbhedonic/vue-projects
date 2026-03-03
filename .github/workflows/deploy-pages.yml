@@ -39,6 +39,9 @@ jobs:
       - name: Add .nojekyll for GitHub Pages
         run: touch docs/.nojekyll
 
+      - name: Add build marker (to verify deployed site)
+        run: echo "built $(date -u +%Y-%m-%dT%H:%MZ)" > docs/build-version.txt
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
