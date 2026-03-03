@@ -1,33 +1,17 @@
-# Arreglar página en blanco / error "video/mp2t"
+# Cómo hacer que la página se vea en https://robbhedonic.github.io/vue-projects/
 
-Si ves **página en blanco** y en la consola: *"Failed to load module script... MIME type of video/mp2t"*, GitHub está sirviendo el **código fuente** (archivos `.ts`) en lugar del **sitio ya construido** (archivos `.js`).
+El workflow sube el **build** a la rama **gh-pages**. Para que el sitio se muestre (y no en blanco), GitHub Pages debe usar esa rama.
 
-## Qué hacer (elige una opción)
+## Pasos (solo una vez)
 
-### Opción 1: Usar GitHub Actions (recomendado)
+1. En GitHub: **https://github.com/Robbhedonic/vue-projects** → **Settings**.
+2. Menú izquierdo → **Pages**.
+3. En **Build and deployment**:
+   - **Source**: **Deploy from a branch**
+   - **Branch**: **gh-pages** (no "main")
+   - **Folder**: **/ (root)**
+4. Guardar si hace falta.
 
-1. En GitHub abre tu repo **vue-projects**.
-2. Arriba: pestaña **Settings** (no "Code").
-3. En el menú izquierdo: **Pages** (en "Code and automation").
-4. En **Build and deployment**:
-   - Donde dice **Source**, haz clic en el desplegable.
-   - Elige **GitHub Actions** (no "Deploy from a branch").
-5. No hace falta guardar; se aplica solo.
-6. Espera 1–2 minutos y abre en **modo incógnito**:  
-   **https://robbhedonic.github.io/vue-projects/**
+En 1–2 minutos el sitio debería verse en: **https://robbhedonic.github.io/vue-projects/**
 
-### Opción 2: Usar la rama gh-pages
-
-1. En GitHub: **Settings** → **Pages**.
-2. En **Build and deployment**:
-   - **Source**: deja **Deploy from a branch**.
-   - **Branch**: cambia a **gh-pages** (no "main").
-   - **Folder**: deja **/ (root)**.
-3. Guarda si aparece el botón.
-4. Abre en incógnito: **https://robbhedonic.github.io/vue-projects/**
-
-## Comprobar que está bien
-
-- Abre: **https://robbhedonic.github.io/vue-projects/build-version.txt**  
-  Si ves una línea con "built" y una fecha → se está sirviendo el build.  
-  Si sale 404 → sigue sirviendo el código fuente; revisa de nuevo **Settings → Pages** (Source = GitHub Actions **o** Branch = gh-pages).
+Si sigue en blanco, abre la página en **modo incógnito** (caché limpia).
