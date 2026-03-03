@@ -1,17 +1,23 @@
-# Cómo hacer que la página se vea en https://robbhedonic.github.io/vue-projects/
+# Cómo hacer que la página se vea (evitar blanco / video/mp2t)
 
-El workflow sube el **build** a la rama **gh-pages**. Para que el sitio se muestre (y no en blanco), GitHub Pages debe usar esa rama.
+El workflow sube el build a **gh-pages** y también a la carpeta **docs** en **main**. Elige **una** de estas dos en Settings → Pages:
 
-## Pasos (solo una vez)
+## Opción 1: Rama main, carpeta docs (recomendada)
 
-1. En GitHub: **https://github.com/Robbhedonic/vue-projects** → **Settings**.
-2. Menú izquierdo → **Pages**.
-3. En **Build and deployment**:
-   - **Source**: **Deploy from a branch**
-   - **Branch**: **gh-pages** (no "main")
-   - **Folder**: **/ (root)**
-4. Guardar si hace falta.
+1. **https://github.com/Robbhedonic/vue-projects/settings/pages**
+2. **Build and deployment**:
+   - **Source**: Deploy from a branch
+   - **Branch**: **main**
+   - **Folder**: **docs** (no "root")
+3. Guardar.
 
-En 1–2 minutos el sitio debería verse en: **https://robbhedonic.github.io/vue-projects/**
+## Opción 2: Rama gh-pages
 
-Si sigue en blanco, abre la página en **modo incógnito** (caché limpia).
+1. Misma página de Settings → Pages.
+2. **Branch**: **gh-pages**
+3. **Folder**: **/ (root)**
+
+---
+
+Después de cambiar, espera 1–2 minutos y abre en **modo incógnito**:  
+https://robbhedonic.github.io/vue-projects/
