@@ -6,10 +6,11 @@
         <span class="text-subtitle-1 mb-6 d-block">My introduction</span>
 
         <v-img
-          src="/src/assets/img/jungle.png"
+          :src="aboutImg"
           alt="About image"
           max-width="300"
           class="mx-auto mb-6"
+          cover
         />
 
         <p class="mb-4">
@@ -69,10 +70,9 @@
               </v-btn>
             </v-toolbar>
 
-            <!-- PDF iframe -->
             <v-card-text style="flex: 1; overflow: hidden; padding: 0">
               <iframe
-                src="/src/assets/pdf/Roberto.Carcamo-CV.pdf"
+                :src="cvPdf"
                 width="100%"
                 height="100%"
                 style="border: none"
@@ -85,7 +85,7 @@
               <v-btn
                 color="primary"
                 variant="tonal"
-                href="/src/assets/pdf/Roberto.Carcamo-CV.pdf"
+                :href="cvPdf"
                 download
               >
                 Download CV
@@ -109,4 +109,7 @@ const isFullScreen = ref(false);
 function toggleFullscreen() {
   isFullScreen.value = !isFullScreen.value;
 }
+
+const aboutImg = new URL('../assets/img/jungle.png', import.meta.url).href;
+const cvPdf = new URL('../assets/pdf/Roberto.Carcamo-CV.pdf', import.meta.url).href;
 </script>
