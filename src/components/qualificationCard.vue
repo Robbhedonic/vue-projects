@@ -62,17 +62,19 @@ defineProps<{
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
-/* Punto */
+/* Punto: alineado con la línea del timeline (centro a 7px en móvil) */
 .q-dot {
   width: 14px;
   height: 14px;
+  min-width: 14px;
   border-radius: 50%;
   background: #3f51b5;
-  margin-top: 10px;
+  margin-top: 4px;
   z-index: 2;
-  box-shadow: 0 0 0 6px rgba(63, 81, 181, 0.12);
+  box-shadow: 0 0 0 4px rgba(63, 81, 181, 0.12);
 }
 
 
@@ -83,25 +85,74 @@ defineProps<{
   text-align: left;
 }
 
+/* Móvil: punto y texto en la misma fila; el punto sigue la fila del card visible */
 @media (max-width: 960px) {
   .q-item {
-    grid-template-columns: 32px 1fr;
+    grid-template-columns: 15px 1fr;
+    grid-template-rows: auto auto;
     column-gap: 12px;
+    margin: 20px 0;
+    align-items: start;
   }
 
-  .q-left,
+  .q-left {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
   .q-right {
     grid-column: 2;
+    grid-row: 2;
   }
 
   .q-mid {
     grid-column: 1;
+    grid-row: 1;
     justify-content: flex-start;
+  }
+
+  /* Cuando el card está a la derecha (reverse), el punto debe estar en la 2ª fila con el texto */
+  .q-item.reverse .q-mid {
+    grid-row: 2;
   }
 
   .q-left .q-card,
   .q-right .q-card {
     text-align: left;
+  }
+
+  .q-card {
+    padding: 4px 4px 4px 0;
+  }
+}
+
+/* Pantalla muy pequeña: misma lógica de alineación punto-texto */
+@media (max-width: 600px) {
+  .q-item {
+    grid-template-columns: 12px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    margin: 16px 0;
+  }
+
+  .q-item.reverse .q-mid {
+    grid-row: 2;
+  }
+
+  .q-dot {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    margin-top: 2px;
+    box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.12);
+  }
+
+  .q-card h3 {
+    font-size: 1rem;
+  }
+
+  .q-card .text-subtitle-2 {
+    font-size: 0.8rem;
   }
 }
 </style>

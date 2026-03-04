@@ -69,7 +69,7 @@
             size="small"
             class="mt-2"
           >
-            Abrir en nueva pestaña
+            Open in new tab
             <v-icon end>mdi-open-in-new</v-icon>
           </v-btn>
         </div>

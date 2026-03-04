@@ -4,16 +4,17 @@
     <p class="text-center text-subtitle-1 mb-10">My personal journey</p>
 
     <!-- Tabs -->
-    <v-row justify="center" class="mb-6">
+    <v-row justify="center" class="mb-4 mb-sm-6 qualification-tabs">
       <v-btn
         v-for="tab in tabs"
         :key="tab.id"
         :variant="activeTab === tab.id ? 'flat' : 'outlined'"
         color="primary"
-        class="ma-2"
+        size="small"
+        class="ma-1 ma-sm-2"
         @click="activeTab = tab.id"
       >
-        <v-icon start>{{ tab.icon }}</v-icon>
+        <v-icon start size="small">{{ tab.icon }}</v-icon>
         {{ tab.label }}
       </v-btn>
     </v-row>
@@ -112,10 +113,31 @@ const activeList = computed(() =>
   border-radius: 999px;
 }
 
+.qualification-tabs {
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* Móvil: línea y puntos alineados (padding + columna = misma posición) */
 @media (max-width: 960px) {
+  .q-timeline {
+    padding-left: 8px;
+  }
+
   .q-timeline::before {
-    left: 16px;
+    left: 15px;
     transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .q-timeline {
+    padding-left: 5px;
+  }
+
+  .q-timeline::before {
+    left: 11px;
+    width: 3px;
   }
 }
 </style>

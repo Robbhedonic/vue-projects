@@ -19,7 +19,7 @@
             v-for="link in navLinks"
             :key="link.id"
             variant="text"
-            class="text-white"
+            :class="['nav-link', { 'nav-link--active': isActive(link) }]"
             :to="link.to"
             :href="link.href"
             :target="link.external ? '_blank' : undefined"
@@ -60,6 +60,7 @@
         :key="link.id"
         :to="link.to"
         :href="link.href"
+        :class="{ 'nav-link-drawer--active': isActive(link) }"
         @click="drawer = false"
         :target="link.external ? '_blank' : undefined"
         rel="noopener"
@@ -73,8 +74,10 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+import { useRoute } from 'vue-router';
 import { useTheme } from 'vuetify';
 
+const route = useRoute();
 const logoImg = new URL('../assets/img/logo.jpeg', import.meta.url).href;
 const cvPdfUrl = new URL(
   '../assets/pdf/Roberto-Carcamo-CV.pdf',
@@ -89,6 +92,21 @@ const toggleTheme = () => {
   theme.name.value = isDark.value ? 'light' : 'dark';
   isDark.value = !isDark.value;
 };
+
+function isActive(link: { to?: string | { path: string; hash?: string }; href?: string }) {
+  if (link.href) return false;
+  const to = link.to;
+  if (typeof to === 'string') {
+    if (to === '/') return route.path === '/' && !route.hash;
+    return route.path === to;
+  }
+  if (to && typeof to === 'object' && 'path' in to) {
+    if (to.path !== route.path) return false;
+    if (to.hash) return route.hash === to.hash;
+    return !route.hash;
+  }
+  return false;
+}
 
 const navLinks = [
   { id: 1, label: 'Home', to: '/', icon: 'mdi-home' },
@@ -116,5 +134,38 @@ const navLinks = [
 }
 .logo {
   border-radius: 12px;
+}
+
+/* Por defecto: enlaces normales (no iluminados) */
+.nav-bar .v-btn.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  background: transparent !important;
+}
+.nav-bar .v-btn.nav-link :deep(.v-btn__content),
+.nav-bar .v-btn.nav-link :deep(.v-icon) {
+  color: inherit !important;
+}
+/* Iluminado solo cuando estás en esa sección/página (activo) */
+.nav-bar .v-btn.nav-link.nav-link--active {
+  color: #fff !important;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.nav-bar .v-btn.nav-link.nav-link--active :deep(.v-btn__content),
+.nav-bar .v-btn.nav-link.nav-link--active :deep(.v-icon) {
+  color: #fff !important;
+}
+/* Hover: mismo efecto de iluminado */
+.nav-bar .v-btn.nav-link:hover,
+.nav-bar .v-btn.nav-link:hover :deep(.v-btn__content),
+.nav-bar .v-btn.nav-link:hover :deep(.v-icon) {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Drawer móvil: activo iluminado */
+.nav-link-drawer--active {
+  background: rgba(0, 0, 0, 0.08);
+  font-weight: 600;
 }
 </style>

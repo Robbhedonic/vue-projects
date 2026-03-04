@@ -14,9 +14,17 @@ const router = createRouter({
       component: () => import('../views/ProjectsView.vue'),
     },
   ],
-  scrollBehavior(to) {
+  scrollBehavior(to, _from, savedPosition) {
+    if (savedPosition) return savedPosition;
     if (to.hash) {
-      return { el: to.hash, behavior: 'smooth' };
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            el: to.hash,
+            behavior: 'smooth',
+          });
+        }, 100);
+      });
     }
     return { top: 0 };
   },

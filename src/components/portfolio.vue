@@ -1,24 +1,30 @@
 <template>
   <v-container id="portfolio" class="py-16">
-    <h2 class="text-h4 text-center font-weight-bold mb-4">Portfolio</h2>
+    <h2 class="text-h4 text-center font-weight-bold mb-2">Portfolio</h2>
     <p class="text-center text-subtitle-1 mb-10">Most recent work</p>
 
     <v-row dense>
       <v-col
+        v-for="project in projects"
+        :key="project.title"
         cols="12"
         sm="6"
         md="4"
-        v-for="project in projects"
-        :key="project.title"
       >
-        <v-card>
-          <v-img :src="project.image" height="200px" cover />
+        <v-card class="h-100" elevation="2">
+          <v-img
+            :src="project.image"
+            height="200"
+            cover
+            class="align-end"
+            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+          >
+            <v-card-title class="text-white">{{ project.title }}</v-card-title>
+          </v-img>
 
-          <v-card-title class="font-weight-bold">
-            {{ project.title }}
-          </v-card-title>
-
-          <v-card-text>{{ project.description }}</v-card-text>
+          <v-card-text class="pt-4">
+            {{ project.description }}
+          </v-card-text>
 
           <v-card-actions>
             <v-btn
@@ -28,8 +34,8 @@
               color="primary"
               variant="text"
             >
-              Demo
-              <v-icon end>mdi-arrow-right</v-icon>
+              Ver proyecto
+              <v-icon end>mdi-open-in-new</v-icon>
             </v-btn>
           </v-card-actions>
         </v-card>
