@@ -42,15 +42,14 @@
 </template>
 
 <script setup lang="ts">
-
 const barbaraImg = new URL('../assets/img/barbara.JPG', import.meta.url).href;
 const camilaImg = new URL('../assets/img/camila.JPG', import.meta.url).href;
 const gabrielaImg = new URL('../assets/img/gabriel.JPG', import.meta.url).href;
 
 const testimonials = [
   {
-    name: 'Barbara Haniecka',
-    role: 'Employer - Hawaii Poke',
+    name: 'Lara Celaya',
+    role: 'Manager - Hawaii Poke',
     image: barbaraImg,
     text: 'Roberto is an excellent worker; I have a very good impression of him. He consistently shows responsibility in his duties at the company.',
   },

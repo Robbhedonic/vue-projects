@@ -37,11 +37,19 @@ ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale);
 const frontendSkills = [
   { name: 'HTML', level: 90 },
   { name: 'CSS', level: 80 },
-  { name: 'JavaScript', level: 60 },
-  { name: 'React', level: 50 },
+  { name: 'JavaScript', level: 80 },
+  { name: 'React', level: 70 },
   { name: 'SASS', level: 80 },
-  { name: 'Figma', level: 60 },
-  { name: 'GitHub', level: 60 },
+  { name: 'Figma', level: 70 },
+  { name: 'GitHub', level: 90 },
+  { name: 'Rest Api', level: 80 },
+  { name: 'MongoDB', level: 70 },
+  { name: 'Vue.js', level: 90 },
+  { name: 'Vuetify', level: 90 },
+  { name: 'Node.js', level: 80 },
+  { name: 'Express.js', level: 80 },
+  { name: 'CI/CD', level: 70 },
+  { name: 'SQL, NOSQL', level: 70 },
 ];
 
 // Función para generar datos por habilidad

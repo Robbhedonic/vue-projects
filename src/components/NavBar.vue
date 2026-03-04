@@ -19,8 +19,9 @@
             v-for="link in navLinks"
             :key="link.id"
             variant="text"
-            :href="link.href"
             class="text-white"
+            :to="link.to"
+            :href="link.href"
             :target="link.external ? '_blank' : undefined"
             rel="noopener"
           >
@@ -57,6 +58,7 @@
       <v-list-item
         v-for="link in navLinks"
         :key="link.id"
+        :to="link.to"
         :href="link.href"
         @click="drawer = false"
         :target="link.external ? '_blank' : undefined"
@@ -74,7 +76,10 @@ import { ref } from 'vue';
 import { useTheme } from 'vuetify';
 
 const logoImg = new URL('../assets/img/logo.jpeg', import.meta.url).href;
-const cvPdfUrl = new URL('../assets/pdf/Roberto.Carcamo-CV.pdf', import.meta.url).href;
+const cvPdfUrl = new URL(
+  '../assets/pdf/Roberto-Carcamo-CV.pdf',
+  import.meta.url,
+).href;
 
 const drawer = ref(false);
 const { global: theme } = useTheme();
@@ -86,14 +91,15 @@ const toggleTheme = () => {
 };
 
 const navLinks = [
-  { id: 1, label: 'Home', href: '#home', icon: 'mdi-home' },
-  { id: 2, label: 'About', href: '#about', icon: 'mdi-account' },
-  { id: 3, label: 'Skills', href: '#skills', icon: 'mdi-code-tags' },
-  { id: 4, label: 'Services', href: '#services', icon: 'mdi-briefcase' },
-  { id: 5, label: 'Portfolio', href: '#portfolio', icon: 'mdi-image' },
-  { id: 6, label: 'Contact', href: '#contact', icon: 'mdi-email' },
+  { id: 1, label: 'Home', to: '/', icon: 'mdi-home' },
+  { id: 2, label: 'About', to: { path: '/', hash: '#about' }, icon: 'mdi-account' },
+  { id: 3, label: 'Skills', to: { path: '/', hash: '#skills' }, icon: 'mdi-code-tags' },
+  { id: 4, label: 'Services', to: { path: '/', hash: '#services' }, icon: 'mdi-briefcase' },
+  { id: 5, label: 'Portfolio', to: { path: '/', hash: '#portfolio' }, icon: 'mdi-image' },
+  { id: 6, label: 'Projects', to: '/projects', icon: 'mdi-laptop' },
+  { id: 7, label: 'Contact', to: { path: '/', hash: '#contact' }, icon: 'mdi-email' },
   {
-    id: 7,
+    id: 8,
     label: 'CV',
     href: cvPdfUrl,
     icon: 'mdi-file-pdf',

@@ -3,11 +3,15 @@
     <v-row class="text-center" align="center" justify="center">
       <v-col cols="12" md="6">
         <div class="d-flex flex-column align-center">
-          <h1 class="text-h3 font-weight-bold mb-2">Hi, I'm Roberto</h1>
-          <h3 class="text-h5 mb-4">A passionate Frontend Developer</h3>
+          <h1 class="text-h2 font-weight-bold mb-2">
+            Hi, I am Roberto Carcamo
+          </h1>
+          <h3 class="text-h2 font-weight-bold mb-4 text-grey-darken-1">
+            Fullstack Developer
+          </h3>
           <p class="mb-6">
-            I’m a motivated student currently seeking an internship opportunity
-            to apply my skills and continue learning in a dynamic environment.
+            I’m a motivated worker currently seeking an opportunity to apply my
+            skills and continue learning in a dynamic environment.
           </p>
 
           <v-btn href="#contact" color="primary" variant="flat">
@@ -18,11 +22,12 @@
       </v-col>
 
       <v-col cols="12" md="6" class="d-flex justify-center">
-        <!-- ✅ Imagen corregida para Vite -->
+        <!--Imagen corregida para Vite -->
         <v-img
           :src="profileImg"
           alt="Profile"
-          max-width="300"
+          max-height="420"
+          max-width="400"
           class="rounded-circle"
           cover
         />
@@ -46,8 +51,10 @@
 </template>
 
 <script lang="ts" setup>
-
-const profileImg = new URL('../assets/img/profile1.png', import.meta.url).href;
+const profileImg = new URL(
+  '../assets/img/Roberto-portrait.jpg',
+  import.meta.url,
+).href;
 
 const socialLinks = [
   {

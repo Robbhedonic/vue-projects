@@ -63,7 +63,7 @@ const openModal = (service: typeof selected.value) => {
 const services = [
   {
     icon: 'mdi-code-tags',
-    title: 'Frontend Developer',
+    title: 'Fullstack Developer',
     details: [
       'I develop the user interface',
       'Web page development',

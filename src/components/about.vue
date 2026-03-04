@@ -1,21 +1,20 @@
 <template>
   <v-container id="about" class="py-16">
     <v-row justify="center">
-      <v-col cols="12" md="8" class="text-center">
-        <h2 class="text-h4 font-weight-bold mb-2">About Me</h2>
-        <span class="text-subtitle-1 mb-6 d-block">My introduction</span>
-
+      <v-col>
         <v-img
           :src="aboutImg"
           alt="About image"
-          max-width="300"
+          max-width="400"
           class="mx-auto mb-6"
           cover
         />
-
+      </v-col>
+      <v-col cols="12" md="8" class="text-center">
+        <h2 class="text-h3 font-weight-bold mb-2">About Me</h2>
         <p class="mb-4">
-          I am a Frontend Developer with a diverse skill set, actively seeking
-          an internship opportunity.
+          I am a Fullstack Developer with a diverse skill set, actively seeking
+          a work opportunity.
         </p>
         <p class="mb-6">
           I am deeply passionate about culture, art, and innovation.
@@ -24,7 +23,7 @@
         <!-- Info blocks -->
         <v-row justify="center" class="mb-6">
           <v-col cols="12" sm="4" class="text-center">
-            <h3 class="text-h5">1.5+</h3>
+            <h3 class="text-h5">3+</h3>
             <span class="text-caption">Years of studies</span>
           </v-col>
           <v-col cols="12" sm="4" class="text-center">
@@ -32,7 +31,7 @@
             <span class="text-caption">Completed projects</span>
           </v-col>
           <v-col cols="12" sm="4" class="text-center">
-            <h3 class="text-h5">10+</h3>
+            <h3 class="text-h5">20+</h3>
             <span class="text-caption">Skills</span>
           </v-col>
         </v-row>
@@ -82,12 +81,7 @@
             <!-- Actions -->
             <v-card-actions>
               <v-spacer />
-              <v-btn
-                color="primary"
-                variant="tonal"
-                :href="cvPdf"
-                download
-              >
+              <v-btn color="primary" variant="tonal" :href="cvPdf" download>
                 Download CV
                 <v-icon end>mdi-download</v-icon>
               </v-btn>
@@ -111,5 +105,6 @@ function toggleFullscreen() {
 }
 
 const aboutImg = new URL('../assets/img/jungle.png', import.meta.url).href;
-const cvPdf = new URL('../assets/pdf/Roberto.Carcamo-CV.pdf', import.meta.url).href;
+const cvPdf = new URL('../assets/pdf/Roberto-Carcamo-CV.pdf', import.meta.url)
+  .href;
 </script>
