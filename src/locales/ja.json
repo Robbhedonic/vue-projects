@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "言語",
+    "home": "ホーム",
+    "about": "自己紹介",
+    "skills": "スキル",
+    "services": "サービス",
+    "portfolio": "ポートフォリオ",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ",
+    "cv": "履歴書"
+  },
+  "home": {
+    "title": "こんにちは、Roberto Carcamoです",
+    "subtitle": "フルスタック開発者",
+    "intro": "スキルを活かし、ダイナミックな環境で学び続ける機会を求める意欲的なプロフェッショナルです。",
+    "contactMe": "お問い合わせ",
+    "cityIllustration": "都市イラスト — 夢の世界",
+    "openInNewTab": "新しいタブで開く"
+  },
+  "about": {
+    "title": "自己紹介",
+    "intro1": "多様なスキルを持つフルスタック開発者で、仕事の機会を積極的に探しています。",
+    "intro2": "文化、芸術、イノベーションに深い情熱を持っています。",
+    "yearsStudies": "学習年数",
+    "completedProjects": "完了したプロジェクト",
+    "skillsCount": "スキル",
+    "viewCv": "履歴書を見る",
+    "curriculumVitae": "履歴書",
+    "downloadCv": "履歴書をダウンロード",
+    "close": "閉じる"
+  },
+  "services": {
+    "title": "サービス",
+    "subtitle": "提供内容",
+    "seeMore": "詳しく見る",
+    "close": "閉じる",
+    "fullstack": {
+      "title": "フルスタック開発者",
+      "summary": "フルWeb開発、UIとユーザー体験。",
+      "details": [
+        "ユーザーインターフェース開発",
+        "Webページ・アプリケーション開発",
+        "ユーザー体験の最適化"
+      ]
+    },
+    "business": {
+      "title": "ビジネス管理・経営",
+      "summary": "戦略、営業、財務分析のコンサルティング。",
+      "details": [
+        "マーケティングと営業",
+        "成長戦略のコンサルティング",
+        "財務計画と分析"
+      ]
+    },
+    "design": {
+      "title": "デザイン＆ブランド",
+      "summary": "ブランド戦略とビジュアルアイデンティティ。",
+      "details": [
+        "ブランド戦略",
+        "ブランドガイドライン",
+        "ビジュアルアイデンティティ"
+      ]
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "ご連絡ください",
+    "name": "お名前",
+    "email": "メール",
+    "subject": "件名",
+    "message": "メッセージ",
+    "sendMessage": "送信",
+    "thankYou": "お問い合わせありがとうございます。すぐにご連絡いたします。",
+    "fieldRequired": "この項目は必須です",
+    "emailInvalid": "有効なメールアドレスを入力してください"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — フロントエンド開発者",
+    "rights": "All rights reserved"
+  },
+  "qualification": {
+    "title": "経歴",
+    "subtitle": "私の歩み",
+    "education": "学歴",
+    "work": "職歴"
+  },
+  "testimonial": {
+    "title": "お客様の声",
+    "subtitle": "雇用主からの評価",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "創業者兼CTO、Onify",
+        "text": "OnifyでのRobertoのインターンシップを指導しました。VueとVuetifyで管理画面を開発し、REST APIと連携し、Figmaで作業しました。Robertoはフロントエンドの理解が非常に優れており、自立心があり解決志向で、チームで早く評価されました。フロントエンド開発の役職を強く推薦します。"
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "マネージャー - Hawaii Poke",
+        "text": "Robertoは優秀な働き手です。非常に良い印象を持っています。会社での職務において一貫して責任感を示しています。"
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "スーパーバイザー - Caja los Andes",
+        "text": "Robertoは意欲と前向きな姿勢を示しました。顧客関係、特に回収などの重要分野で強いスキルを発揮しました。"
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "雇用主 - Walmart",
+        "text": "Robertoは常に責任感があり、同僚の中でも際立っていました。学業のためWalmartで4年間働きました。"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "ポートフォリオ",
+    "subtitle": "最近の作品",
+    "viewProject": "プロジェクトを見る",
+    "quiz": {
+      "title": "クイズアプリ",
+      "description": "UIコンポーネントとアニメーション付きインタラクションのレスポンシブクイズアプリ。"
+    },
+    "pokemon": {
+      "title": "ポケモンアプリ",
+      "description": "ポケモン情報とAPI連携のインタラクティブアプリ。"
+    },
+    "firstWebsite": {
+      "title": "初めてのウェブサイト",
+      "description": "アニメーションとレイアウトを学んだ初のレスポンシブサイト。"
+    }
+  },
+  "projectSection": {
+    "title": "新規プロジェクトはありますか？",
+    "subtitle": "お気軽にご連絡ください。無料相談いたします。",
+    "contactMe": "お問い合わせ"
+  },
+  "skills": {
+    "title": "フルスタックスキル"
+  },
+  "projectsPage": {
+    "title": "プロジェクト",
+    "subtitle": "注目プロジェクトと最近の作品",
+    "viewProject": "プロジェクトを見る"
+  }
+}

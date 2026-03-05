@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Lugha",
+    "home": "Nyumbani",
+    "about": "Kuhusu",
+    "skills": "Ujuzi",
+    "services": "Huduma",
+    "portfolio": "Portfolio",
+    "projects": "Miradi",
+    "contact": "Wasiliana",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Habari, mimi ni Roberto Carcamo",
+    "subtitle": "Msanidi Fullstack",
+    "intro": "Mimi ni mtaalamu aliye na motisha anayetafuta fursa ya kutumia ujuzi wangu na kuendelea kujifunza katika mazingira yanayobadilika.",
+    "contactMe": "Wasiliana nami",
+    "cityIllustration": "Picha ya Jiji — Nchi ya Ndoto",
+    "openInNewTab": "Fungua kwenye kichupo kipya"
+  },
+  "about": {
+    "title": "Kuhusu mimi",
+    "intro1": "Mimi ni Msanidi Fullstack mwenye ujuzi mbalimbali, nikitafuta kazi kwa bidii.",
+    "intro2": "Nina shauku kubwa kwa utamaduni, sanaa na uvumbuzi.",
+    "yearsStudies": "Miaka ya masomo",
+    "completedProjects": "Miradi iliyokamilika",
+    "skillsCount": "Ujuzi",
+    "viewCv": "Tazama CV",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "Pakua CV",
+    "close": "Funga"
+  },
+  "services": {
+    "title": "Huduma",
+    "subtitle": "Ninachotoa",
+    "seeMore": "Tazama zaidi",
+    "close": "Funga",
+    "fullstack": {
+      "title": "Msanidi Fullstack",
+      "summary": "Maendeleo kamili ya wavuti, UI na uzoefu wa mtumiaji.",
+      "details": [
+        "Maendeleo ya kiolesura cha mtumiaji",
+        "Maendeleo ya kurasa za wavuti na programu",
+        "Uboreshaji wa uzoefu wa mtumiaji"
+      ]
+    },
+    "business": {
+      "title": "Usimamizi wa Biashara",
+      "summary": "Mashauri ya mkakati, mauzo na uchambuzi wa kifedha.",
+      "details": [
+        "Uuzaji na mauzo",
+        "Mashauri ya mkakati wa ukuaji",
+        "Mpango na uchambuzi wa kifedha"
+      ]
+    },
+    "design": {
+      "title": "Ubunifu na Chapa",
+      "summary": "Mkakati wa chapa na utambulisho wa kuona.",
+      "details": [
+        "Mkakati wa chapa",
+        "Mwongozo wa chapa",
+        "Utambulisho wa kuona"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Wasiliana nami",
+    "subtitle": "Wasiliana",
+    "name": "Jina",
+    "email": "Barua pepe",
+    "subject": "Somo",
+    "message": "Ujumbe",
+    "sendMessage": "Tuma ujumbe",
+    "thankYou": "Asante kwa kuwasiliana. Nitarudia hivi karibuni!",
+    "fieldRequired": "Sehemu hii inahitajika",
+    "emailInvalid": "Barua pepe lazima iwe halali"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Msanidi Frontend",
+    "rights": "Haki zote zimehifadhiwa"
+  },
+  "qualification": {
+    "title": "Sifa",
+    "subtitle": "Safari yangu",
+    "education": "Elimu",
+    "work": "Kazi"
+  },
+  "testimonial": {
+    "title": "Maoni",
+    "subtitle": "Wajenzi wangu wasemavyo",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Mwanzilishi na CTO, Onify",
+        "text": "Nilimsimamia Roberto wakati wa mafunzo yake huko Onify. Alitengeneza kiolesura chetu cha usimamizi na Vue na Vuetify, akiiunganisha na REST API na kufanya kazi na Figma. Roberto ana uelewa mzuri wa frontend, ana uhuru na anaelekea suluhisho, na alipendezwa na haraka katika timu. Ninampendekeza kwa nguvu kwa majukumu ya maendeleo ya frontend."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Meneja - Hawaii Poke",
+        "text": "Roberto ni mfanyakazi bora; nina maoni mazuri sana juu yake. Anaonyesha uwajibikaji thabiti katika majukumu yake katika kampuni."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Msimamizi - Caja los Andes",
+        "text": "Roberto alionyesha motisha na mtazamo chanya. Alionyesha ujuzi imara katika uhusiano na wateja, hasa katika maeneo muhimu kama ukusanyaji wa deni."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Mwajiri - Walmart",
+        "text": "Roberto amekuwa mwenye wajibu daima na alijitokeza miongoni mwa wafanyakazi wake. Alifanya kazi Walmart kwa miaka minne kufadhili masomo yake."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Kazi za hivi karibuni",
+    "viewProject": "Tazama mradi",
+    "quiz": {
+      "title": "Programu ya Quiz",
+      "description": "Programu ya quiz inayojibu na vipengele vya UI na maingiliano yanayohuisha."
+    },
+    "pokemon": {
+      "title": "Programu ya Pokémon",
+      "description": "Programu inayoshirikiana na taarifa za Pokémon na ujumuishaji wa API."
+    },
+    "firstWebsite": {
+      "title": "Tovuti ya kwanza",
+      "description": "Tovuti yangu ya kwanza inayojibu na maonyesho na ujuzi wa mpangilio."
+    }
+  },
+  "projectSection": {
+    "title": "Una mradi mpya?",
+    "subtitle": "Wasiliana nami sasa upate ushauri wa bure.",
+    "contactMe": "Wasiliana nami"
+  },
+  "skills": {
+    "title": "Ujuzi wa Fullstack"
+  },
+  "projectsPage": {
+    "title": "Miradi",
+    "subtitle": "Miradi iliyochaguliwa na kazi za hivi karibuni",
+    "viewProject": "Tazama mradi"
+  }
+}

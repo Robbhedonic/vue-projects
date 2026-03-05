@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Språk",
+    "home": "Hjem",
+    "about": "Om meg",
+    "skills": "Ferdigheter",
+    "services": "Tjenester",
+    "portfolio": "Portefølje",
+    "projects": "Prosjekter",
+    "contact": "Kontakt",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Hei, jeg er Roberto Carcamo",
+    "subtitle": "Fullstack-utvikler",
+    "intro": "Jeg er en motivert fagperson som søker en mulighet til å bruke mine ferdigheter og fortsette å lære i et dynamisk miljø.",
+    "contactMe": "Kontakt meg",
+    "cityIllustration": "Byillustrasjon — Drømmeland",
+    "openInNewTab": "Åpne i ny fane"
+  },
+  "about": {
+    "title": "Om meg",
+    "intro1": "Jeg er Fullstack-utvikler med et bredt ferdighetsett og søker aktivt etter arbeid.",
+    "intro2": "Jeg brenner for kultur, kunst og innovasjon.",
+    "yearsStudies": "År med studier",
+    "completedProjects": "Fullførte prosjekter",
+    "skillsCount": "Ferdigheter",
+    "viewCv": "Se CV",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "Last ned CV",
+    "close": "Lukk"
+  },
+  "services": {
+    "title": "Tjenester",
+    "subtitle": "Hva jeg tilbyr",
+    "seeMore": "Se mer",
+    "close": "Lukk",
+    "fullstack": {
+      "title": "Fullstack-utvikler",
+      "summary": "Full webutvikling, UI og brukeropplevelse.",
+      "details": [
+        "Utvikling av brukergrensesnitt",
+        "Utvikling av nettsider og applikasjoner",
+        "Optimalisering av brukeropplevelsen"
+      ]
+    },
+    "business": {
+      "title": "Bedriftsadministrasjon og ledelse",
+      "summary": "Rådgivning innen strategi, salg og finansiell analyse.",
+      "details": [
+        "Markedsføring og salg",
+        "Rådgivning om vekststrategi",
+        "Finansiell planlegging og analyse"
+      ]
+    },
+    "design": {
+      "title": "Design og merkevare",
+      "summary": "Merkevarestrategi og visuell identitet.",
+      "details": [
+        "Merkevarestrategi",
+        "Merkevarehåndbok",
+        "Visuell identitet"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakt meg",
+    "subtitle": "Ta kontakt",
+    "name": "Navn",
+    "email": "E-post",
+    "subject": "Emne",
+    "message": "Melding",
+    "sendMessage": "Send melding",
+    "thankYou": "Takk for at du tok kontakt. Jeg kommer tilbake snart!",
+    "fieldRequired": "Dette feltet er obligatorisk",
+    "emailInvalid": "E-postadressen må være gyldig"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Frontend-utvikler",
+    "rights": "Alle rettigheter reservert"
+  },
+  "qualification": {
+    "title": "Kvalifikasjon",
+    "subtitle": "Min reise",
+    "education": "Utdanning",
+    "work": "Arbeid"
+  },
+  "testimonial": {
+    "title": "Tilbakemeldinger",
+    "subtitle": "Hva mine arbeidsgivere sier",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Gründer og CTO, Onify",
+        "text": "Jeg veiledet Roberto under praktikken hans hos Onify. Han utviklet vårt admin-grensesnitt med Vue og Vuetify, integrerte mot REST API-er og jobbet med Figma. Roberto viser svært god forståelse av frontend, er selvstendig og løsningsorientert, og ble raskt satt pris på i teamet. Jeg anbefaler ham varmt for roller innen frontend-utvikling."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Manager - Hawaii Poke",
+        "text": "Roberto er en utmerket medarbeider; jeg har et svært positivt inntrykk av ham. Han viser konsekvent ansvar i sine oppgaver i selskapet."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Supervisor - Caja los Andes",
+        "text": "Roberto viste motivasjon og en positiv holdning. Han viste sterke ferdigheter i kundeforhold, særlig innen kritiske områder som inkasso."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Arbeidsgiver - Walmart",
+        "text": "Roberto har alltid vært ansvarlig og skilte seg ut blant kollegene. Han jobbet hos Walmart i fire år for å finansiere studiene sine."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portefølje",
+    "subtitle": "Siste arbeider",
+    "viewProject": "Se prosjekt",
+    "quiz": {
+      "title": "Quiz-app",
+      "description": "Responsiv quiz-app med UI-komponenter og animerte interaksjoner."
+    },
+    "pokemon": {
+      "title": "Pokémon-app",
+      "description": "Interaktiv app med Pokémon-info og API-integrasjon."
+    },
+    "firstWebsite": {
+      "title": "Første nettside",
+      "description": "Min første responsive nettside med animasjoner og layout."
+    }
+  },
+  "projectSection": {
+    "title": "Har du et nytt prosjekt?",
+    "subtitle": "Kontakt meg nå for en gratis konsultasjon.",
+    "contactMe": "Kontakt meg"
+  },
+  "skills": {
+    "title": "Fullstack-ferdigheter"
+  },
+  "projectsPage": {
+    "title": "Prosjekter",
+    "subtitle": "Utvalgte prosjekter og nylig arbeid",
+    "viewProject": "Se prosjekt"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Idioma",
+    "home": "Início",
+    "about": "Sobre mim",
+    "skills": "Habilidades",
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Olá, sou Roberto Carcamo",
+    "subtitle": "Desenvolvedor Fullstack",
+    "intro": "Sou um profissional motivado em busca de uma oportunidade para aplicar minhas habilidades e continuar aprendendo em um ambiente dinâmico.",
+    "contactMe": "Contate-me",
+    "cityIllustration": "Ilustração Cidade — Estado dos sonhos",
+    "openInNewTab": "Abrir em nova aba"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "intro1": "Sou Desenvolvedor Fullstack com um conjunto diversificado de habilidades, em busca ativa de oportunidade de trabalho.",
+    "intro2": "Sou profundamente apaixonado por cultura, arte e inovação.",
+    "yearsStudies": "Anos de estudos",
+    "completedProjects": "Projetos concluídos",
+    "skillsCount": "Habilidades",
+    "viewCv": "Ver CV",
+    "curriculumVitae": "Currículo",
+    "downloadCv": "Baixar CV",
+    "close": "Fechar"
+  },
+  "services": {
+    "title": "Serviços",
+    "subtitle": "O que ofereço",
+    "seeMore": "Ver mais",
+    "close": "Fechar",
+    "fullstack": {
+      "title": "Desenvolvedor Fullstack",
+      "summary": "Desenvolvimento web completo, UI e experiência do usuário.",
+      "details": [
+        "Desenvolvimento de interfaces de usuário",
+        "Desenvolvimento de páginas e aplicações web",
+        "Otimização da experiência do usuário"
+      ]
+    },
+    "business": {
+      "title": "Administração e Gestão Empresarial",
+      "summary": "Consultoria em estratégia, vendas e análise financeira.",
+      "details": [
+        "Marketing e vendas",
+        "Consultoria em estratégia de crescimento",
+        "Planejamento e análise financeira"
+      ]
+    },
+    "design": {
+      "title": "Design e Marca",
+      "summary": "Estratégia de marca e identidade visual.",
+      "details": [
+        "Estratégia de marca",
+        "Manual da marca",
+        "Identidade visual"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contate-me",
+    "subtitle": "Entre em contato",
+    "name": "Nome",
+    "email": "E-mail",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "sendMessage": "Enviar mensagem",
+    "thankYou": "Obrigado por entrar em contato. Responderei em breve!",
+    "fieldRequired": "Este campo é obrigatório",
+    "emailInvalid": "Digite um e-mail válido"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Desenvolvedor Frontend",
+    "rights": "Todos os direitos reservados"
+  },
+  "qualification": {
+    "title": "Qualificação",
+    "subtitle": "Minha trajetória",
+    "education": "Educação",
+    "work": "Experiência"
+  },
+  "testimonial": {
+    "title": "Depoimentos",
+    "subtitle": "O que meus empregadores dizem",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Fundador e CTO, Onify",
+        "text": "Supervisei o Roberto durante seu estágio na Onify. Ele desenvolveu nossa interface administrativa com Vue e Vuetify, integrou com APIs REST e trabalhou com Figma. Roberto demonstra muito boa compreensão de frontend, é independente e orientado a soluções, e foi rapidamente valorizado na equipe. Recomendo-o fortemente para funções em desenvolvimento frontend."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Gerente - Hawaii Poke",
+        "text": "Roberto é um excelente profissional; tenho uma impressão muito positiva dele. Ele demonstra consistentemente responsabilidade em suas funções na empresa."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Supervisora - Caja los Andes",
+        "text": "Roberto demonstrou motivação e atitude positiva. Mostrou fortes habilidades em relações com clientes, especialmente em áreas críticas como cobrança."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Empregadora - Walmart",
+        "text": "Roberto sempre foi responsável e se destacou entre os colegas. Trabalhou no Walmart por quatro anos para financiar seus estudos."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfólio",
+    "subtitle": "Trabalhos mais recentes",
+    "viewProject": "Ver projeto",
+    "quiz": {
+      "title": "App Quiz",
+      "description": "App de quiz responsivo com componentes de UI e interações animadas."
+    },
+    "pokemon": {
+      "title": "App Pokémon",
+      "description": "App interativo com informações de Pokémon e integração de API."
+    },
+    "firstWebsite": {
+      "title": "Primeiro site",
+      "description": "Meu primeiro site responsivo com animações e layout."
+    }
+  },
+  "projectSection": {
+    "title": "Você tem um novo projeto?",
+    "subtitle": "Entre em contato agora e obtenha uma consulta gratuita.",
+    "contactMe": "Contate-me"
+  },
+  "skills": {
+    "title": "Habilidades Fullstack"
+  },
+  "projectsPage": {
+    "title": "Projetos",
+    "subtitle": "Projetos em destaque e trabalhos recentes",
+    "viewProject": "Ver projeto"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "ቋንቋ",
+    "home": "ቤት",
+    "about": "ብዛይ",
+    "skills": "ክእልትታት",
+    "services": "ጋህታታት",
+    "portfolio": "ፖርትፎሊዮ",
+    "projects": "ፕሮጀክትታት",
+    "contact": "ርክብ",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "ሰላም፣ ኣነ Roberto Carcamo እየ",
+    "subtitle": "Fullstack ገዲፊ",
+    "intro": "ኣነ ተነፋፊ ሰራሕተኛ እየ ንኽእለተይ ንምትግባር ከምኡውን ኣብ ህይወታዊ ኣካባቢ ንምቕጻል ኣገባብ ዝደልይ እየ።",
+    "contactMe": "ርኸበኒ",
+    "cityIllustration": "ከተማ ስእሊ — ናይ ህልም ኩነታት",
+    "openInNewTab": "ኣብ ሓድሽ ታብ ክፈት"
+  },
+  "about": {
+    "title": "ብዛይ",
+    "intro1": "ኣነ Fullstack ገዲፊ ብዝሕያይ ክእልትታት እየ፣ ንስራሕ ብቕጽበት ዝደልይ።",
+    "intro2": "ንባህልያት፣ ስነጥበብ ከምኡውን ህያው ሓድሽ ኣገባብ ዝፍቅድ እየ።",
+    "yearsStudies": "ዓመታት ትምህርቲ",
+    "completedProjects": "ዝተፈትዉ ፕሮጀክትታት",
+    "skillsCount": "ክእልትታት",
+    "viewCv": "CV ርአ",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "CV ኣውርድ",
+    "close": "ዕጸ"
+  },
+  "services": {
+    "title": "ጋህታታት",
+    "subtitle": "እንታይ ዝህብ",
+    "seeMore": "ተወሳስእ",
+    "close": "ዕጸ",
+    "fullstack": {
+      "title": "Fullstack ገዲፊ",
+      "summary": "ምሉእ ዌብ ምድላው፣ UI ከምኡውን ተጠቃሚ ተመክሮ።",
+      "details": [
+        "ተጠቃሚ ኣጋጣሚ ምድላው",
+        "ዌብ ገጻት ከምኡውን መተግበርቲታት ምድላው",
+        "ተጠቃሚ ተመክሮ ምምሕራሽ"
+      ]
+    },
+    "business": {
+      "title": "ንግዲ ኣስተዳዳሪን ምሕደራን",
+      "summary": "ስትራተጂ፣ መሸጣ ከምኡውን ፋይናንሻዊ ትንተና ምኽሪ።",
+      "details": [
+        "ማርኬቲንግ ከምኡውን መሸጣ",
+        "ዕብየት ስትራተጂ ምኽሪ",
+        "ፋይናንሻዊ ውጥን ከምኡውን ትንተና"
+      ]
+    },
+    "design": {
+      "title": "ዲዛይን ከምኡውን ብራንድ",
+      "summary": "ብራንድ ስትራተጂ ከምኡውን ርእይቶ መለስያ።",
+      "details": [
+        "ብራንድ ስትራተጂ",
+        "ብራንድ መምርሒ",
+        "ርእይቶ መለስያ"
+      ]
+    }
+  },
+  "contact": {
+    "title": "ርኸበኒ",
+    "subtitle": "ተራኸብ",
+    "name": "ስም",
+    "email": "ኢመይል",
+    "subject": "ዋና",
+    "message": "መልእኽቲ",
+    "sendMessage": "መልእኽቲ ስደድ",
+    "thankYou": "ርኸባኻ ንምርኣይ የቐንየልካ! ብቕልጡፍ ክምልስ እየ።",
+    "fieldRequired": "እዚ ዓንዲ ኣድለይቲ እዩ",
+    "emailInvalid": "ትክክለኛ ኢመይል ኣትይ"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Frontend ገዲፊ",
+    "rights": "ኹሎም መሰላት ይሓልዉ"
+  },
+  "qualification": {
+    "title": "ብቕዓት",
+    "subtitle": "ናይይ ጕዕዞ",
+    "education": "ትምህርቲ",
+    "work": "ስራሕ"
+  },
+  "testimonial": {
+    "title": "ምስክር",
+    "subtitle": "ናይ ስራሕ ዋላድታተይ እንታይ ይብሉ",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "መስረቲ ከምኡውን CTO፣ Onify",
+        "text": "ኣብ Onify ኣብ ናይ Roberto ስልጠና ኣመሓድርኩም። ንኣስተዳዳሪ ኣጋጣሚና ብVue ከምኡውን Vuetify ኣድለየ፣ ምስ REST APIታት ኣካል ገበረ ከምኡውን ምስ Figma ሰራሕ። Roberto ንfrontend ብጣዕሚ ጽቡቕ ርድኢት ይርኢ፣ ገለንነት ኣለዎ ከምኡውን ንፍትሒ ዝተመርኮሰ፣ ኣብ ጕጅለ ብቕልጡፍ ተኸቢሩ። ንfrontend ምድላው ዓዲታት ብሓይሊ ክመርሖ እየ።"
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "ምሕደራይ - Hawaii Poke",
+        "text": "Roberto ጽቡቕ ሰራሕተኛ እዩ፤ ብጣዕሚ ጽቡቕ ርእይቶ ኣለኒ። ኣብ ናይ ኩባንያ ግቡኣቱ ብተኻኻል ሓላፍነት ይርኢ።"
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "ተቖጣጢ - Caja los Andes",
+        "text": "Roberto ተነፋፊነት ከምኡውን ኣወንታዊ ኣረኣእያ ኣርኢዩ። ኣብ ናይ ክላይንት ርክብታት፣ ብፍላይ ኣብ ክሪቲካላዊ ከባብታት ከም ውርሻ ምእካብ ዓብሊ ክእልትታት ኣርኢዩ።"
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "ዋላድ ስራሕ - Walmart",
+        "text": "Roberto ኩሉ ግዜ ተሓላፊ ነበረ ከምኡውን ካብ ኣሕዋቱ ተፈላሊዑ። ንትምህርቱ ንምፍያን ኣብ Walmart ንኣርባዕተ ዓመት ሰሪሑ።"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "ፖርትፎሊዮ",
+    "subtitle": "ዝሓድሸ ስራሕ",
+    "viewProject": "ፕሮጀክት ርአ",
+    "quiz": {
+      "title": "Quiz መተግበሪ",
+      "description": "ብUI ኣካላት ከምኡውን ናይ ህይወት ምልልስ ዝህብ ምላሽ ዝህብ quiz መተግበሪ።"
+    },
+    "pokemon": {
+      "title": "Pokémon መተግበሪ",
+      "description": "ብPokémon ሓበሬታ ከምኡውን API ምውህባት ዝህብ መልልሲ መተግበሪ።"
+    },
+    "firstWebsite": {
+      "title": "ፍሉይ ዌብ ሳይት",
+      "description": "ናይይ ፍሉይ ህይወታዊ ዌብ ሳይት ብህይወት ምልልስ ከምኡውን ኣቀማምጣ።"
+    }
+  },
+  "projectSection": {
+    "title": "ሓድሽ ፕሮጀክት ኣለካ?",
+    "subtitle": "ሕጂ ርኸበኒ ከምኡውን ናጻ ምኽሪ ርኸብ።",
+    "contactMe": "ርኸበኒ"
+  },
+  "skills": {
+    "title": "Fullstack ክእልትታት"
+  },
+  "projectsPage": {
+    "title": "ፕሮጀክትታት",
+    "subtitle": "ዝተመርጹ ፕሮጀክትታት ከምኡውን ዝሓደሸ ስራሕ",
+    "viewProject": "ፕሮጀክት ርአ"
+  }
+}

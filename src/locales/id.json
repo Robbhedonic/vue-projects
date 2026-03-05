@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Bahasa",
+    "home": "Beranda",
+    "about": "Tentang",
+    "skills": "Keahlian",
+    "services": "Layanan",
+    "portfolio": "Portfolio",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Hai, saya Roberto Carcamo",
+    "subtitle": "Pengembang Fullstack",
+    "intro": "Saya profesional yang termotivasi yang mencari kesempatan untuk menerapkan keahlian saya dan terus belajar di lingkungan yang dinamis.",
+    "contactMe": "Hubungi Saya",
+    "cityIllustration": "Ilustrasi Kota — Negeri Impian",
+    "openInNewTab": "Buka di tab baru"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "intro1": "Saya Pengembang Fullstack dengan beragam keahlian, aktif mencari peluang kerja.",
+    "intro2": "Saya sangat mencintai budaya, seni, dan inovasi.",
+    "yearsStudies": "Tahun belajar",
+    "completedProjects": "Proyek selesai",
+    "skillsCount": "Keahlian",
+    "viewCv": "Lihat CV",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "Unduh CV",
+    "close": "Tutup"
+  },
+  "services": {
+    "title": "Layanan",
+    "subtitle": "Yang saya tawarkan",
+    "seeMore": "Selengkapnya",
+    "close": "Tutup",
+    "fullstack": {
+      "title": "Pengembang Fullstack",
+      "summary": "Pengembangan web lengkap, UI dan pengalaman pengguna.",
+      "details": [
+        "Pengembangan antarmuka pengguna",
+        "Pengembangan halaman web dan aplikasi",
+        "Optimisasi pengalaman pengguna"
+      ]
+    },
+    "business": {
+      "title": "Administrasi & Manajemen Bisnis",
+      "summary": "Konsultasi strategi, penjualan dan analisis keuangan.",
+      "details": [
+        "Pemasaran dan penjualan",
+        "Konsultasi strategi pertumbuhan",
+        "Perencanaan dan analisis keuangan"
+      ]
+    },
+    "design": {
+      "title": "Desain & Merek",
+      "summary": "Strategi merek dan identitas visual.",
+      "details": [
+        "Strategi merek",
+        "Pedoman merek",
+        "Identitas visual"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "subtitle": "Silakan hubungi",
+    "name": "Nama",
+    "email": "Email",
+    "subject": "Subjek",
+    "message": "Pesan",
+    "sendMessage": "Kirim Pesan",
+    "thankYou": "Terima kasih telah menghubungi. Saya akan segera membalas!",
+    "fieldRequired": "Bidang ini wajib diisi",
+    "emailInvalid": "Email harus valid"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Pengembang Frontend",
+    "rights": "Hak cipta dilindungi"
+  },
+  "qualification": {
+    "title": "Kualifikasi",
+    "subtitle": "Perjalanan saya",
+    "education": "Pendidikan",
+    "work": "Pengalaman kerja"
+  },
+  "testimonial": {
+    "title": "Testimoni",
+    "subtitle": "Apa kata pemberi kerja saya",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Pendiri & CTO, Onify",
+        "text": "Saya membimbing Roberto selama magangnya di Onify. Ia mengembangkan antarmuka admin kami dengan Vue dan Vuetify, mengintegrasikan REST API dan bekerja dengan Figma. Roberto menunjukkan pemahaman yang sangat baik tentang frontend, mandiri dan berorientasi solusi, dan cepat dihargai di tim. Saya sangat merekomendasikannya untuk peran pengembangan frontend."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Manajer - Hawaii Poke",
+        "text": "Roberto adalah pekerja yang sangat baik; saya memiliki kesan yang sangat baik tentangnya. Ia secara konsisten menunjukkan tanggung jawab dalam tugasnya di perusahaan."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Supervisor - Caja los Andes",
+        "text": "Roberto menunjukkan motivasi dan sikap positif. Ia menunjukkan keterampilan kuat dalam hubungan klien, terutama di bidang kritis seperti penagihan utang."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Pemberi kerja - Walmart",
+        "text": "Roberto selalu bertanggung jawab dan menonjol di antara rekan-rekannya. Ia bekerja di Walmart selama empat tahun untuk membiayai studinya."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Pekerjaan terbaru",
+    "viewProject": "Lihat proyek",
+    "quiz": {
+      "title": "Aplikasi Kuis",
+      "description": "Aplikasi kuis responsif dengan komponen UI dan interaksi animasi."
+    },
+    "pokemon": {
+      "title": "Aplikasi Pokémon",
+      "description": "Aplikasi interaktif dengan info Pokémon dan integrasi API."
+    },
+    "firstWebsite": {
+      "title": "Situs web pertama",
+      "description": "Situs web responsif pertama saya dengan animasi dan tata letak."
+    }
+  },
+  "projectSection": {
+    "title": "Anda punya proyek baru?",
+    "subtitle": "Hubungi saya sekarang untuk konsultasi gratis.",
+    "contactMe": "Hubungi Saya"
+  },
+  "skills": {
+    "title": "Keahlian Fullstack"
+  },
+  "projectsPage": {
+    "title": "Proyek",
+    "subtitle": "Proyek pilihan dan pekerjaan terbaru",
+    "viewProject": "Lihat proyek"
+  }
+}

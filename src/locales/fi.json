@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Kieli",
+    "home": "Etusivu",
+    "about": "Minusta",
+    "skills": "Taidot",
+    "services": "Palvelut",
+    "portfolio": "Portfolio",
+    "projects": "Projektit",
+    "contact": "Yhteystiedot",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Hei, olen Roberto Carcamo",
+    "subtitle": "Fullstack-kehittäjä",
+    "intro": "Olen motivoitunut ammattilainen, joka etsii mahdollisuutta hyödyntää taitojani ja jatkaa oppimista dynaamisessa ympäristössä.",
+    "contactMe": "Ota yhteyttä",
+    "cityIllustration": "Kaupunki-kuvitus — Unelmien maa",
+    "openInNewTab": "Avaa uudessa välilehdessä"
+  },
+  "about": {
+    "title": "Minusta",
+    "intro1": "Olen Fullstack-kehittäjä monipuolisilla taidoilla ja etsin aktiivisesti työtä.",
+    "intro2": "Olen syvästi kiinnostunut kulttuurista, taiteesta ja innovaatiosta.",
+    "yearsStudies": "Opiskeluvuodet",
+    "completedProjects": "Valmistuneet projektit",
+    "skillsCount": "Taidot",
+    "viewCv": "Näytä CV",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "Lataa CV",
+    "close": "Sulje"
+  },
+  "services": {
+    "title": "Palvelut",
+    "subtitle": "Mitä tarjoan",
+    "seeMore": "Lue lisää",
+    "close": "Sulje",
+    "fullstack": {
+      "title": "Fullstack-kehittäjä",
+      "summary": "Täysi web-kehitys, käyttöliittymä ja käyttökokemus.",
+      "details": [
+        "Käyttöliittymien kehitys",
+        "Verkkosivujen ja sovellusten kehitys",
+        "Käyttökokemuksen optimointi"
+      ]
+    },
+    "business": {
+      "title": "Liikehallinto ja johtaminen",
+      "summary": "Konsultointi strategiassa, myynnissä ja taloudellisessa analyysissä.",
+      "details": [
+        "Markkinointi ja myynti",
+        "Kasvustrategian konsultointi",
+        "Taloudellinen suunnittelu ja analyysi"
+      ]
+    },
+    "design": {
+      "title": "Suunnittelu ja brändi",
+      "summary": "Brändistrategia ja visuaalinen identiteetti.",
+      "details": [
+        "Brändistrategia",
+        "Brändiohjekirja",
+        "Visuaalinen identiteetti"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "subtitle": "Ota yhteyttä",
+    "name": "Nimi",
+    "email": "Sähköposti",
+    "subject": "Aihe",
+    "message": "Viesti",
+    "sendMessage": "Lähetä viesti",
+    "thankYou": "Kiitos yhteydenotostasi. Palaan asiaan pian!",
+    "fieldRequired": "Tämä kenttä on pakollinen",
+    "emailInvalid": "Sähköpostiosoite on oltava kelvollinen"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Frontend-kehittäjä",
+    "rights": "Kaikki oikeudet pidätetään"
+  },
+  "qualification": {
+    "title": "Koulutus",
+    "subtitle": "Matkani",
+    "education": "Koulutus",
+    "work": "Työ"
+  },
+  "testimonial": {
+    "title": "Suositukset",
+    "subtitle": "Mitä työnantajani sanovat",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Perustaja ja CTO, Onify",
+        "text": "Ohjasin Robertoa hänen harjoittelujaksonaan Onifyssä. Hän kehitti hallintakäyttöliittymämme Vuen ja Vuetifyn avulla, integroi REST API -rajapinnat ja työskenteli Figman parissa. Roberto osoittaa erittäin hyvää ymmärrystä frontendistä, on itsenäinen ja ratkaisukeskeinen, ja häntä arvostettiin nopeasti tiimissä. Suosittelen häntä lämpimästi frontend-kehitystehtäviin."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Manageri - Hawaii Poke",
+        "text": "Roberto on erinomainen työntekijä; minulla on erittäin positiivinen kuva hänestä. Hän osoittaa johdonmukaisesti vastuullisuutta tehtävissään yrityksessä."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Esimies - Caja los Andes",
+        "text": "Roberto osoitti motivaatiota ja positiivista asennetta. Hän osoitti vahvoja taitoja asiakassuhteissa, erityisesti kriittisillä aloilla kuten perintä."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Työnantaja - Walmart",
+        "text": "Roberto on aina ollut vastuullinen ja erottui joukosta kollegoiden keskuudessa. Hän työskenteli Walmartilla neljä vuotta opintojensa rahoittamiseksi."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Viimeisimmät työt",
+    "viewProject": "Näytä projekti",
+    "quiz": {
+      "title": "Kysely-sovellus",
+      "description": "Responsiivinen kyselysovellus UI-komponenteilla ja animoiduilla vuorovaikutuksilla."
+    },
+    "pokemon": {
+      "title": "Pokémon-sovellus",
+      "description": "Interaktiivinen sovellus Pokémon-tiedoilla ja API-integraatiolla."
+    },
+    "firstWebsite": {
+      "title": "Ensimmäinen verkkosivu",
+      "description": "Ensimmäinen responsiivinen verkkosivuni animaatioilla ja layoutilla."
+    }
+  },
+  "projectSection": {
+    "title": "Sinulla on uusi projekti?",
+    "subtitle": "Ota yhteyttä nyt ja saat ilmaisen konsultaation.",
+    "contactMe": "Ota yhteyttä"
+  },
+  "skills": {
+    "title": "Fullstack-taidot"
+  },
+  "projectsPage": {
+    "title": "Projektit",
+    "subtitle": "Valitut projektit ja viimeisimmät työt",
+    "viewProject": "Näytä projekti"
+  }
+}

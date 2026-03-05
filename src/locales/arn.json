@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Chedungun",
+    "home": "Ruka",
+    "about": "Ñi chillkatun",
+    "skills": "Kimel",
+    "services": "Kelluael",
+    "portfolio": "Portfolio",
+    "projects": "Wirin",
+    "contact": "Nütramkawün",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Mari mari, iñche Roberto Carcamo",
+    "subtitle": "Fullstack weñamkantufe",
+    "intro": "Iñche niwkülelu kellufe tañi kimel nütramkawiñmael ka piamel kimeltun mu. Kake dungu mew tañi norüm wüñoam ta inan.",
+    "contactMe": "Nütramkawün iñche",
+    "cityIllustration": "Wariache ñi nütram — Pewma mülen",
+    "openInNewTab": "Wüño we trokiñ mew eluael"
+  },
+  "about": {
+    "title": "Ñi chillkatun",
+    "intro1": "Iñche Fullstack weñamkantufe tañi kimel müten mew, kelluael nütramkawiñmael.",
+    "intro2": "Iñche adkintun adkintun ta adkintuael norüm, zugu ka wüño adkintun.",
+    "yearsStudies": "Antü kimeltun",
+    "completedProjects": "Rupale wirin",
+    "skillsCount": "Kimel",
+    "viewCv": "CV püramün",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "CV wilün",
+    "close": "Werkülen"
+  },
+  "services": {
+    "title": "Kelluael",
+    "subtitle": "Iñche chem choyün",
+    "seeMore": "Wüño püramün",
+    "close": "Werkülen",
+    "fullstack": {
+      "title": "Fullstack weñamkantufe",
+      "summary": "Web weñamkantun, UI ka chillkatufe norüm.",
+      "details": [
+        "Chillkatufe norüm weñamkantun",
+        "Web trokiñ ka aplikasion weñamkantun",
+        "Chillkatufe norüm femkünuam"
+      ]
+    },
+    "business": {
+      "title": "Kellu weñamtun ka kamkün",
+      "summary": "Nütramkawün weñam, choyün ka plata nütram.",
+      "details": [
+        "Choyün ka weñam",
+        "Wiñam nütramkawün",
+        "Plata weñam ka nütram"
+      ]
+    },
+    "design": {
+      "title": "Adkintun ka marka",
+      "summary": "Marka nütram ka adkintun norüm.",
+      "details": [
+        "Marka nütram",
+        "Marka chillka",
+        "Adkintun norüm"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Nütramkawün iñche",
+    "subtitle": "Nütramkawün",
+    "name": "Püñeñ",
+    "email": "Email",
+    "subject": "Dungu",
+    "message": "Nütram",
+    "sendMessage": "Nütram ülkantun",
+    "thankYou": "Nütramkawünmuam piamel. Iñche wüño nütramkawan!",
+    "fieldRequired": "Tüfachi trokiñ nielu ngey",
+    "emailInvalid": "Küme email eluael"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Frontend weñamkantufe",
+    "rights": "Kom norüm küdawel"
+  },
+  "qualification": {
+    "title": "Kimeltun",
+    "subtitle": "Ñi rupa",
+    "education": "Kimeltun",
+    "work": "Kelluael"
+  },
+  "testimonial": {
+    "title": "Nütram",
+    "subtitle": "Ñi kellupeyem chem nütramkawi",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Pünonel & CTO, Onify",
+        "text": "Iñche Roberto püramün Onify mew. Vue ka Vuetify mew admin weñamkantun, REST API nütramkawi, Figma mew kelluken. Roberto frontend mew küme kimel, norümel ka femkünuam, ka kellupeyem mew küme püramün. Frontend weñamkantun mew femael."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Manager - Hawaii Poke",
+        "text": "Roberto küme kellufe; iñche küme adkintun. Kom trokiñ mew norümel kelluken."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Supervisor - Caja los Andes",
+        "text": "Roberto niwkülelu ka küme norüm. Chillkatufe nütramkawün mew fücha kimel, choyün trokiñ mew."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Kellupeyem - Walmart",
+        "text": "Roberto kom antü norümel ka kellupeyem mew püramün. Walmart mew meli tripantu kelluken kimeltun mu."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Wüño wirin",
+    "viewProject": "Wirin püramün",
+    "quiz": {
+      "title": "Quiz aplicación",
+      "description": "Web quiz UI mew ka norüm weñam."
+    },
+    "pokemon": {
+      "title": "Pokémon aplicación",
+      "description": "Pokémon nütram ka API mew aplicación."
+    },
+    "firstWebsite": {
+      "title": "Ñi wüño web",
+      "description": "Ñi wüño web norüm mew ka adkintun."
+    }
+  },
+  "projectSection": {
+    "title": "Wüño wirin nieluymi?",
+    "subtitle": "Wüño nütramkawün, norümel nütramkawün.",
+    "contactMe": "Nütramkawün iñche"
+  },
+  "skills": {
+    "title": "Fullstack kimel"
+  },
+  "projectsPage": {
+    "title": "Wirin",
+    "subtitle": "Wirin ka wüño kelluael",
+    "viewProject": "Wirin püramün"
+  }
+}

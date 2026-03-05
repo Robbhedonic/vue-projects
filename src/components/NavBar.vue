@@ -2,8 +2,8 @@
   <v-app-bar flat dark class="nav-bar" color="primary">
     <v-container>
       <v-row align="center" justify="space-between" no-gutters>
-        <!-- Logo -->
-        <v-col cols="auto">
+        <!-- Logo: never shrink -->
+        <v-col cols="auto" class="nav-logo-col">
           <v-img
             :src="logoImg"
             alt="Logo"
@@ -30,8 +30,8 @@
           </v-btn>
         </v-col>
 
-        <!-- Language + Theme + Burger -->
-        <v-col cols="auto" class="d-flex align-center">
+        <!-- Language + Theme + Burger: never shrink so they stay inside the bar -->
+        <v-col cols="auto" class="d-flex align-center nav-actions-col">
           <v-menu location="bottom">
             <template #activator="{ props }">
               <v-btn icon v-bind="props" class="me-1" :title="t('nav.language')">
@@ -100,7 +100,7 @@ const route = useRoute();
 
 // Persist locale in localStorage
 const LOCALE_KEY = 'app-locale';
-const VALID_LOCALES = ['en', 'es', 'sv', 'zh', 'ar', 'de'];
+const VALID_LOCALES = ['en', 'es', 'sv', 'zh', 'ar', 'de', 'hi', 'pt', 'no', 'da', 'fi', 'fr', 'ti', 'sw', 'ja', 'ko', 'id', 'arn', 'ru', 'ur', 'uk', 'bn'];
 const savedLocale = localStorage.getItem(LOCALE_KEY);
 if (savedLocale && VALID_LOCALES.includes(savedLocale)) {
   locale.value = savedLocale;
@@ -116,6 +116,22 @@ const languages = [
   { code: 'zh', name: '中文' },
   { code: 'ar', name: 'العربية' },
   { code: 'de', name: 'Deutsch' },
+  { code: 'hi', name: 'हिन्दी' },
+  { code: 'pt', name: 'Português' },
+  { code: 'no', name: 'Norsk' },
+  { code: 'da', name: 'Dansk' },
+  { code: 'fi', name: 'Suomi' },
+  { code: 'fr', name: 'Français' },
+  { code: 'ti', name: 'ትግርኛ' },
+  { code: 'sw', name: 'Kiswahili' },
+  { code: 'ja', name: '日本語' },
+  { code: 'ko', name: '한국어' },
+  { code: 'id', name: 'Bahasa Indonesia' },
+  { code: 'arn', name: 'Mapudungun' },
+  { code: 'ru', name: 'Русский' },
+  { code: 'ur', name: 'اردو' },
+  { code: 'uk', name: 'Українська' },
+  { code: 'bn', name: 'বাংলা' },
 ];
 const logoImg = new URL('../assets/img/logo.jpeg', import.meta.url).href;
 const cvPdfUrl = new URL(
@@ -242,6 +258,22 @@ const navLinks = [
 }
 .nav-links-col {
   min-width: 0;
+  flex-shrink: 1;
+}
+.nav-logo-col {
+  flex-shrink: 0;
+}
+.nav-actions-col {
+  flex-shrink: 0;
+}
+.nav-bar :deep(.v-toolbar__content),
+.nav-bar :deep(.v-container) {
+  flex-wrap: nowrap;
+  min-width: 0;
+}
+.nav-bar :deep(.v-row) {
+  min-width: 0;
+  flex-wrap: nowrap;
 }
 .logo {
   border-radius: 12px;
