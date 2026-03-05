@@ -4,12 +4,17 @@ import router from './router'
 import vuetify from './plugins/vuetify'
 import { i18n } from './i18n'
 import { loadFonts } from './plugins/webfontloader'
+import { initAnalytics } from './plugins/analytics'
 
 loadFonts()
 
-createApp(App)
+const app = createApp(App)
   .use(router)
   .use(i18n)
   .use(vuetify)
-  .mount('#app')
+
+router.isReady().then(() => {
+  app.mount('#app')
+  initAnalytics(router)
+})
   
