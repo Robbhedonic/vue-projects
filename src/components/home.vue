@@ -4,18 +4,17 @@
       <v-col cols="12" md="6">
         <div class="d-flex flex-column align-center">
           <h1 class="text-h2 font-weight-bold mb-2">
-            Hi, I am Roberto Carcamo
+            {{ t('home.title') }}
           </h1>
           <h3 class="text-h2 font-weight-bold mb-4 text-grey-darken-1">
-            Fullstack Developer
+            {{ t('home.subtitle') }}
           </h3>
           <p class="mb-6">
-            I’m a motivated worker currently seeking an opportunity to apply my
-            skills and continue learning in a dynamic environment.
+            {{ t('home.intro') }}
           </p>
 
           <v-btn href="#contact" color="primary" variant="flat">
-            Contact Me
+            {{ t('home.contactMe') }}
             <v-icon end>mdi-email</v-icon>
           </v-btn>
         </div>
@@ -53,7 +52,7 @@
       <v-col cols="12" class="d-flex justify-center">
         <div class="illustration-box">
           <h3 class="text-h6 mb-3 text-center">
-            City Illustration — Dreams State
+            {{ t('home.cityIllustration') }}
           </h3>
           <iframe
             :src="cityIllustrationUrl"
@@ -69,7 +68,7 @@
             size="small"
             class="mt-2"
           >
-            Open in new tab
+            {{ t('home.openInNewTab') }}
             <v-icon end>mdi-open-in-new</v-icon>
           </v-btn>
         </div>
@@ -79,6 +78,9 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 const profileImg = new URL(
   '../assets/img/Roberto-portrait.jpg',
   import.meta.url,

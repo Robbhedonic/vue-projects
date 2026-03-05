@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Sprache",
+    "home": "Start",
+    "about": "Über mich",
+    "skills": "Kompetenzen",
+    "services": "Leistungen",
+    "portfolio": "Portfolio",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "cv": "Lebenslauf"
+  },
+  "home": {
+    "title": "Hallo, ich bin Roberto Carcamo",
+    "subtitle": "Fullstack-Entwickler",
+    "intro": "Ich bin ein motivierter Berufstätiger auf der Suche nach einer Gelegenheit, meine Fähigkeiten einzusetzen und in einem dynamischen Umfeld weiterzulernen.",
+    "contactMe": "Kontakt",
+    "cityIllustration": "Stadt-Illustration — Traumzustand",
+    "openInNewTab": "In neuem Tab öffnen"
+  },
+  "about": {
+    "title": "Über mich",
+    "intro1": "Ich bin Fullstack-Entwickler mit vielfältigen Fähigkeiten und suche aktiv eine Arbeitsstelle.",
+    "intro2": "Ich bin leidenschaftlich an Kultur, Kunst und Innovation interessiert.",
+    "yearsStudies": "Jahre Ausbildung",
+    "completedProjects": "Abgeschlossene Projekte",
+    "skillsCount": "Kompetenzen",
+    "viewCv": "Lebenslauf ansehen",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "Lebenslauf herunterladen",
+    "close": "Schließen"
+  },
+  "services": {
+    "title": "Leistungen",
+    "subtitle": "Was ich anbiete",
+    "seeMore": "Mehr erfahren",
+    "close": "Schließen",
+    "fullstack": {
+      "title": "Fullstack-Entwickler",
+      "summary": "Komplette Webentwicklung, UI und Nutzererlebnis.",
+      "details": [
+        "Entwicklung von Benutzeroberflächen",
+        "Entwicklung von Webseiten und Anwendungen",
+        "Optimierung der Nutzererfahrung"
+      ]
+    },
+    "business": {
+      "title": "Betriebswirtschaft & Management",
+      "summary": "Beratung in Strategie, Vertrieb und Finanzanalyse.",
+      "details": [
+        "Marketing und Vertrieb",
+        "Beratung zu Wachstumsstrategien",
+        "Finanzplanung und -analyse"
+      ]
+    },
+    "design": {
+      "title": "Design & Marke",
+      "summary": "Markenstrategie und visuelle Identität.",
+      "details": [
+        "Markenstrategie",
+        "Markenrichtlinien",
+        "Visuelle Identität"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Kontakt aufnehmen",
+    "name": "Name",
+    "email": "E-Mail",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "sendMessage": "Nachricht senden",
+    "thankYou": "Vielen Dank für Ihre Nachricht. Ich melde mich bald!",
+    "fieldRequired": "Dieses Feld ist erforderlich",
+    "emailInvalid": "Bitte gültige E-Mail-Adresse eingeben"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Frontend-Entwickler",
+    "rights": "Alle Rechte vorbehalten"
+  },
+  "qualification": {
+    "title": "Qualifikation",
+    "subtitle": "Mein Werdegang",
+    "education": "Ausbildung",
+    "work": "Berufserfahrung"
+  },
+  "testimonial": {
+    "title": "Referenzen",
+    "subtitle": "Was Arbeitgeber sagen",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Gründer & CTO, Onify",
+        "text": "Ich habe Roberto während seines Praktikums bei Onify betreut. Er hat unsere Admin-Oberfläche mit Vue und Vuetify entwickelt, REST-APIs integriert und mit Figma gearbeitet. Roberto zeigt ein sehr gutes Verständnis für Frontend, ist eigenständig und lösungsorientiert und wurde im Team schnell geschätzt. Ich empfehle ihn wärmstens für Frontend-Entwicklerrollen."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Managerin - Hawaii Poke",
+        "text": "Roberto ist ein ausgezeichneter Mitarbeiter; ich habe einen sehr guten Eindruck von ihm. Er zeigt durchgängig Verantwortung in seinen Aufgaben im Unternehmen."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Supervisorin - Caja los Andes",
+        "text": "Roberto zeigte Motivation und eine positive Einstellung. Er wies starke Fähigkeiten in der Kundenbeziehung auf, insbesondere in kritischen Bereichen wie der Schuldeneintreibung."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Arbeitgeberin - Walmart",
+        "text": "Roberto war immer verantwortungsbewusst und stach unter seinen Kollegen hervor. Er arbeitete vier Jahre bei Walmart, um sein Studium zu finanzieren."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Aktuelle Arbeiten",
+    "viewProject": "Projekt ansehen",
+    "quiz": {
+      "title": "Quiz-App",
+      "description": "Responsive Quiz-App mit UI-Komponenten und animierten Interaktionen."
+    },
+    "pokemon": {
+      "title": "Pokémon-App",
+      "description": "Interaktive App mit Pokémon-Infos und API-Anbindung."
+    },
+    "firstWebsite": {
+      "title": "Erste Webseite",
+      "description": "Meine erste responsive Webseite mit Animationen und Layout."
+    }
+  },
+  "projectSection": {
+    "title": "Sie haben ein neues Projekt?",
+    "subtitle": "Kontaktieren Sie mich für eine kostenlose Beratung.",
+    "contactMe": "Kontakt"
+  },
+  "skills": {
+    "title": "Frontend-Kompetenzen"
+  },
+  "projectsPage": {
+    "title": "Projekte",
+    "subtitle": "Ausgewählte Projekte und aktuelle Arbeiten",
+    "viewProject": "Projekt ansehen"
+  }
+}

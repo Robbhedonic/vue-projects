@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Language",
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Hi, I am Roberto Carcamo",
+    "subtitle": "Fullstack Developer",
+    "intro": "I'm a motivated worker currently seeking an opportunity to apply my skills and continue learning in a dynamic environment.",
+    "contactMe": "Contact Me",
+    "cityIllustration": "City Illustration — Dreams State",
+    "openInNewTab": "Open in new tab"
+  },
+  "about": {
+    "title": "About Me",
+    "intro1": "I am a Fullstack Developer with a diverse skill set, actively seeking a work opportunity.",
+    "intro2": "I am deeply passionate about culture, art, and innovation.",
+    "yearsStudies": "Years of studies",
+    "completedProjects": "Completed projects",
+    "skillsCount": "Skills",
+    "viewCv": "View CV",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "Download CV",
+    "close": "Close"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I offer",
+    "seeMore": "See more",
+    "close": "Close",
+    "fullstack": {
+      "title": "Fullstack Developer",
+      "summary": "Full web development, UI and user experience.",
+      "details": [
+        "User interface development",
+        "Web pages and applications development",
+        "User experience optimization"
+      ]
+    },
+    "business": {
+      "title": "Business Admin & Management",
+      "summary": "Strategy, sales and financial analysis consulting.",
+      "details": [
+        "Marketing and sales",
+        "Growth strategy consulting",
+        "Financial planning and analysis"
+      ]
+    },
+    "design": {
+      "title": "Design & Brand",
+      "summary": "Brand strategy and visual identity.",
+      "details": [
+        "Brand strategy",
+        "Brand guidelines",
+        "Visual identity"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Get in touch",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessage": "Send Message",
+    "thankYou": "Thank you for reaching out. I'll get back to you soon!",
+    "fieldRequired": "This field is required",
+    "emailInvalid": "E-mail must be valid"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Frontend Developer",
+    "rights": "All rights reserved"
+  },
+  "qualification": {
+    "title": "Qualification",
+    "subtitle": "My personal journey",
+    "education": "Education",
+    "work": "Work"
+  },
+  "testimonial": {
+    "title": "Testimonial",
+    "subtitle": "My employers say",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Founder & CTO, Onify",
+        "text": "I supervised Roberto during his internship at Onify. He developed our admin interface with Vue and Vuetify, integrated with REST APIs and worked with Figma. Roberto shows a very good understanding of frontend, is independent and solution-oriented, and was quickly appreciated in the team. I warmly recommend him for frontend development roles."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Manager - Hawaii Poke",
+        "text": "Roberto is an excellent worker; I have a very good impression of him. He consistently shows responsibility in his duties at the company."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Supervisor - Caja los Andes",
+        "text": "Roberto demonstrated motivation and a positive attitude. He showed strong skills in client relations, particularly in critical areas such as debt collections."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Employer - Walmart",
+        "text": "Roberto has always been responsible and stood out among his colleagues. He worked at Walmart for four years to finance his studies."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Most recent work",
+    "viewProject": "View project",
+    "quiz": {
+      "title": "Quiz App",
+      "description": "Responsive quiz app with UI components and animated interactions."
+    },
+    "pokemon": {
+      "title": "Pokémon App",
+      "description": "Interactive app with Pokémon info and API integration."
+    },
+    "firstWebsite": {
+      "title": "First Website",
+      "description": "My first responsive website with animations and layout skills."
+    }
+  },
+  "projectSection": {
+    "title": "You have a new project",
+    "subtitle": "Contact me now and get a free consult.",
+    "contactMe": "Contact Me"
+  },
+  "skills": {
+    "title": "Frontend Skills"
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "subtitle": "Featured projects and recent work",
+    "viewProject": "View project"
+  }
+}

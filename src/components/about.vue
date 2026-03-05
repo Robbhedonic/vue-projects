@@ -11,34 +11,33 @@
         />
       </v-col>
       <v-col cols="12" md="8" class="text-center">
-        <h2 class="text-h3 font-weight-bold mb-2">About Me</h2>
+        <h2 class="text-h3 font-weight-bold mb-2">{{ t('about.title') }}</h2>
         <p class="mb-4">
-          I am a Fullstack Developer with a diverse skill set, actively seeking
-          a work opportunity.
+          {{ t('about.intro1') }}
         </p>
         <p class="mb-6">
-          I am deeply passionate about culture, art, and innovation.
+          {{ t('about.intro2') }}
         </p>
 
         <!-- Info blocks -->
         <v-row justify="center" class="mb-6">
           <v-col cols="12" sm="4" class="text-center">
             <h3 class="text-h5">3+</h3>
-            <span class="text-caption">Years of studies</span>
+            <span class="text-caption">{{ t('about.yearsStudies') }}</span>
           </v-col>
           <v-col cols="12" sm="4" class="text-center">
             <h3 class="text-h5">06+</h3>
-            <span class="text-caption">Completed projects</span>
+            <span class="text-caption">{{ t('about.completedProjects') }}</span>
           </v-col>
           <v-col cols="12" sm="4" class="text-center">
             <h3 class="text-h5">20+</h3>
-            <span class="text-caption">Skills</span>
+            <span class="text-caption">{{ t('about.skillsCount') }}</span>
           </v-col>
         </v-row>
 
         <!-- Open Dialog Button -->
         <v-btn color="primary" variant="outlined" @click="dialog = true">
-          View CV
+          {{ t('about.viewCv') }}
           <v-icon end>mdi-eye</v-icon>
         </v-btn>
 
@@ -57,7 +56,7 @@
             "
           >
             <v-toolbar flat color="primary" dark>
-              <v-toolbar-title>Curriculum Vitae</v-toolbar-title>
+              <v-toolbar-title>{{ t('about.curriculumVitae') }}</v-toolbar-title>
               <v-spacer />
               <v-btn icon @click="toggleFullscreen">
                 <v-icon>
@@ -82,10 +81,10 @@
             <v-card-actions>
               <v-spacer />
               <v-btn color="primary" variant="tonal" :href="cvPdf" download>
-                Download CV
+                {{ t('about.downloadCv') }}
                 <v-icon end>mdi-download</v-icon>
               </v-btn>
-              <v-btn text @click="dialog = false">Close</v-btn>
+              <v-btn text @click="dialog = false">{{ t('about.close') }}</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
@@ -96,6 +95,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const dialog = ref(false);
 const isFullScreen = ref(false);

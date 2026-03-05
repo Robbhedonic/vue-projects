@@ -1,14 +1,14 @@
 <template>
   <v-container id="proyects" class="py-16">
-    <h2 class="text-h4 text-center font-weight-bold mb-2">Projects</h2>
+    <h2 class="text-h4 text-center font-weight-bold mb-2">{{ t('projectsPage.title') }}</h2>
     <p class="text-center text-subtitle-1 mb-10">
-      Proyectos destacados y trabajos recientes
+      {{ t('projectsPage.subtitle') }}
     </p>
 
     <v-row dense>
       <v-col
-        v-for="project in projects"
-        :key="project.title"
+        v-for="(project, i) in projects"
+        :key="i"
         cols="12"
         sm="6"
         md="4"
@@ -21,11 +21,11 @@
             class="align-end"
             gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
           >
-            <v-card-title class="text-white">{{ project.title }}</v-card-title>
+            <v-card-title class="text-white">{{ t(project.titleKey) }}</v-card-title>
           </v-img>
 
           <v-card-text class="pt-4">
-            {{ project.description }}
+            {{ t(project.descriptionKey) }}
           </v-card-text>
 
           <v-card-actions>
@@ -36,7 +36,7 @@
               color="primary"
               variant="text"
             >
-              Ver proyecto
+              {{ t('projectsPage.viewProject') }}
               <v-icon end>mdi-open-in-new</v-icon>
             </v-btn>
           </v-card-actions>
@@ -47,29 +47,29 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 const quizImg = new URL('../assets/img/quiz.jpeg', import.meta.url).href;
 const pokemonImg = new URL('../assets/img/pokemon.jpeg', import.meta.url).href;
 const firstWebsiteImg = new URL('../assets/img/f-w.jpeg', import.meta.url).href;
 
 const projects = [
   {
-    title: 'Quiz App',
-    description:
-      'Aplicación de quiz responsive con componentes de UI e interacciones animadas.',
+    titleKey: 'portfolio.quiz.title',
+    descriptionKey: 'portfolio.quiz.description',
     image: quizImg,
     link: 'https://robbhedonic.github.io/JavascriptQuiz1/',
   },
   {
-    title: 'Pokémon App',
-    description:
-      'App interactiva con información de Pokémon e integración de API.',
+    titleKey: 'portfolio.pokemon.title',
+    descriptionKey: 'portfolio.pokemon.description',
     image: pokemonImg,
     link: 'https://robbhedonic.github.io/Pokemon-Application/',
   },
   {
-    title: 'First Website',
-    description:
-      'Mi primer sitio web responsive con animaciones y maquetación.',
+    titleKey: 'portfolio.firstWebsite.title',
+    descriptionKey: 'portfolio.firstWebsite.description',
     image: firstWebsiteImg,
     link: 'https://robbhedonic.github.io/index.html',
   },

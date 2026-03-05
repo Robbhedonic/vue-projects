@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "Språk",
+    "home": "Hem",
+    "about": "Om mig",
+    "skills": "Kunskaper",
+    "services": "Tjänster",
+    "portfolio": "Portfölj",
+    "projects": "Projekt",
+    "contact": "Kontakt",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Hej, jag är Roberto Cárcamo",
+    "subtitle": "Fullstack-utvecklare",
+    "intro": "Jag är en motiverad yrkesperson som söker en möjlighet att tillämpa mina färdigheter och fortsätta lära mig i en dynamisk miljö.",
+    "contactMe": "Kontakta mig",
+    "cityIllustration": "Stadsillustration — Drömmar",
+    "openInNewTab": "Öppna i ny flik"
+  },
+  "about": {
+    "title": "Om mig",
+    "intro1": "Jag är Fullstack-utvecklare med en bred kompetens och söker aktivt ett arbete.",
+    "intro2": "Jag brinner för kultur, konst och innovation.",
+    "yearsStudies": "År av studier",
+    "completedProjects": "Genomförda projekt",
+    "skillsCount": "Färdigheter",
+    "viewCv": "Visa CV",
+    "curriculumVitae": "Curriculum Vitae",
+    "downloadCv": "Ladda ner CV",
+    "close": "Stäng"
+  },
+  "services": {
+    "title": "Tjänster",
+    "subtitle": "Vad jag erbjuder",
+    "seeMore": "Visa mer",
+    "close": "Stäng",
+    "fullstack": {
+      "title": "Fullstack-utvecklare",
+      "summary": "Full webbutveckling, UI och användarupplevelse.",
+      "details": [
+        "Utveckling av användargränssnitt",
+        "Utveckling av webbsidor och applikationer",
+        "Optimering av användarupplevelsen"
+      ]
+    },
+    "business": {
+      "title": "Företagsadministration & Ledning",
+      "summary": "Rådgivning inom strategi, försäljning och finansiell analys.",
+      "details": [
+        "Marknadsföring och försäljning",
+        "Rådgivning om tillväxtstrategi",
+        "Finansiell planering och analys"
+      ]
+    },
+    "design": {
+      "title": "Design & Varumärke",
+      "summary": "Varumärkesstrategi och visuell identitet.",
+      "details": [
+        "Varumärkesstrategi",
+        "Varumärkeshandbok",
+        "Visuell identitet"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakta mig",
+    "subtitle": "Hör av dig",
+    "name": "Namn",
+    "email": "E-post",
+    "subject": "Ämne",
+    "message": "Meddelande",
+    "sendMessage": "Skicka meddelande",
+    "thankYou": "Tack för att du hörde av dig. Jag återkommer snart!",
+    "fieldRequired": "Detta fält är obligatoriskt",
+    "emailInvalid": "E-postadressen måste vara giltig"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — Frontend-utvecklare",
+    "rights": "Alla rättigheter förbehållna"
+  },
+  "qualification": {
+    "title": "Utbildning",
+    "subtitle": "Min resa",
+    "education": "Utbildning",
+    "work": "Arbete"
+  },
+  "testimonial": {
+    "title": "Omdömen",
+    "subtitle": "Vad mina arbetsgivare säger",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "Grundare & CTO, Onify",
+        "text": "Jag har handledat Roberto under hans LIA-praktik på Onify. Han utvecklade vårt admingränssnitt med Vue och Vuetify, integrerade mot REST API:er och arbetade med Figma. Roberto visar mycket god förståelse för frontend, är självständig och lösningsorienterad, och blev snabbt uppskattad i teamet. Jag rekommenderar honom varmt för roller inom frontendutveckling."
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "Manager - Hawaii Poke",
+        "text": "Roberto är en utmärkt medarbetare; jag har ett mycket positivt intryck av honom. Han visar konsekvent ansvar i sina uppgifter på företaget."
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "Supervisor - Caja los Andes",
+        "text": "Roberto visade motivation och ett positivt förhållningssätt. Han visade starka färdigheter inom kundrelationer, särskilt inom kritiska områden som indrivning."
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "Arbetsgivare - Walmart",
+        "text": "Roberto har alltid varit ansvarsfull och utmärkte sig bland sina kollegor. Han arbetade på Walmart i fyra år för att finansiera sina studier."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfölj",
+    "subtitle": "Senaste arbeten",
+    "viewProject": "Visa projekt",
+    "quiz": {
+      "title": "Quiz-app",
+      "description": "Responsiv quiz-app med UI-komponenter och animerade interaktioner."
+    },
+    "pokemon": {
+      "title": "Pokémon-app",
+      "description": "Interaktiv app med Pokémon-info och API-integration."
+    },
+    "firstWebsite": {
+      "title": "Första webbplatsen",
+      "description": "Min första responsiva webbplats med animationer och layout."
+    }
+  },
+  "projectSection": {
+    "title": "Har du ett nytt projekt?",
+    "subtitle": "Kontakta mig nu för en kostnadsfri konsultation.",
+    "contactMe": "Kontakta mig"
+  },
+  "skills": {
+    "title": "Frontend-färdigheter"
+  },
+  "projectsPage": {
+    "title": "Projekt",
+    "subtitle": "Utvalda projekt och senaste arbeten",
+    "viewProject": "Visa projekt"
+  }
+}

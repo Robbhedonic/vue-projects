@@ -1,7 +1,7 @@
 <template>
   <v-container id="qualification" class="py-16">
-    <h2 class="text-h4 text-center font-weight-bold mb-2">Qualification</h2>
-    <p class="text-center text-subtitle-1 mb-10">My personal journey</p>
+    <h2 class="text-h4 text-center font-weight-bold mb-2">{{ t('qualification.title') }}</h2>
+    <p class="text-center text-subtitle-1 mb-10">{{ t('qualification.subtitle') }}</p>
 
     <!-- Tabs -->
     <v-row justify="center" class="mb-4 mb-sm-6 qualification-tabs">
@@ -15,7 +15,7 @@
         @click="activeTab = tab.id"
       >
         <v-icon start size="small">{{ tab.icon }}</v-icon>
-        {{ tab.label }}
+        {{ t(tab.labelKey) }}
       </v-btn>
     </v-row>
 
@@ -33,13 +33,16 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 import QualificationCard from './qualificationCard.vue';
+
+const { t } = useI18n();
 
 const activeTab = ref<'education' | 'work'>('education');
 
 const tabs = [
-  { id: 'education', label: 'Education', icon: 'mdi-school' },
-  { id: 'work', label: 'Work', icon: 'mdi-briefcase' },
+  { id: 'education', labelKey: 'qualification.education', icon: 'mdi-school' },
+  { id: 'work', labelKey: 'qualification.work', icon: 'mdi-briefcase' },
 ] as const;
 
 const education = [

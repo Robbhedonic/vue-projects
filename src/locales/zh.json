@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "language": "语言",
+    "home": "首页",
+    "about": "关于",
+    "skills": "技能",
+    "services": "服务",
+    "portfolio": "作品集",
+    "projects": "项目",
+    "contact": "联系",
+    "cv": "简历"
+  },
+  "home": {
+    "title": "你好，我是 Roberto Carcamo",
+    "subtitle": "全栈开发者",
+    "intro": "我是一名积极进取的专业人士，正在寻找机会运用我的技能并在充满活力的环境中继续学习。",
+    "contactMe": "联系我",
+    "cityIllustration": "城市插画 — 梦想之境",
+    "openInNewTab": "在新标签页中打开"
+  },
+  "about": {
+    "title": "关于我",
+    "intro1": "我是一名全栈开发者，拥有多样化的技能，正在积极寻找工作机会。",
+    "intro2": "我热爱文化、艺术与创新。",
+    "yearsStudies": "学习年限",
+    "completedProjects": "已完成项目",
+    "skillsCount": "技能",
+    "viewCv": "查看简历",
+    "curriculumVitae": "个人简历",
+    "downloadCv": "下载简历",
+    "close": "关闭"
+  },
+  "services": {
+    "title": "服务",
+    "subtitle": "我的服务",
+    "seeMore": "了解更多",
+    "close": "关闭",
+    "fullstack": {
+      "title": "全栈开发者",
+      "summary": "完整的网络开发、界面与用户体验。",
+      "details": [
+        "用户界面开发",
+        "网页与应用程序开发",
+        "用户体验优化"
+      ]
+    },
+    "business": {
+      "title": "企业管理与行政",
+      "summary": "战略、销售与财务分析咨询。",
+      "details": [
+        "市场营销与销售",
+        "增长战略咨询",
+        "财务规划与分析"
+      ]
+    },
+    "design": {
+      "title": "设计与品牌",
+      "summary": "品牌策略与视觉识别。",
+      "details": [
+        "品牌策略",
+        "品牌手册",
+        "视觉识别"
+      ]
+    }
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "保持联系",
+    "name": "姓名",
+    "email": "邮箱",
+    "subject": "主题",
+    "message": "留言",
+    "sendMessage": "发送消息",
+    "thankYou": "感谢您的留言，我会尽快回复！",
+    "fieldRequired": "此栏为必填",
+    "emailInvalid": "请输入有效的邮箱地址"
+  },
+  "footer": {
+    "company": "New Thinking Technology",
+    "role": "Roberto C.C. — 前端开发者",
+    "rights": "版权所有"
+  },
+  "qualification": {
+    "title": "资历",
+    "subtitle": "我的经历",
+    "education": "教育",
+    "work": "工作"
+  },
+  "testimonial": {
+    "title": "评价",
+    "subtitle": "雇主评价",
+    "items": [
+      {
+        "name": "Robert Lundsten",
+        "role": "创始人兼首席技术官，Onify",
+        "text": "我在 Onify 指导 Roberto 实习期间与他共事。他用 Vue 和 Vuetify 开发了我们的管理界面，对接 REST API 并使用 Figma。Roberto 对前端有很好的理解，独立且注重解决方案，很快在团队中获得认可。我强烈推荐他担任前端开发相关职位。"
+      },
+      {
+        "name": "Lara Celaya",
+        "role": "经理 - Hawaii Poke",
+        "text": "Roberto 是一名出色的员工；我对他印象非常好。他在公司的职责中始终表现出责任感。"
+      },
+      {
+        "name": "Camila Aguila",
+        "role": "主管 - Caja los Andes",
+        "text": "Roberto 表现出积极性和正面态度。他在客户关系方面能力突出，尤其在催收等关键领域。"
+      },
+      {
+        "name": "Gabriela Marzan",
+        "role": "雇主 - Walmart",
+        "text": "Roberto 一直很有责任心，在同事中脱颖而出。他在沃尔玛工作了四年以资助自己的学业。"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "作品集",
+    "subtitle": "近期作品",
+    "viewProject": "查看项目",
+    "quiz": {
+      "title": "测验应用",
+      "description": "响应式测验应用，含 UI 组件与动效交互。"
+    },
+    "pokemon": {
+      "title": "宝可梦应用",
+      "description": "交互式应用，含宝可梦信息与 API 集成。"
+    },
+    "firstWebsite": {
+      "title": "第一个网站",
+      "description": "我的第一个响应式网站，含动画与布局实践。"
+    }
+  },
+  "projectSection": {
+    "title": "您有新项目？",
+    "subtitle": "立即联系我，获取免费咨询。",
+    "contactMe": "联系我"
+  },
+  "skills": {
+    "title": "前端技能"
+  },
+  "projectsPage": {
+    "title": "项目",
+    "subtitle": "精选项目与近期作品",
+    "viewProject": "查看项目"
+  }
+}

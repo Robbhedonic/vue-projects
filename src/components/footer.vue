@@ -6,8 +6,8 @@
           <v-avatar size="80" class="mb-2">
             <v-img :src="logoImg" alt="logo" />
           </v-avatar>
-          <div class="font-weight-bold text-h6">New Thinking Technology</div>
-          <div class="text-subtitle-2">Roberto C.C. — Frontend Developer</div>
+          <div class="font-weight-bold text-h6">{{ t('footer.company') }}</div>
+          <div class="text-subtitle-2">{{ t('footer.role') }}</div>
         </v-col>
       </v-row>
 
@@ -27,13 +27,16 @@
       </v-row>
 
       <div class="text-caption">
-        &copy; {{ new Date().getFullYear() }} R.C.C. — All rights reserved
+        &copy; {{ new Date().getFullYear() }} R.C.C. — {{ t('footer.rights') }}
       </div>
     </v-container>
   </v-footer>
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 const logoImg = new URL('../assets/img/logo.jpeg', import.meta.url).href;
 
 const socialLinks = [

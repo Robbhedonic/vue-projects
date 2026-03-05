@@ -13,8 +13,8 @@
           />
         </v-col>
 
-        <!-- Desktop Nav -->
-        <v-col cols="auto" class="d-none d-md-flex">
+        <!-- Desktop Nav: from lg (1280px) to avoid overflow at 960–1279px -->
+        <v-col cols="auto" class="d-none d-lg-flex flex-nowrap nav-links-col">
           <v-btn
             v-for="link in navLinks"
             :key="link.id"
@@ -26,20 +26,37 @@
             rel="noopener"
           >
             <v-icon start>{{ link.icon }}</v-icon>
-            {{ link.label }}
+            {{ t(link.labelKey) }}
           </v-btn>
         </v-col>
 
-        <!-- Theme + Burger icon -->
+        <!-- Language + Theme + Burger -->
         <v-col cols="auto" class="d-flex align-center">
+          <v-menu location="bottom">
+            <template #activator="{ props }">
+              <v-btn icon v-bind="props" class="me-1" :title="t('nav.language')">
+                <v-icon>mdi-translate</v-icon>
+              </v-btn>
+            </template>
+            <v-list density="compact">
+              <v-list-item
+                v-for="lang in languages"
+                :key="lang.code"
+                :active="locale === lang.code"
+                @click="locale = lang.code"
+              >
+                <v-list-item-title>{{ lang.name }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
           <v-btn icon @click="toggleTheme" class="me-2">
             <v-icon>{{
               isDark ? 'mdi-white-balance-sunny' : 'mdi-moon-waning-crescent'
             }}</v-icon>
           </v-btn>
 
-          <!-- Burger icon visible only on small screens -->
-          <v-btn icon class="d-md-none" @click="drawer = true">
+          <!-- Burger: visible when nav doesn't fit (below lg) -->
+          <v-btn icon class="d-lg-none" @click="drawer = true">
             <v-icon>mdi-menu</v-icon>
           </v-btn>
         </v-col>
@@ -47,12 +64,12 @@
     </v-container>
   </v-app-bar>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile Menu: same blue as navbar, white icons -->
   <v-navigation-drawer
     v-model="drawer"
     temporary
     location="right"
-    class="d-md-none"
+    class="d-lg-none nav-drawer"
   >
     <v-list nav dense>
       <v-list-item
@@ -66,7 +83,7 @@
         rel="noopener"
       >
         <v-icon start class="me-2">{{ link.icon }}</v-icon>
-        <v-list-item-title>{{ link.label }}</v-list-item-title>
+        <v-list-item-title>{{ t(link.labelKey) }}</v-list-item-title>
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
@@ -76,8 +93,30 @@
 import { ref, onMounted, onUnmounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { useTheme } from 'vuetify';
+import { useI18n } from 'vue-i18n';
 
+const { t, locale } = useI18n();
 const route = useRoute();
+
+// Persist locale in localStorage
+const LOCALE_KEY = 'app-locale';
+const VALID_LOCALES = ['en', 'es', 'sv', 'zh', 'ar', 'de'];
+const savedLocale = localStorage.getItem(LOCALE_KEY);
+if (savedLocale && VALID_LOCALES.includes(savedLocale)) {
+  locale.value = savedLocale;
+}
+watch(locale, (newLocale) => {
+  localStorage.setItem(LOCALE_KEY, newLocale);
+});
+
+const languages = [
+  { code: 'en', name: 'English' },
+  { code: 'es', name: 'Español' },
+  { code: 'sv', name: 'Svenska' },
+  { code: 'zh', name: '中文' },
+  { code: 'ar', name: 'العربية' },
+  { code: 'de', name: 'Deutsch' },
+];
 const logoImg = new URL('../assets/img/logo.jpeg', import.meta.url).href;
 const cvPdfUrl = new URL(
   '../assets/pdf/Roberto-Carcamo-CV.pdf',
@@ -176,53 +215,33 @@ function isActive(link: {
 }
 
 const navLinks = [
-  { id: 1, label: 'Home', to: '/', icon: 'mdi-home' },
-  {
-    id: 2,
-    label: 'About',
-    to: { path: '/', hash: '#about' },
-    icon: 'mdi-account',
-  },
-  {
-    id: 3,
-    label: 'Skills',
-    to: { path: '/', hash: '#skills' },
-    icon: 'mdi-code-tags',
-  },
-  {
-    id: 4,
-    label: 'Services',
-    to: { path: '/', hash: '#services' },
-    icon: 'mdi-briefcase',
-  },
-  {
-    id: 5,
-    label: 'Portfolio',
-    to: { path: '/', hash: '#portfolio' },
-    icon: 'mdi-image',
-  },
-  { id: 6, label: 'Projects', to: '/projects', icon: 'mdi-laptop' },
-  {
-    id: 7,
-    label: 'Contact',
-    to: { path: '/', hash: '#contact' },
-    icon: 'mdi-email',
-  },
-  {
-    id: 8,
-    label: 'CV',
-    href: cvPdfUrl,
-    icon: 'mdi-file-pdf',
-    external: true,
-  },
+  { id: 1, labelKey: 'nav.home', to: '/', icon: 'mdi-home' },
+  { id: 2, labelKey: 'nav.about', to: { path: '/', hash: '#about' }, icon: 'mdi-account' },
+  { id: 3, labelKey: 'nav.skills', to: { path: '/', hash: '#skills' }, icon: 'mdi-code-tags' },
+  { id: 4, labelKey: 'nav.services', to: { path: '/', hash: '#services' }, icon: 'mdi-briefcase' },
+  { id: 5, labelKey: 'nav.portfolio', to: { path: '/', hash: '#portfolio' }, icon: 'mdi-image' },
+  { id: 6, labelKey: 'nav.projects', to: '/projects', icon: 'mdi-laptop' },
+  { id: 7, labelKey: 'nav.contact', to: { path: '/', hash: '#contact' }, icon: 'mdi-email' },
+  { id: 8, labelKey: 'nav.cv', href: cvPdfUrl, icon: 'mdi-file-pdf', external: true },
 ];
 </script>
 
 <style scoped>
 .nav-bar {
-  background: linear-gradient(135deg, #3f51b5, #1e88e5);
+  background: #1976d2 !important;
   border-radius: 0 0 12px 12px;
   color: white;
+  overflow: hidden;
+}
+.nav-bar :deep(.v-icon),
+.nav-bar :deep(.v-btn .v-icon) {
+  color: #fff !important;
+}
+.nav-bar :deep(.v-btn) {
+  color: #fff !important;
+}
+.nav-links-col {
+  min-width: 0;
 }
 .logo {
   border-radius: 12px;
@@ -230,7 +249,7 @@ const navLinks = [
 
 /* Links with no background: text only on the bar */
 .nav-bar .v-btn.nav-link {
-  color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
   background: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
@@ -264,9 +283,19 @@ const navLinks = [
   color: #fff !important;
 }
 
-/* Mobile drawer: active highlighted */
-.nav-link-drawer--active {
-  background: rgba(0, 0, 0, 0.08);
+/* Mobile drawer: same blue as navbar, white icons and text */
+.nav-drawer :deep(.v-overlay__content),
+.nav-drawer :deep(.v-navigation-drawer__content),
+.nav-drawer :deep(.v-list) {
+  background: #1976d2 !important;
+}
+.nav-drawer :deep(.v-list-item),
+.nav-drawer :deep(.v-list-item-title),
+.nav-drawer :deep(.v-icon) {
+  color: #fff !important;
+}
+.nav-drawer .nav-link-drawer--active {
+  background: rgba(255, 255, 255, 0.15) !important;
   font-weight: 600;
 }
 </style>

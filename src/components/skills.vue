@@ -1,6 +1,6 @@
 <template>
   <v-container id="skills">
-    <h2 class="text-h4 text-center font-weight-bold mb-4">Frontend Skills</h2>
+    <h2 class="text-h4 text-center font-weight-bold mb-4">{{ t('skills.title') }}</h2>
 
     <div class="skills-marquee">
       <div class="skills-track">
@@ -48,6 +48,7 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
 import { Doughnut } from 'vue-chartjs';
 import {
   Chart as ChartJS,
@@ -60,6 +61,7 @@ import {
 
 ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale);
 
+const { t } = useI18n();
 type SkillItem = { name: string; level: number; icon?: string; image?: string };
 
 // Skills data (icon = MDI, image = optional URL)

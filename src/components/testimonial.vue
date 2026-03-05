@@ -1,7 +1,7 @@
 <template>
   <v-container id="testimonial" class="py-16 testimonial-wrap">
-    <h2 class="text-h4 font-weight-bold text-center mb-2">Testimonial</h2>
-    <p class="text-subtitle-1 text-center mb-6">My employers say</p>
+    <h2 class="text-h4 font-weight-bold text-center mb-2">{{ t('testimonial.title') }}</h2>
+    <p class="text-subtitle-1 text-center mb-6">{{ t('testimonial.subtitle') }}</p>
 
     <v-carousel
       hide-delimiters
@@ -28,7 +28,7 @@
 
             <v-col cols="12" md="8" class="pa-3 pa-sm-4">
               <div class="text-h6 font-weight-bold">
-                {{ testimonial.name }}
+                {{ t(`testimonial.items.${testimonial.index}.name`) }}
               </div>
               <div class="text-subtitle-2 mb-2">
                 <a
@@ -38,9 +38,9 @@
                   rel="noopener"
                   class="testimonial-link"
                 >
-                  {{ testimonial.role }}
+                  {{ t(`testimonial.items.${testimonial.index}.role`) }}
                 </a>
-                <template v-else>{{ testimonial.role }}</template>
+                <template v-else>{{ t(`testimonial.items.${testimonial.index}.role`) }}</template>
               </div>
 
               <div class="mb-2">
@@ -49,7 +49,7 @@
                 </v-icon>
               </div>
 
-              <p class="testimonial-text text-body-2">{{ testimonial.text }}</p>
+              <p class="testimonial-text text-body-2">{{ t(`testimonial.items.${testimonial.index}.text`) }}</p>
             </v-col>
           </v-row>
         </v-card>
@@ -59,37 +59,19 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 const barbaraImg = new URL('../assets/img/barbara.JPG', import.meta.url).href;
 const camilaImg = new URL('../assets/img/camila.JPG', import.meta.url).href;
 const gabrielaImg = new URL('../assets/img/gabriel.JPG', import.meta.url).href;
 const robertImg = new URL('../assets/img/robert.jpg', import.meta.url).href;
 
 const testimonials = [
-  {
-    name: 'Robert Lundsten',
-    role: 'Grundare & CTO, Onify',
-    image: robertImg,
-    link: 'https://onify.co',
-    text: 'Jag har handledat Roberto under hans LIA-praktik på Onify. Han utvecklade vårt admingränssnitt med Vue och Vuetify, integrerade mot REST API:er och arbetade med Figma. Roberto visar mycket god förståelse för frontend, är självständig och lösningsorienterad, och blev snabbt uppskattad i teamet. Jag rekommenderar honom varmt för roller inom frontendutveckling.',
-  },
-  {
-    name: 'Lara Celaya',
-    role: 'Manager - Hawaii Poke',
-    image: barbaraImg,
-    text: 'Roberto is an excellent worker; I have a very good impression of him. He consistently shows responsibility in his duties at the company.',
-  },
-  {
-    name: 'Camila Aguila',
-    role: 'Supervisor - Caja los Andes',
-    image: camilaImg,
-    text: 'Roberto demonstrated motivation and a positive attitude. He showed strong skills in client relations, particularly in critical areas such as debt collections.',
-  },
-  {
-    name: 'Gabriela Marzan',
-    role: 'Employer - Walmart',
-    image: gabrielaImg,
-    text: 'Roberto has always been responsible and stood out among his colleagues. He worked at Walmart for four years to finance his studies.',
-  },
+  { index: 0, image: robertImg, link: 'https://onify.co' },
+  { index: 1, image: barbaraImg },
+  { index: 2, image: camilaImg },
+  { index: 3, image: gabrielaImg },
 ];
 </script>
 
