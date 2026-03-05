@@ -8,7 +8,27 @@
     "portfolio": "الأعمال",
     "projects": "المشاريع",
     "contact": "اتصل",
-    "cv": "السيرة"
+    "cv": "السيرة",
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "dashboard": "لوحة التحكم",
+    "logout": "تسجيل الخروج"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "email": "البريد",
+    "password": "كلمة المرور",
+    "name": "الاسم",
+    "fieldRequired": "هذا الحقل مطلوب",
+    "emailInvalid": "أدخل بريداً صحيحاً",
+    "passwordMin": "6 أحرف على الأقل",
+    "ownerOnly": "تسجيل الدخول للمالك فقط.",
+    "loginFailed": "فشل تسجيل الدخول",
+    "registerFailed": "فشل التسجيل",
+    "dashboard": "لوحة التحكم",
+    "welcome": "مرحباً",
+    "dashboardHint": "أنت مسجل الدخول."
   },
   "home": {
     "title": "مرحباً، أنا Roberto Carcamo",

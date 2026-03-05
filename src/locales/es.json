@@ -8,7 +8,31 @@
     "portfolio": "Portafolio",
     "projects": "Proyectos",
     "contact": "Contacto",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "Entrar",
+    "register": "Registrarse",
+    "dashboard": "Panel",
+    "logout": "Salir"
+  },
+  "auth": {
+    "login": "Entrar",
+    "register": "Registrarse",
+    "email": "Correo",
+    "password": "Contraseña",
+    "name": "Nombre",
+    "fieldRequired": "Este campo es obligatorio",
+    "emailInvalid": "Introduce un correo válido",
+    "passwordMin": "Al menos 6 caracteres",
+    "ownerOnly": "Solo el dueño del sitio puede iniciar sesión.",
+    "hasAccount": "¿Ya tienes cuenta? Entrar",
+    "loginFailed": "Error al iniciar sesión",
+    "registerFailed": "Error al registrarse",
+    "dashboard": "Panel",
+    "welcome": "Bienvenido/a",
+    "dashboardHint": "Has iniciado sesión. Esta zona se puede ampliar con más funciones.",
+    "setupHintRestart": "La cuenta del dueño se crea al arrancar el servidor. Reinicia el servidor (npm run server) y vuelve a intentar.",
+    "setupHintEnv": "Configura OWNER_EMAIL y OWNER_PASSWORD en server/.env y reinicia el servidor.",
+    "setupHintServer": "Arranca el backend con: npm run server"
   },
   "home": {
     "title": "Hola, soy Roberto Cárcamo",

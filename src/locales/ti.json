@@ -8,7 +8,27 @@
     "portfolio": "ፖርትፎሊዮ",
     "projects": "ፕሮጀክትታት",
     "contact": "ርክብ",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "fieldRequired": "This field is required",
+    "emailInvalid": "Please enter a valid email",
+    "passwordMin": "At least 6 characters",
+    "ownerOnly": "Login for site owner only.",
+    "loginFailed": "Login failed",
+    "registerFailed": "Registration failed",
+    "dashboard": "Dashboard",
+    "welcome": "Welcome",
+    "dashboardHint": "You are logged in."
   },
   "home": {
     "title": "ሰላም፣ ኣነ Roberto Carcamo እየ",

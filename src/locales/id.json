@@ -8,7 +8,27 @@
     "portfolio": "Portfolio",
     "projects": "Proyek",
     "contact": "Kontak",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "Masuk",
+    "register": "Daftar",
+    "dashboard": "Dashboard",
+    "logout": "Keluar"
+  },
+  "auth": {
+    "login": "Masuk",
+    "register": "Daftar",
+    "email": "Email",
+    "password": "Kata sandi",
+    "name": "Nama",
+    "fieldRequired": "Bidang ini wajib",
+    "emailInvalid": "Masukkan email yang valid",
+    "passwordMin": "Minimal 6 karakter",
+    "ownerOnly": "Hanya pemilik situs yang dapat masuk.",
+    "loginFailed": "Login gagal",
+    "registerFailed": "Pendaftaran gagal",
+    "dashboard": "Dashboard",
+    "welcome": "Selamat datang",
+    "dashboardHint": "Anda sudah masuk."
   },
   "home": {
     "title": "Hai, saya Roberto Carcamo",

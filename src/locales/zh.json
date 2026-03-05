@@ -8,7 +8,27 @@
     "portfolio": "作品集",
     "projects": "项目",
     "contact": "联系",
-    "cv": "简历"
+    "cv": "简历",
+    "login": "登录",
+    "register": "注册",
+    "dashboard": "仪表板",
+    "logout": "退出"
+  },
+  "auth": {
+    "login": "登录",
+    "register": "注册",
+    "email": "邮箱",
+    "password": "密码",
+    "name": "姓名",
+    "fieldRequired": "此字段必填",
+    "emailInvalid": "请输入有效邮箱",
+    "passwordMin": "至少6个字符",
+    "ownerOnly": "仅站点所有者可登录。",
+    "loginFailed": "登录失败",
+    "registerFailed": "注册失败",
+    "dashboard": "仪表板",
+    "welcome": "欢迎",
+    "dashboardHint": "您已登录。"
   },
   "home": {
     "title": "你好，我是 Roberto Carcamo",

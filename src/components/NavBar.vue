@@ -28,6 +28,22 @@
             <v-icon start>{{ link.icon }}</v-icon>
             {{ t(link.labelKey) }}
           </v-btn>
+          <template v-if="!isLoggedIn">
+            <v-btn variant="text" class="nav-link" to="/login">
+              <v-icon start>mdi-login</v-icon>
+              {{ t('nav.login') }}
+            </v-btn>
+          </template>
+          <template v-else>
+            <v-btn variant="text" class="nav-link" :class="{ 'nav-link--active': isDashboard }" to="/dashboard">
+              <v-icon start>mdi-view-dashboard</v-icon>
+              {{ t('nav.dashboard') }}
+            </v-btn>
+            <v-btn variant="text" class="nav-link" @click="doLogout">
+              <v-icon start>mdi-logout</v-icon>
+              {{ t('nav.logout') }}
+            </v-btn>
+          </template>
         </v-col>
 
         <!-- Language + Theme + Burger: never shrink so they stay inside the bar -->
@@ -85,18 +101,43 @@
         <v-icon start class="me-2">{{ link.icon }}</v-icon>
         <v-list-item-title>{{ t(link.labelKey) }}</v-list-item-title>
       </v-list-item>
+      <template v-if="!isLoggedIn">
+        <v-list-item to="/login" @click="drawer = false">
+          <v-icon start class="me-2">mdi-login</v-icon>
+          <v-list-item-title>{{ t('nav.login') }}</v-list-item-title>
+        </v-list-item>
+      </template>
+      <template v-else>
+        <v-list-item to="/dashboard" @click="drawer = false">
+          <v-icon start class="me-2">mdi-view-dashboard</v-icon>
+          <v-list-item-title>{{ t('nav.dashboard') }}</v-list-item-title>
+        </v-list-item>
+        <v-list-item @click="doLogout(); drawer = false">
+          <v-icon start class="me-2">mdi-logout</v-icon>
+          <v-list-item-title>{{ t('nav.logout') }}</v-list-item-title>
+        </v-list-item>
+      </template>
     </v-list>
   </v-navigation-drawer>
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, onUnmounted, watch } from 'vue';
-import { useRoute } from 'vue-router';
+import { ref, onMounted, onUnmounted, watch, computed } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 import { useTheme } from 'vuetify';
 import { useI18n } from 'vue-i18n';
+import { useAuth } from '@/composables/useAuth';
 
 const { t, locale } = useI18n();
 const route = useRoute();
+const router = useRouter();
+const { isLoggedIn, logout } = useAuth();
+
+function doLogout() {
+  logout();
+  router.push('/');
+}
+const isDashboard = computed(() => route.path === '/dashboard');
 
 // Persist locale in localStorage
 const LOCALE_KEY = 'app-locale';

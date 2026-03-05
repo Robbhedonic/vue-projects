@@ -8,7 +8,27 @@
     "portfolio": "Portfolio",
     "projects": "Projektit",
     "contact": "Yhteystiedot",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "Kirjaudu",
+    "register": "Rekisteröidy",
+    "dashboard": "Kojelauta",
+    "logout": "Kirjaudu ulos"
+  },
+  "auth": {
+    "login": "Kirjaudu",
+    "register": "Rekisteröidy",
+    "email": "Sähköposti",
+    "password": "Salasana",
+    "name": "Nimi",
+    "fieldRequired": "Tämä kenttä on pakollinen",
+    "emailInvalid": "Syötä toimiva sähköposti",
+    "passwordMin": "Vähintään 6 merkkiä",
+    "ownerOnly": "Vain sivuston omistaja voi kirjautua.",
+    "loginFailed": "Kirjautuminen epäonnistui",
+    "registerFailed": "Rekisteröityminen epäonnistui",
+    "dashboard": "Kojelauta",
+    "welcome": "Tervetuloa",
+    "dashboardHint": "Olet kirjautunut."
   },
   "home": {
     "title": "Hei, olen Roberto Carcamo",

@@ -8,7 +8,27 @@
     "portfolio": "Portefølje",
     "projects": "Prosjekter",
     "contact": "Kontakt",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "Logg inn",
+    "register": "Registrer",
+    "dashboard": "Dashbord",
+    "logout": "Logg ut"
+  },
+  "auth": {
+    "login": "Logg inn",
+    "register": "Registrer",
+    "email": "E-post",
+    "password": "Passord",
+    "name": "Navn",
+    "fieldRequired": "Dette feltet er obligatorisk",
+    "emailInvalid": "Oppgi gyldig e-post",
+    "passwordMin": "Minst 6 tegn",
+    "ownerOnly": "Kun eier kan logge inn.",
+    "loginFailed": "Innlogging feilet",
+    "registerFailed": "Registrering feilet",
+    "dashboard": "Dashbord",
+    "welcome": "Velkommen",
+    "dashboardHint": "Du er logget inn."
   },
   "home": {
     "title": "Hei, jeg er Roberto Carcamo",

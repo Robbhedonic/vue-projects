@@ -8,7 +8,27 @@
     "portfolio": "Portfolio",
     "projects": "Miradi",
     "contact": "Wasiliana",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "Ingia",
+    "register": "Jisajili",
+    "dashboard": "Dashibodi",
+    "logout": "Ondoka"
+  },
+  "auth": {
+    "login": "Ingia",
+    "register": "Jisajili",
+    "email": "Barua pepe",
+    "password": "Nenosiri",
+    "name": "Jina",
+    "fieldRequired": "Sehemu hii inahitajika",
+    "emailInvalid": "Tafadhali weka barua pepe halali",
+    "passwordMin": "Angalau herufi 6",
+    "ownerOnly": "Mwenye tovuti tu anaweza kuingia.",
+    "loginFailed": "Kuingia kumeshindwa",
+    "registerFailed": "Usajili umeshindwa",
+    "dashboard": "Dashibodi",
+    "welcome": "Karibu",
+    "dashboardHint": "Umeingia."
   },
   "home": {
     "title": "Habari, mimi ni Roberto Carcamo",

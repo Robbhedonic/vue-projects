@@ -8,7 +8,27 @@
     "portfolio": "Portfolio",
     "projects": "Projekte",
     "contact": "Kontakt",
-    "cv": "Lebenslauf"
+    "cv": "Lebenslauf",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "dashboard": "Dashboard",
+    "logout": "Abmelden"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "name": "Name",
+    "fieldRequired": "Dieses Feld ist erforderlich",
+    "emailInvalid": "Bitte gültige E-Mail eingeben",
+    "passwordMin": "Mindestens 6 Zeichen",
+    "ownerOnly": "Nur der Seiteninhaber kann sich anmelden.",
+    "loginFailed": "Anmeldung fehlgeschlagen",
+    "registerFailed": "Registrierung fehlgeschlagen",
+    "dashboard": "Dashboard",
+    "welcome": "Willkommen",
+    "dashboardHint": "Sie sind angemeldet."
   },
   "home": {
     "title": "Hallo, ich bin Roberto Carcamo",

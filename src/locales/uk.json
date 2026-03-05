@@ -8,7 +8,27 @@
     "portfolio": "Портфоліо",
     "projects": "Проєкти",
     "contact": "Контакти",
-    "cv": "Резюме"
+    "cv": "Резюме",
+    "login": "Увійти",
+    "register": "Реєстрація",
+    "dashboard": "Панель",
+    "logout": "Вийти"
+  },
+  "auth": {
+    "login": "Увійти",
+    "register": "Реєстрація",
+    "email": "Email",
+    "password": "Пароль",
+    "name": "Ім'я",
+    "fieldRequired": "Обов'язкове поле",
+    "emailInvalid": "Введіть коректний email",
+    "passwordMin": "Мінімум 6 символів",
+    "ownerOnly": "Увійти може лише власник сайту.",
+    "loginFailed": "Помилка входу",
+    "registerFailed": "Помилка реєстрації",
+    "dashboard": "Панель",
+    "welcome": "Ласкаво просимо",
+    "dashboardHint": "Ви увійшли в систему."
   },
   "home": {
     "title": "Привіт, я Роберто Каркамо",

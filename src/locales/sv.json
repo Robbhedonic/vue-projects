@@ -8,7 +8,27 @@
     "portfolio": "Portfölj",
     "projects": "Projekt",
     "contact": "Kontakt",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "Logga in",
+    "register": "Registrera",
+    "dashboard": "Kontrollpanel",
+    "logout": "Logga ut"
+  },
+  "auth": {
+    "login": "Logga in",
+    "register": "Registrera",
+    "email": "E-post",
+    "password": "Lösenord",
+    "name": "Namn",
+    "fieldRequired": "Detta fält krävs",
+    "emailInvalid": "Ange en giltig e-postadress",
+    "passwordMin": "Minst 6 tecken",
+    "ownerOnly": "Endast webbplatsens ägare kan logga in.",
+    "loginFailed": "Inloggning misslyckades",
+    "registerFailed": "Registrering misslyckades",
+    "dashboard": "Kontrollpanel",
+    "welcome": "Välkommen",
+    "dashboardHint": "Du är inloggad. Detta område kan utökas."
   },
   "home": {
     "title": "Hej, jag är Roberto Cárcamo",

@@ -8,7 +8,31 @@
     "portfolio": "Portfolio",
     "projects": "Projects",
     "contact": "Contact",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "fieldRequired": "This field is required",
+    "emailInvalid": "Please enter a valid email",
+    "passwordMin": "At least 6 characters",
+    "ownerOnly": "Login for site owner only.",
+    "hasAccount": "Already have an account? Login",
+    "loginFailed": "Login failed",
+    "registerFailed": "Registration failed",
+    "dashboard": "Dashboard",
+    "welcome": "Welcome",
+    "dashboardHint": "You are logged in. This area can be extended with more features.",
+    "setupHintRestart": "Owner account is created when the server starts. Restart the server (npm run server) and try again.",
+    "setupHintEnv": "Set OWNER_EMAIL and OWNER_PASSWORD in server/.env, then restart the server.",
+    "setupHintServer": "Start the backend with: npm run server"
   },
   "home": {
     "title": "Hi, I am Roberto Carcamo",

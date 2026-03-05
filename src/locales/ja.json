@@ -8,7 +8,27 @@
     "portfolio": "ポートフォリオ",
     "projects": "プロジェクト",
     "contact": "お問い合わせ",
-    "cv": "履歴書"
+    "cv": "履歴書",
+    "login": "ログイン",
+    "register": "登録",
+    "dashboard": "ダッシュボード",
+    "logout": "ログアウト"
+  },
+  "auth": {
+    "login": "ログイン",
+    "register": "登録",
+    "email": "メール",
+    "password": "パスワード",
+    "name": "名前",
+    "fieldRequired": "必須項目です",
+    "emailInvalid": "有効なメールを入力してください",
+    "passwordMin": "6文字以上",
+    "ownerOnly": "サイト管理者のみログインできます。",
+    "loginFailed": "ログインに失敗しました",
+    "registerFailed": "登録に失敗しました",
+    "dashboard": "ダッシュボード",
+    "welcome": "ようこそ",
+    "dashboardHint": "ログイン中です。"
   },
   "home": {
     "title": "こんにちは、Roberto Carcamoです",

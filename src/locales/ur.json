@@ -8,7 +8,27 @@
     "portfolio": "پورٹ فولیو",
     "projects": "پروجیکٹس",
     "contact": "رابطہ",
-    "cv": "CV"
+    "cv": "CV",
+    "login": "لاگ ان",
+    "register": "رجسٹر",
+    "dashboard": "ڈیش بورڈ",
+    "logout": "لاگ آؤٹ"
+  },
+  "auth": {
+    "login": "لاگ ان",
+    "register": "رجسٹر",
+    "email": "ای میل",
+    "password": "پاس ورڈ",
+    "name": "نام",
+    "fieldRequired": "یہ فیلڈ ضروری ہے",
+    "emailInvalid": "درست ای میل درج کریں",
+    "passwordMin": "کم از کم 6 حروف",
+    "ownerOnly": "صرف سائٹ مالک لاگ ان کر سکتا ہے۔",
+    "loginFailed": "لاگ ان ناکام",
+    "registerFailed": "رجسٹریشن ناکام",
+    "dashboard": "ڈیش بورڈ",
+    "welcome": "خوش آمدید",
+    "dashboardHint": "آپ لاگ ان ہیں۔"
   },
   "home": {
     "title": "سلام، میں Roberto Carcamo ہوں",

@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Server data (users DB)
+server/data
+
+# Env files (credentials)
+.env
+server/.env

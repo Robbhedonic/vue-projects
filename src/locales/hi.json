@@ -8,7 +8,27 @@
     "portfolio": "पोर्टफोलियो",
     "projects": "प्रोजेक्ट",
     "contact": "संपर्क",
-    "cv": "सीवी"
+    "cv": "सीवी",
+    "login": "लॉग इन",
+    "register": "रजिस्टर",
+    "dashboard": "डैशबोर्ड",
+    "logout": "लॉग आउट"
+  },
+  "auth": {
+    "login": "लॉग इन",
+    "register": "रजिस्टर",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "name": "नाम",
+    "fieldRequired": "यह फ़ील्ड आवश्यक है",
+    "emailInvalid": "वैध ईमेल दर्ज करें",
+    "passwordMin": "कम से कम 6 अक्षर",
+    "ownerOnly": "केवल साइट मालिक लॉग इन कर सकता है।",
+    "loginFailed": "लॉग इन विफल",
+    "registerFailed": "रजिस्ट्रेशन विफल",
+    "dashboard": "डैशबोर्ड",
+    "welcome": "स्वागत है",
+    "dashboardHint": "आप लॉग इन हैं।"
   },
   "home": {
     "title": "नमस्ते, मैं Roberto Carcamo हूं",
