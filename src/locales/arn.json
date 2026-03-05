@@ -73,7 +73,9 @@
     "sendMessage": "Nütram ülkantun",
     "thankYou": "Nütramkawünmuam piamel. Iñche wüño nütramkawan!",
     "fieldRequired": "Tüfachi trokiñ nielu ngey",
-    "emailInvalid": "Küme email eluael"
+    "emailInvalid": "Küme email eluael",
+    "fieldTooLong": "Küme {max} chillka",
+    "sendError": "Welu kintun. Tuchi amulay chi."
   },
   "footer": {
     "company": "New Thinking Technology",

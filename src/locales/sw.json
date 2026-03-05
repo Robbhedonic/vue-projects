@@ -73,7 +73,9 @@
     "sendMessage": "Tuma ujumbe",
     "thankYou": "Asante kwa kuwasiliana. Nitarudia hivi karibuni!",
     "fieldRequired": "Sehemu hii inahitajika",
-    "emailInvalid": "Barua pepe lazima iwe halali"
+    "emailInvalid": "Barua pepe lazima iwe halali",
+    "fieldTooLong": "Herufi {max} za juu",
+    "sendError": "Hitilafu imetokea. Tafadhali jaribu tena baadaye."
   },
   "footer": {
     "company": "New Thinking Technology",

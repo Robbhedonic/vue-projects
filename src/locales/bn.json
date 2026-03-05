@@ -73,7 +73,9 @@
     "sendMessage": "বার্তা পাঠান",
     "thankYou": "যোগাযোগ করার জন্য ধন্যবাদ। শীঘ্রই উত্তর দেব!",
     "fieldRequired": "এই ফিল্ডটি প্রয়োজন",
-    "emailInvalid": "সঠিক ইমেইল লিখুন"
+    "emailInvalid": "সঠিক ইমেইল লিখুন",
+    "fieldTooLong": "সর্বোচ্চ {max} অক্ষর",
+    "sendError": "কিছু ভুল হয়েছে। পরে আবার চেষ্টা করুন।"
   },
   "footer": {
     "company": "New Thinking Technology",

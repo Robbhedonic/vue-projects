@@ -73,7 +73,9 @@
     "sendMessage": "Nachricht senden",
     "thankYou": "Vielen Dank für Ihre Nachricht. Ich melde mich bald!",
     "fieldRequired": "Dieses Feld ist erforderlich",
-    "emailInvalid": "Bitte gültige E-Mail-Adresse eingeben"
+    "emailInvalid": "Bitte gültige E-Mail-Adresse eingeben",
+    "fieldTooLong": "Maximal {max} Zeichen",
+    "sendError": "Etwas ist schiefgelaufen. Bitte später erneut versuchen."
   },
   "footer": {
     "company": "New Thinking Technology",

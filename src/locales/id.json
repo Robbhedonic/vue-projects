@@ -73,7 +73,9 @@
     "sendMessage": "Kirim Pesan",
     "thankYou": "Terima kasih telah menghubungi. Saya akan segera membalas!",
     "fieldRequired": "Bidang ini wajib diisi",
-    "emailInvalid": "Email harus valid"
+    "emailInvalid": "Email harus valid",
+    "fieldTooLong": "Maksimal {max} karakter",
+    "sendError": "Terjadi kesalahan. Silakan coba lagi nanti."
   },
   "footer": {
     "company": "New Thinking Technology",

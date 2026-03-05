@@ -73,7 +73,9 @@
     "sendMessage": "Enviar mensagem",
     "thankYou": "Obrigado por entrar em contato. Responderei em breve!",
     "fieldRequired": "Este campo é obrigatório",
-    "emailInvalid": "Digite um e-mail válido"
+    "emailInvalid": "Digite um e-mail válido",
+    "fieldTooLong": "Máximo {max} caracteres",
+    "sendError": "Algo deu errado. Tente novamente mais tarde."
   },
   "footer": {
     "company": "New Thinking Technology",

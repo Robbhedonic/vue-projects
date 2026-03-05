@@ -73,7 +73,9 @@
     "sendMessage": "پیغام بھیجیں",
     "thankYou": "رابطہ کرنے کا شکریہ۔ جلد جواب دوں گا!",
     "fieldRequired": "یہ فیلڈ ضروری ہے",
-    "emailInvalid": "درست ای میل درج کریں"
+    "emailInvalid": "درست ای میل درج کریں",
+    "fieldTooLong": "زیادہ سے زیادہ {max} حروف",
+    "sendError": "کچھ غلط ہو گیا۔ بعد میں دوبارہ کوشش کریں۔"
   },
   "footer": {
     "company": "New Thinking Technology",

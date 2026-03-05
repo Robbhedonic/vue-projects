@@ -73,7 +73,9 @@
     "sendMessage": "送信",
     "thankYou": "お問い合わせありがとうございます。すぐにご連絡いたします。",
     "fieldRequired": "この項目は必須です",
-    "emailInvalid": "有効なメールアドレスを入力してください"
+    "emailInvalid": "有効なメールアドレスを入力してください",
+    "fieldTooLong": "最大{max}文字",
+    "sendError": "エラーが発生しました。しばらくしてから再試行してください。"
   },
   "footer": {
     "company": "New Thinking Technology",

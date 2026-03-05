@@ -73,7 +73,9 @@
     "sendMessage": "Lähetä viesti",
     "thankYou": "Kiitos yhteydenotostasi. Palaan asiaan pian!",
     "fieldRequired": "Tämä kenttä on pakollinen",
-    "emailInvalid": "Sähköpostiosoite on oltava kelvollinen"
+    "emailInvalid": "Sähköpostiosoite on oltava kelvollinen",
+    "fieldTooLong": "Enintään {max} merkkiä",
+    "sendError": "Jotain meni vikaan. Yritä myöhemmin uudelleen."
   },
   "footer": {
     "company": "New Thinking Technology",

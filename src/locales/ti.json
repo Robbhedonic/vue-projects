@@ -73,7 +73,9 @@
     "sendMessage": "መልእኽቲ ስደድ",
     "thankYou": "ርኸባኻ ንምርኣይ የቐንየልካ! ብቕልጡፍ ክምልስ እየ።",
     "fieldRequired": "እዚ ዓንዲ ኣድለይቲ እዩ",
-    "emailInvalid": "ትክክለኛ ኢመይል ኣትይ"
+    "emailInvalid": "ትክክለኛ ኢመይል ኣትይ",
+    "fieldTooLong": "ክብሪ {max} ፊደላት",
+    "sendError": "ኣድላዪ ጌጋ ተፈጢሩ። ድሕሪኡ እንደገና ፈትን።"
   },
   "footer": {
     "company": "New Thinking Technology",

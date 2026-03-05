@@ -73,7 +73,9 @@
     "sendMessage": "Send melding",
     "thankYou": "Takk for at du tok kontakt. Jeg kommer tilbake snart!",
     "fieldRequired": "Dette feltet er obligatorisk",
-    "emailInvalid": "E-postadressen må være gyldig"
+    "emailInvalid": "E-postadressen må være gyldig",
+    "fieldTooLong": "Maks {max} tegn",
+    "sendError": "Noe gikk galt. Prøv igjen senere."
   },
   "footer": {
     "company": "New Thinking Technology",

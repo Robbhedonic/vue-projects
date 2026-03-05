@@ -73,7 +73,9 @@
     "sendMessage": "إرسال الرسالة",
     "thankYou": "شكراً لتواصلك. سأرد عليك قريباً!",
     "fieldRequired": "هذا الحقل مطلوب",
-    "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح"
+    "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+    "fieldTooLong": "الحد الأقصى {max} حرف",
+    "sendError": "حدث خطأ. يرجى المحاولة لاحقاً."
   },
   "footer": {
     "company": "New Thinking Technology",

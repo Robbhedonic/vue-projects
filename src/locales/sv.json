@@ -73,7 +73,9 @@
     "sendMessage": "Skicka meddelande",
     "thankYou": "Tack för att du hörde av dig. Jag återkommer snart!",
     "fieldRequired": "Detta fält är obligatoriskt",
-    "emailInvalid": "E-postadressen måste vara giltig"
+    "emailInvalid": "E-postadressen måste vara giltig",
+    "fieldTooLong": "Max {max} tecken",
+    "sendError": "Något gick fel. Försök igen senare."
   },
   "footer": {
     "company": "New Thinking Technology",

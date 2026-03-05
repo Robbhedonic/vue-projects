@@ -73,7 +73,9 @@
     "sendMessage": "Надіслати",
     "thankYou": "Дякую за звернення. Скоро відповім!",
     "fieldRequired": "Це поле обов'язкове",
-    "emailInvalid": "Введіть коректний email"
+    "emailInvalid": "Введіть коректний email",
+    "fieldTooLong": "Не більше {max} символів",
+    "sendError": "Щось пішло не так. Спробуйте пізніше."
   },
   "footer": {
     "company": "New Thinking Technology",

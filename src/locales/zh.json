@@ -73,7 +73,9 @@
     "sendMessage": "发送消息",
     "thankYou": "感谢您的留言，我会尽快回复！",
     "fieldRequired": "此栏为必填",
-    "emailInvalid": "请输入有效的邮箱地址"
+    "emailInvalid": "请输入有效的邮箱地址",
+    "fieldTooLong": "最多 {max} 个字符",
+    "sendError": "出错了，请稍后再试。"
   },
   "footer": {
     "company": "New Thinking Technology",
