@@ -228,7 +228,7 @@ const navLinks = [
 
 <style scoped>
 .nav-bar {
-  background: #1976d2 !important;
+  background: linear-gradient(135deg, #3f51b5, #1e88e5) !important;
   border-radius: 0 0 12px 12px;
   color: white;
   overflow: hidden;

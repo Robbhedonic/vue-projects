@@ -1,5 +1,5 @@
 <template>
-  <v-footer color="primary" padless>
+  <v-footer class="footer-bar" padless>
     <v-container class="text-center py-6 text-white">
       <v-row justify="center" class="mb-4">
         <v-col cols="12">
@@ -48,3 +48,9 @@ const socialLinks = [
   { icon: 'mdi-instagram', url: 'https://www.instagram.com/' },
 ];
 </script>
+
+<style scoped>
+.footer-bar {
+  background: linear-gradient(135deg, #3f51b5, #1e88e5) !important;
+}
+</style>
