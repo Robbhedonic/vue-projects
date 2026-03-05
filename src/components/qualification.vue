@@ -118,7 +118,7 @@ const activeList = computed(() =>
   gap: 4px;
 }
 
-/* Móvil: línea y puntos alineados (padding + columna = misma posición) */
+/* Mobile: line and dots aligned (padding + column = same position) */
 @media (max-width: 960px) {
   .q-timeline {
     padding-left: 8px;

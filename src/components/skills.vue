@@ -62,7 +62,7 @@ ChartJS.register(Title, Tooltip, Legend, ArcElement, CategoryScale);
 
 type SkillItem = { name: string; level: number; icon?: string; image?: string };
 
-// Datos de las habilidades (icon = MDI, image = URL opcional)
+// Skills data (icon = MDI, image = optional URL)
 const frontendSkills: SkillItem[] = [
   { name: 'HTML', level: 90, icon: 'mdi-language-html5' },
   { name: 'CSS', level: 80, icon: 'mdi-language-css3' },
@@ -81,7 +81,7 @@ const frontendSkills: SkillItem[] = [
   { name: 'SQL, NOSQL', level: 70, icon: 'mdi-database-outline' },
 ];
 
-// Función para generar datos por habilidad
+// Function to generate data per skill
 const generateChartData = (skill: { name: string; level: number }) => {
   return {
     labels: ['Skill', 'Remaining'],
@@ -95,11 +95,11 @@ const generateChartData = (skill: { name: string; level: number }) => {
   };
 };
 
-// Opciones del gráfico
+// Chart options
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
-  cutout: '70%', // hace que el círculo sea más delgado
+  cutout: '70%', // makes the circle thinner
   plugins: {
     legend: {
       display: false,

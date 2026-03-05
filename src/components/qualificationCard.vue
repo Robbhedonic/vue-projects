@@ -65,7 +65,7 @@ defineProps<{
   align-items: flex-start;
 }
 
-/* Punto: alineado con la línea del timeline (centro a 7px en móvil) */
+/* Dot: aligned with the timeline line (center at 7px on mobile) */
 .q-dot {
   width: 14px;
   height: 14px;
@@ -85,7 +85,7 @@ defineProps<{
   text-align: left;
 }
 
-/* Móvil: punto y texto en la misma fila; el punto sigue la fila del card visible */
+/* Mobile: dot and text on the same row; the dot follows the visible card row */
 @media (max-width: 960px) {
   .q-item {
     grid-template-columns: 15px 1fr;
@@ -111,7 +111,7 @@ defineProps<{
     justify-content: flex-start;
   }
 
-  /* Cuando el card está a la derecha (reverse), el punto debe estar en la 2ª fila con el texto */
+  /* When the card is on the right (reverse), the dot must be on the 2nd row with the text */
   .q-item.reverse .q-mid {
     grid-row: 2;
   }
@@ -126,7 +126,7 @@ defineProps<{
   }
 }
 
-/* Pantalla muy pequeña: misma lógica de alineación punto-texto */
+/* Very small screen: same dot-text alignment logic */
 @media (max-width: 600px) {
   .q-item {
     grid-template-columns: 12px 1fr;

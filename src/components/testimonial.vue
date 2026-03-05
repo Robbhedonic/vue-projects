@@ -119,7 +119,7 @@ const testimonials = [
   max-width: 800px;
 }
 
-/* En pantallas chicas: más margen para que las flechas queden a los lados del card */
+/* On small screens: more margin so the arrows stay on the sides of the card */
 @media (max-width: 960px) {
   .testimonial-card {
     margin: 0 44px;

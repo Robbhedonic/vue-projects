@@ -73,7 +73,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { useTheme } from 'vuetify';
 
@@ -88,34 +88,126 @@ const drawer = ref(false);
 const { global: theme } = useTheme();
 const isDark = ref(theme.name.value === 'dark');
 
+/** Id of the section currently visible on screen (without #). Only on / route. */
+const visibleSectionId = ref<string | null>(null);
+const SECTION_IDS = ['home', 'about', 'skills', 'services', 'portfolio', 'contact'];
+let observer: IntersectionObserver | null = null;
+
+function startSectionObserver() {
+  const ratios = new Map<string, number>();
+  const updateActive = () => {
+    let maxId: string | null = null;
+    let maxRatio = 0;
+    ratios.forEach((ratio, id) => {
+      if (ratio > maxRatio) {
+        maxRatio = ratio;
+        maxId = id;
+      }
+    });
+    visibleSectionId.value = maxRatio >= 0.1 ? maxId : (ratios.size ? SECTION_IDS[0] : null);
+  };
+
+  observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        const id = (entry.target as HTMLElement).id;
+        if (id) ratios.set(id, entry.intersectionRatio);
+      }
+      updateActive();
+    },
+    { root: null, rootMargin: '-10% 0px -50% 0px', threshold: [0, 0.1, 0.25, 0.5, 0.75, 1] }
+  );
+
+  for (const id of SECTION_IDS) {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
+  }
+}
+
+function stopSectionObserver() {
+  if (observer) {
+    observer.disconnect();
+    observer = null;
+  }
+  visibleSectionId.value = null;
+}
+
+onMounted(() => {
+  if (route.path === '/') {
+    setTimeout(startSectionObserver, 100);
+  }
+});
+
+onUnmounted(stopSectionObserver);
+
+watch(
+  () => route.path,
+  () => {
+    stopSectionObserver();
+    if (route.path === '/') setTimeout(startSectionObserver, 100);
+  }
+);
+
 const toggleTheme = () => {
   theme.name.value = isDark.value ? 'light' : 'dark';
   isDark.value = !isDark.value;
 };
 
-function isActive(link: { to?: string | { path: string; hash?: string }; href?: string }) {
+function isActive(link: {
+  to?: string | { path: string; hash?: string };
+  href?: string;
+}) {
   if (link.href) return false;
   const to = link.to;
   if (typeof to === 'string') {
-    if (to === '/') return route.path === '/' && !route.hash;
+    if (to === '/projects') return route.path === '/projects';
+    if (to === '/') return route.path === '/' && (visibleSectionId.value === 'home' || visibleSectionId.value === null);
     return route.path === to;
   }
   if (to && typeof to === 'object' && 'path' in to) {
     if (to.path !== route.path) return false;
-    if (to.hash) return route.hash === to.hash;
-    return !route.hash;
+    if (to.hash) {
+      const hashId = to.hash.slice(1);
+      return visibleSectionId.value === hashId;
+    }
+    return false;
   }
   return false;
 }
 
 const navLinks = [
   { id: 1, label: 'Home', to: '/', icon: 'mdi-home' },
-  { id: 2, label: 'About', to: { path: '/', hash: '#about' }, icon: 'mdi-account' },
-  { id: 3, label: 'Skills', to: { path: '/', hash: '#skills' }, icon: 'mdi-code-tags' },
-  { id: 4, label: 'Services', to: { path: '/', hash: '#services' }, icon: 'mdi-briefcase' },
-  { id: 5, label: 'Portfolio', to: { path: '/', hash: '#portfolio' }, icon: 'mdi-image' },
+  {
+    id: 2,
+    label: 'About',
+    to: { path: '/', hash: '#about' },
+    icon: 'mdi-account',
+  },
+  {
+    id: 3,
+    label: 'Skills',
+    to: { path: '/', hash: '#skills' },
+    icon: 'mdi-code-tags',
+  },
+  {
+    id: 4,
+    label: 'Services',
+    to: { path: '/', hash: '#services' },
+    icon: 'mdi-briefcase',
+  },
+  {
+    id: 5,
+    label: 'Portfolio',
+    to: { path: '/', hash: '#portfolio' },
+    icon: 'mdi-image',
+  },
   { id: 6, label: 'Projects', to: '/projects', icon: 'mdi-laptop' },
-  { id: 7, label: 'Contact', to: { path: '/', hash: '#contact' }, icon: 'mdi-email' },
+  {
+    id: 7,
+    label: 'Contact',
+    to: { path: '/', hash: '#contact' },
+    icon: 'mdi-email',
+  },
   {
     id: 8,
     label: 'CV',
@@ -136,34 +228,43 @@ const navLinks = [
   border-radius: 12px;
 }
 
-/* Por defecto: enlaces normales (no iluminados) */
+/* Links with no background: text only on the bar */
 .nav-bar .v-btn.nav-link {
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.nav-bar .v-btn.nav-link :deep(.v-btn__overlay) {
   background: transparent !important;
 }
 .nav-bar .v-btn.nav-link :deep(.v-btn__content),
 .nav-bar .v-btn.nav-link :deep(.v-icon) {
   color: inherit !important;
 }
-/* Iluminado solo cuando estás en esa sección/página (activo) */
+/* Active: color/font change only, no background */
 .nav-bar .v-btn.nav-link.nav-link--active {
   color: #fff !important;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.2) !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 .nav-bar .v-btn.nav-link.nav-link--active :deep(.v-btn__content),
 .nav-bar .v-btn.nav-link.nav-link--active :deep(.v-icon) {
   color: #fff !important;
 }
-/* Hover: mismo efecto de iluminado */
+/* Hover: color only, no background */
+.nav-bar .v-btn.nav-link:hover {
+  background: none !important;
+  box-shadow: none !important;
+}
 .nav-bar .v-btn.nav-link:hover,
 .nav-bar .v-btn.nav-link:hover :deep(.v-btn__content),
 .nav-bar .v-btn.nav-link:hover :deep(.v-icon) {
   color: #fff !important;
-  background: rgba(255, 255, 255, 0.15) !important;
 }
 
-/* Drawer móvil: activo iluminado */
+/* Mobile drawer: active highlighted */
 .nav-link-drawer--active {
   background: rgba(0, 0, 0, 0.08);
   font-weight: 600;
