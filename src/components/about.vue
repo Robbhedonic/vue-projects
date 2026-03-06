@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col>
         <v-img
-          :src="aboutImg"
+          :src="aboutImageUrl"
           alt="About image"
           max-width="400"
           class="mx-auto mb-6"
@@ -94,10 +94,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useUserSettings } from '@/composables/useUserSettings';
 
 const { t } = useI18n();
+const { settings } = useUserSettings();
 
 const dialog = ref(false);
 const isFullScreen = ref(false);
@@ -106,7 +108,8 @@ function toggleFullscreen() {
   isFullScreen.value = !isFullScreen.value;
 }
 
-const aboutImg = new URL('../assets/img/jungle.png', import.meta.url).href;
+const defaultAboutImg = new URL('../assets/img/jungle.png', import.meta.url).href;
+const aboutImageUrl = computed(() => settings.value.aboutImageUrl || defaultAboutImg);
 const cvPdf = new URL('../assets/pdf/Roberto-Carcamo-CV.pdf', import.meta.url)
   .href;
 </script>

@@ -25,6 +25,7 @@ dist-ssr
 
 # Server data (users DB)
 server/data
+server/uploads
 
 # Env files (credentials)
 .env

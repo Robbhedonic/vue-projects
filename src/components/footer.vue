@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="footer-bar" padless>
+  <v-footer class="footer-bar" padless :style="footerStyle">
     <v-container class="text-center py-6 text-white">
       <v-row justify="center" class="mb-4">
         <v-col cols="12">
@@ -34,9 +34,18 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useUserSettings } from '@/composables/useUserSettings';
 
 const { t } = useI18n();
+const { settings } = useUserSettings();
+
+const footerStyle = computed(() => {
+  const c = settings.value.footerColor;
+  if (!c) return {};
+  return { background: c + ' !important' };
+});
 const logoImg = new URL('../assets/img/logo.jpeg', import.meta.url).href;
 
 const socialLinks = [

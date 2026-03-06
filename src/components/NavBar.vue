@@ -1,8 +1,7 @@
 <template>
-  <v-app-bar flat dark class="nav-bar" color="primary">
+  <v-app-bar flat dark class="nav-bar" color="primary" :style="navBarStyle">
     <v-container>
       <v-row align="center" justify="space-between" no-gutters>
-        <!-- Logo: never shrink -->
         <v-col cols="auto" class="nav-logo-col">
           <v-img
             :src="logoImg"
@@ -13,7 +12,6 @@
           />
         </v-col>
 
-        <!-- Desktop Nav: from lg (1280px) to avoid overflow at 960–1279px -->
         <v-col cols="auto" class="d-none d-lg-flex flex-nowrap nav-links-col">
           <v-btn
             v-for="link in navLinks"
@@ -46,7 +44,6 @@
           </template>
         </v-col>
 
-        <!-- Language + Theme + Burger: never shrink so they stay inside the bar -->
         <v-col cols="auto" class="d-flex align-center nav-actions-col">
           <v-menu location="bottom">
             <template #activator="{ props }">
@@ -70,8 +67,6 @@
               isDark ? 'mdi-white-balance-sunny' : 'mdi-moon-waning-crescent'
             }}</v-icon>
           </v-btn>
-
-          <!-- Burger: visible when nav doesn't fit (below lg) -->
           <v-btn icon class="d-lg-none" @click="drawer = true">
             <v-icon>mdi-menu</v-icon>
           </v-btn>
@@ -86,6 +81,7 @@
     temporary
     location="right"
     class="d-lg-none nav-drawer"
+    :style="drawerStyle"
   >
     <v-list nav dense>
       <v-list-item
@@ -127,8 +123,21 @@ import { useRoute, useRouter } from 'vue-router';
 import { useTheme } from 'vuetify';
 import { useI18n } from 'vue-i18n';
 import { useAuth } from '@/composables/useAuth';
+import { useUserSettings } from '@/composables/useUserSettings';
 
 const { t, locale } = useI18n();
+const { settings } = useUserSettings();
+
+const navBarStyle = computed(() => {
+  const c = settings.value.navbarColor;
+  if (!c) return {};
+  return { background: c + ' !important' };
+});
+const drawerStyle = computed(() => {
+  const c = settings.value.navbarColor;
+  if (!c) return {};
+  return { '--drawer-bg': c };
+});
 const route = useRoute();
 const router = useRouter();
 const { isLoggedIn, logout } = useAuth();
@@ -360,7 +369,7 @@ const navLinks = [
 .nav-drawer :deep(.v-overlay__content),
 .nav-drawer :deep(.v-navigation-drawer__content),
 .nav-drawer :deep(.v-list) {
-  background: #1976d2 !important;
+  background: var(--drawer-bg, linear-gradient(135deg, #3f51b5, #1e88e5)) !important;
 }
 .nav-drawer :deep(.v-list-item),
 .nav-drawer :deep(.v-list-item-title),

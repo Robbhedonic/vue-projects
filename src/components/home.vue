@@ -23,7 +23,7 @@
       <v-col cols="12" md="6" class="d-flex justify-center">
         <!-- Image adjusted for Vite -->
         <v-img
-          :src="profileImg"
+          :src="homeImageUrl"
           alt="Profile"
           max-height="420"
           max-width="400"
@@ -78,13 +78,19 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useUserSettings } from '@/composables/useUserSettings';
 
 const { t } = useI18n();
-const profileImg = new URL(
+const { settings } = useUserSettings();
+
+const defaultProfileImg = new URL(
   '../assets/img/Roberto-portrait.jpg',
   import.meta.url,
 ).href;
+
+const homeImageUrl = computed(() => settings.value.homeImageUrl || defaultProfileImg);
 
 const cityIllustrationUrl = 'https://robbhedonic.github.io/city-Illustration/';
 
