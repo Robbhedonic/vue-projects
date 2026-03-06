@@ -17,7 +17,7 @@ export function useAuth() {
   // In dev, use same origin so Vite proxy forwards /api; in prod use VITE_API_URL or Render fallback
   const apiBase =
     import.meta.env.VITE_API_URL ||
-    (import.meta.env.DEV ? '' : 'https://vue-projects-a2nt.onrender.com');
+    (import.meta.env.PROD ? 'https://vue-projects-a2nt.onrender.com' : '');
 
   function setToken(t: string | null) {
     stored.value = t;
