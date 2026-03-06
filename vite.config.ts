@@ -22,9 +22,9 @@ function warnIfNoAnalytics() {
 }
 
 // https://vite.dev/config/
-// base must match GitHub repo name for Pages: https://<user>.github.io/<repo>/
+// base: '/' for Vercel/Render; use '/vue-projects/' for GitHub Pages
 export default defineConfig({
-  base: '/vue-projects/',
+  base: '/',
   plugins: [warnIfNoAnalytics(), vue(), vuetify({ autoImport: true })],
   resolve: {
     alias: {
