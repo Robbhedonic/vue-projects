@@ -92,7 +92,7 @@ async function submit() {
     router.replace('/dashboard');
   } catch (e) {
     const msg = e instanceof Error ? e.message : t('auth.loginFailed');
-    error.value = msg;
+    error.value = msg === 'LOGIN_NOT_AVAILABLE' ? t('auth.loginNotAvailable') : msg;
     console.error('Login error:', e);
   } finally {
     loading.value = false;

@@ -26,6 +26,7 @@
     "ownerOnly": "Login for site owner only.",
     "hasAccount": "Already have an account? Login",
     "loginFailed": "Login failed",
+    "loginNotAvailable": "Login is not available on this deployment. GitHub Pages only serves static files. To use login, run the app locally (npm run dev and npm run server) or deploy the backend elsewhere and set VITE_API_URL when building.",
     "registerFailed": "Registration failed",
     "dashboard": "Dashboard",
     "welcome": "Welcome",

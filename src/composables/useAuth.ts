@@ -62,6 +62,9 @@ export function useAuth() {
       console.error('Login response (not JSON):', res.status, text?.slice(0, 200));
     }
     if (!res.ok) {
+      if (res.status === 405 || res.status === 404) {
+        throw new Error('LOGIN_NOT_AVAILABLE');
+      }
       const msg = data.error || (text?.slice(0, 100) || `Error ${res.status}`);
       throw new Error(msg);
     }
