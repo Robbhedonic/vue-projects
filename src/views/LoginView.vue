@@ -60,7 +60,9 @@ const loading = ref(false);
 const error = ref('');
 const setupHint = ref('');
 
-const apiBase = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? '' : '');
+const apiBase =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.DEV ? '' : 'https://vue-projects-a2nt.onrender.com');
 
 onMounted(async () => {
   try {

@@ -19,7 +19,10 @@ const DEFAULT_SETTINGS: UserSettings = {
 const settings = ref<UserSettings>({ ...DEFAULT_SETTINGS });
 
 function getApiBase() {
-  return import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? '' : '');
+  return (
+    import.meta.env.VITE_API_URL ||
+    (import.meta.env.DEV ? '' : 'https://vue-projects-a2nt.onrender.com')
+  );
 }
 
 function getToken() {
