@@ -26,7 +26,7 @@
     "ownerOnly": "Solo el dueño del sitio puede iniciar sesión.",
     "hasAccount": "¿Ya tienes cuenta? Entrar",
     "loginFailed": "Error al iniciar sesión",
-    "loginNotAvailable": "El inicio de sesión no está disponible en esta publicación. GitHub Pages solo sirve archivos estáticos. Para usar el login, ejecuta la app en local (npm run dev y npm run server) o despliega el backend en otro servicio y configura VITE_API_URL al construir.",
+    "loginNotAvailable": "El inicio de sesión no está disponible. No se pudo conectar con la API. Intenta de nuevo o comprueba que el backend esté desplegado y en ejecución.",
     "registerFailed": "Error al registrarse",
     "dashboard": "Panel",
     "welcome": "Bienvenido/a",
