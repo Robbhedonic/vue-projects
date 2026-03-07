@@ -19,10 +19,10 @@ const DEFAULT_SETTINGS: UserSettings = {
 const settings = ref<UserSettings>({ ...DEFAULT_SETTINGS });
 
 function getApiBase() {
-  return (
+  const raw =
     import.meta.env.VITE_API_URL ||
-    (import.meta.env.PROD ? 'https://vue-projects-a2nt.onrender.com' : '')
-  );
+    (import.meta.env.PROD ? 'https://vue-projects-a2nt.onrender.com' : '');
+  return raw && !/^https?:\/\//i.test(raw) ? `https://${raw.replace(/^\/+/, '')}` : raw;
 }
 
 function getToken() {

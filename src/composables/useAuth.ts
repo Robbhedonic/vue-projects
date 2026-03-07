@@ -15,9 +15,11 @@ export function useAuth() {
   const token = computed(() => stored.value);
   const isLoggedIn = computed(() => !!stored.value);
   // In dev, use same origin so Vite proxy forwards /api; in prod use VITE_API_URL or Render fallback
-  const apiBase =
+  const raw =
     import.meta.env.VITE_API_URL ||
     (import.meta.env.PROD ? 'https://vue-projects-a2nt.onrender.com' : '');
+  const apiBase =
+    raw && !/^https?:\/\//i.test(raw) ? `https://${raw.replace(/^\/+/, '')}` : raw;
 
   function setToken(t: string | null) {
     stored.value = t;

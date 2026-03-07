@@ -157,9 +157,11 @@ const uploadingHome = ref(false);
 const uploadingAbout = ref(false);
 const uploadError = ref('');
 
-const apiBase = (
+const raw =
   import.meta.env.VITE_API_URL ||
-  (import.meta.env.PROD ? 'https://vue-projects-a2nt.onrender.com' : '')
+  (import.meta.env.PROD ? 'https://vue-projects-a2nt.onrender.com' : '');
+const apiBase = (
+  raw && !/^https?:\/\//i.test(raw) ? `https://${raw.replace(/^\/+/, '')}` : raw
 ).replace(/\/$/, '');
 
 async function uploadFile(file: File): Promise<string> {
