@@ -1,4 +1,5 @@
 import { ref, watch } from 'vue';
+import { getApiBase } from '@/lib/apiBase';
 
 export interface UserSettings {
   navbarColor: string | null;
@@ -17,13 +18,6 @@ const DEFAULT_SETTINGS: UserSettings = {
 };
 
 const settings = ref<UserSettings>({ ...DEFAULT_SETTINGS });
-
-function getApiBase() {
-  const raw =
-    import.meta.env.VITE_API_URL ||
-    (import.meta.env.PROD ? 'https://vue-projects-a2nt.onrender.com' : '');
-  return raw && !/^https?:\/\//i.test(raw) ? `https://${raw.replace(/^\/+/, '')}` : raw;
-}
 
 function getToken() {
   return localStorage.getItem('auth-token');

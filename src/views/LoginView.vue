@@ -46,6 +46,7 @@ import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { useAuth } from '@/composables/useAuth';
+import { getApiBase } from '@/lib/apiBase';
 
 const { t } = useI18n();
 const router = useRouter();
@@ -59,12 +60,7 @@ const showPassword = ref(false);
 const loading = ref(false);
 const error = ref('');
 const setupHint = ref('');
-
-const raw =
-  import.meta.env.VITE_API_URL ||
-  (import.meta.env.PROD ? 'https://vue-projects-a2nt.onrender.com' : '');
-const apiBase =
-  raw && !/^https?:\/\//i.test(raw) ? `https://${raw.replace(/^\/+/, '')}` : raw;
+const apiBase = getApiBase();
 
 onMounted(async () => {
   try {
