@@ -286,8 +286,8 @@ app.use((err, _req, res, _next) => {
 ensureOwner()
   .then(async () => {
     const users = await readUsers();
-    app.listen(PORT, () => {
-      console.log(`Server running at http://localhost:${PORT}`);
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`Server running at http://0.0.0.0:${PORT}`);
       console.log(`Owner configured: ${OWNER_EMAIL ? 'yes' : 'no'}. Users in DB: ${users.length}`);
     });
   })
