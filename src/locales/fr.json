@@ -149,6 +149,10 @@
     "firstWebsite": {
       "title": "Premier site web",
       "description": "Mon premier site web responsive avec animations et mise en page."
+    },
+    "films": {
+      "title": "Plateforme de Films",
+      "description": "Projet de plateforme de films développé avec des outils frontend modernes."
     }
   },
   "projectSection": {

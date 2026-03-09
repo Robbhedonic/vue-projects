@@ -94,11 +94,7 @@
     "design": {
       "title": "Diseño y Marca",
       "summary": "Estrategia de marca e identidad visual.",
-      "details": [
-        "Estrategia de marca",
-        "Manual de marca",
-        "Identidad visual"
-      ]
+      "details": ["Estrategia de marca", "Manual de marca", "Identidad visual"]
     }
   },
   "contact": {
@@ -167,6 +163,10 @@
     "firstWebsite": {
       "title": "Primer sitio web",
       "description": "Mi primer sitio web responsive con animaciones y maquetación."
+    },
+    "films": {
+      "title": "Films House",
+      "description": "Plataforma de cine desarrollada con herramientas modernas de frontend."
     }
   },
   "projectSection": {

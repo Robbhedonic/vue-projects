@@ -149,6 +149,10 @@
     "firstWebsite": {
       "title": "Första webbplatsen",
       "description": "Min första responsiva webbplats med animationer och layout."
+    },
+    "films": {
+      "title": "Films House",
+      "description": "Filmplattform byggd med moderna frontend-verktyg."
     }
   },
   "projectSection": {

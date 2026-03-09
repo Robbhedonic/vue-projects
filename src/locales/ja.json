@@ -149,6 +149,10 @@
     "firstWebsite": {
       "title": "初めてのウェブサイト",
       "description": "アニメーションとレイアウトを学んだ初のレスポンシブサイト。"
+    },
+    "films": {
+      "title": "映画プラットフォーム",
+      "description": "最新のフロントエンド技術で構築された映画プラットフォームプロジェクト。"
     }
   },
   "projectSection": {

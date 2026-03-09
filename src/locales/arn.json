@@ -76,11 +76,7 @@
     "design": {
       "title": "Adkintun ka marka",
       "summary": "Marka nütram ka adkintun norüm.",
-      "details": [
-        "Marka nütram",
-        "Marka chillka",
-        "Adkintun norüm"
-      ]
+      "details": ["Marka nütram", "Marka chillka", "Adkintun norüm"]
     }
   },
   "contact": {
@@ -149,6 +145,10 @@
     "firstWebsite": {
       "title": "Ñi wüño web",
       "description": "Ñi wüño web norüm mew ka adkintun."
+    },
+    "films": {
+      "title": "Filme ñi plataforma",
+      "description": "Filme ñi plataforma, küme modern frontend herramientas mu."
     }
   },
   "projectSection": {

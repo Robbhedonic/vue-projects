@@ -149,6 +149,10 @@
     "firstWebsite": {
       "title": "Ensimmäinen verkkosivu",
       "description": "Ensimmäinen responsiivinen verkkosivuni animaatioilla ja layoutilla."
+    },
+    "films": {
+      "title": "Elokuva-alusta",
+      "description": "Elokuva-alustaprojekti rakennettu moderneilla frontend-työkaluilla."
     }
   },
   "projectSection": {

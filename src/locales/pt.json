@@ -76,11 +76,7 @@
     "design": {
       "title": "Design e Marca",
       "summary": "Estratégia de marca e identidade visual.",
-      "details": [
-        "Estratégia de marca",
-        "Manual da marca",
-        "Identidade visual"
-      ]
+      "details": ["Estratégia de marca", "Manual da marca", "Identidade visual"]
     }
   },
   "contact": {
@@ -149,6 +145,10 @@
     "firstWebsite": {
       "title": "Primeiro site",
       "description": "Meu primeiro site responsivo com animações e layout."
+    },
+    "films": {
+      "title": "फिल्म प्लेटफ़ॉर्म",
+      "description": "आधुनिक फ्रंटएंड टूल्स के साथ बनाया गया फ़िल्म प्लेटफ़ॉर्म प्रोजेक्ट।"
     }
   },
   "projectSection": {

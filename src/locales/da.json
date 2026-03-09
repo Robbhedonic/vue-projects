@@ -76,11 +76,7 @@
     "design": {
       "title": "Design og brand",
       "summary": "Brandstrategi og visuel identitet.",
-      "details": [
-        "Brandstrategi",
-        "Brandmanual",
-        "Visuel identitet"
-      ]
+      "details": ["Brandstrategi", "Brandmanual", "Visuel identitet"]
     }
   },
   "contact": {
@@ -149,6 +145,10 @@
     "firstWebsite": {
       "title": "Første hjemmeside",
       "description": "Min første responsive hjemmeside med animationer og layout."
+    },
+    "films": {
+      "title": "Filmplatform",
+      "description": "Filmplatform bygget med moderne frontend-værktøjer."
     }
   },
   "projectSection": {

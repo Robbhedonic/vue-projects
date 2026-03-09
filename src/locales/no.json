@@ -76,11 +76,7 @@
     "design": {
       "title": "Design og merkevare",
       "summary": "Merkevarestrategi og visuell identitet.",
-      "details": [
-        "Merkevarestrategi",
-        "Merkevarehåndbok",
-        "Visuell identitet"
-      ]
+      "details": ["Merkevarestrategi", "Merkevarehåndbok", "Visuell identitet"]
     }
   },
   "contact": {
@@ -149,6 +145,10 @@
     "firstWebsite": {
       "title": "Første nettside",
       "description": "Min første responsive nettside med animasjoner og layout."
+    },
+    "films": {
+      "title": "Filmplattform",
+      "description": "Filmplattform utviklet med moderne frontend-verktøy."
     }
   },
   "projectSection": {

@@ -149,6 +149,10 @@
     "firstWebsite": {
       "title": "Tovuti ya kwanza",
       "description": "Tovuti yangu ya kwanza inayojibu na maonyesho na ujuzi wa mpangilio."
+    },
+    "films": {
+      "title": "Jukwaa la Filamu",
+      "description": "Mradi wa jukwaa la filamu uliotengenezwa kwa zana za kisasa za frontend."
     }
   },
   "projectSection": {
