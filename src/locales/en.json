@@ -94,11 +94,7 @@
     "design": {
       "title": "Design & Brand",
       "summary": "Brand strategy and visual identity.",
-      "details": [
-        "Brand strategy",
-        "Brand guidelines",
-        "Visual identity"
-      ]
+      "details": ["Brand strategy", "Brand guidelines", "Visual identity"]
     }
   },
   "contact": {
@@ -167,6 +163,10 @@
     "firstWebsite": {
       "title": "First Website",
       "description": "My first responsive website with animations and layout skills."
+    },
+    "films": {
+      "title": "Films House",
+      "description": "Movie platform project built with modern frontend tools."
     }
   },
   "projectSection": {

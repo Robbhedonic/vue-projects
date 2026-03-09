@@ -5,7 +5,9 @@
         <h2 class="text-h4 font-weight-bold mb-4">{{ t('auth.dashboard') }}</h2>
         <v-card variant="tonal" class="pa-4 mb-6">
           <p class="text-body-1">
-            {{ t('auth.welcome') }}, <strong>{{ user?.name || user?.email }}</strong>.
+            {{ t('auth.welcome') }},
+            <strong>{{ user?.name || user?.email }}</strong
+            >.
           </p>
           <p class="text-body-2 text-medium-emphasis mt-2">
             {{ t('auth.dashboardHint') }}
@@ -13,11 +15,15 @@
         </v-card>
 
         <v-card variant="tonal" class="pa-4">
-          <h3 class="text-h6 font-weight-bold mb-4">{{ t('auth.appearance') }}</h3>
+          <h3 class="text-h6 font-weight-bold mb-4">
+            {{ t('auth.appearance') }}
+          </h3>
           <v-form ref="formRef" @submit.prevent="save">
             <v-row>
               <v-col cols="12" md="6">
-                <label class="text-caption text-medium-emphasis d-block mb-1">{{ t('auth.navbarColor') }}</label>
+                <label class="text-caption text-medium-emphasis d-block mb-1">{{
+                  t('auth.navbarColor')
+                }}</label>
                 <div class="d-flex align-center gap-2">
                   <input
                     v-model="form.navbarColor"
@@ -30,11 +36,18 @@
                     hide-details
                     placeholder="#3f51b5"
                   />
-                  <v-btn size="small" variant="text" @click="form.navbarColor = ''">{{ t('auth.useDefault') }}</v-btn>
+                  <v-btn
+                    size="small"
+                    variant="text"
+                    @click="form.navbarColor = ''"
+                    >{{ t('auth.useDefault') }}</v-btn
+                  >
                 </div>
               </v-col>
               <v-col cols="12" md="6">
-                <label class="text-caption text-medium-emphasis d-block mb-1">{{ t('auth.footerColor') }}</label>
+                <label class="text-caption text-medium-emphasis d-block mb-1">{{
+                  t('auth.footerColor')
+                }}</label>
                 <div class="d-flex align-center gap-2">
                   <input
                     v-model="form.footerColor"
@@ -47,11 +60,18 @@
                     hide-details
                     placeholder="#3f51b5"
                   />
-                  <v-btn size="small" variant="text" @click="form.footerColor = ''">{{ t('auth.useDefault') }}</v-btn>
+                  <v-btn
+                    size="small"
+                    variant="text"
+                    @click="form.footerColor = ''"
+                    >{{ t('auth.useDefault') }}</v-btn
+                  >
                 </div>
               </v-col>
               <v-col cols="12" md="6">
-                <label class="text-caption text-medium-emphasis d-block mb-1">{{ t('auth.backgroundColor') }}</label>
+                <label class="text-caption text-medium-emphasis d-block mb-1">{{
+                  t('auth.backgroundColor')
+                }}</label>
                 <div class="d-flex align-center gap-2">
                   <input
                     v-model="form.backgroundColor"
@@ -64,12 +84,21 @@
                     hide-details
                     placeholder="#ffffff"
                   />
-                  <v-btn size="small" variant="text" @click="form.backgroundColor = ''">{{ t('auth.useDefault') }}</v-btn>
+                  <v-btn
+                    size="small"
+                    variant="text"
+                    @click="form.backgroundColor = ''"
+                    >{{ t('auth.useDefault') }}</v-btn
+                  >
                 </div>
               </v-col>
               <v-col cols="12">
-                <label class="text-caption text-medium-emphasis d-block mb-1">{{ t('auth.homeImageUrl') }}</label>
-                <p class="text-caption text-medium-emphasis mb-1">{{ t('auth.pasteUrlOrUpload') }}</p>
+                <label class="text-caption text-medium-emphasis d-block mb-1">{{
+                  t('auth.homeImageUrl')
+                }}</label>
+                <p class="text-caption text-medium-emphasis mb-1">
+                  {{ t('auth.pasteUrlOrUpload') }}
+                </p>
                 <v-text-field
                   v-model="form.homeImageUrl"
                   density="compact"
@@ -95,8 +124,12 @@
                 </v-btn>
               </v-col>
               <v-col cols="12">
-                <label class="text-caption text-medium-emphasis d-block mb-1">{{ t('auth.aboutImageUrl') }}</label>
-                <p class="text-caption text-medium-emphasis mb-1">{{ t('auth.pasteUrlOrUpload') }}</p>
+                <label class="text-caption text-medium-emphasis d-block mb-1">{{
+                  t('auth.aboutImageUrl')
+                }}</label>
+                <p class="text-caption text-medium-emphasis mb-1">
+                  {{ t('auth.pasteUrlOrUpload') }}
+                </p>
                 <v-text-field
                   v-model="form.aboutImageUrl"
                   density="compact"
@@ -122,13 +155,22 @@
                 </v-btn>
               </v-col>
               <v-col cols="12">
-                <v-alert v-if="uploadError" type="error" density="compact" class="mb-2" closable @click:close="uploadError = ''">
+                <v-alert
+                  v-if="uploadError"
+                  type="error"
+                  density="compact"
+                  class="mb-2"
+                  closable
+                  @click:close="uploadError = ''"
+                >
                   {{ uploadError }}
                 </v-alert>
                 <v-btn type="submit" color="primary" :loading="saving">
                   {{ t('auth.saveSettings') }}
                 </v-btn>
-                <span v-if="savedMessage" class="ml-3 text-success">{{ t('auth.settingsSaved') }}</span>
+                <span v-if="savedMessage" class="ml-3 text-success">{{
+                  t('auth.settingsSaved')
+                }}</span>
               </v-col>
             </v-row>
           </v-form>
@@ -149,7 +191,6 @@ const { t } = useI18n();
 const { user, fetchUser } = useAuth();
 const { settings, loadSettings, saveSettings } = useUserSettings();
 
-const formRef = ref();
 const saving = ref(false);
 const savedMessage = ref(false);
 const homeFileInput = ref<HTMLInputElement | null>(null);
@@ -176,7 +217,7 @@ async function uploadFile(file: File): Promise<string> {
   }
   const data = await res.json();
   const path = data.path || '';
-  return path.startsWith('http') ? path : (apiBase ? apiBase + path : path);
+  return path.startsWith('http') ? path : apiBase ? apiBase + path : path;
 }
 
 async function onHomeFileChange(e: Event) {
@@ -188,7 +229,8 @@ async function onHomeFileChange(e: Event) {
   try {
     form.value.homeImageUrl = await uploadFile(file);
   } catch (err) {
-    uploadError.value = err instanceof Error ? err.message : t('auth.uploadError');
+    uploadError.value =
+      err instanceof Error ? err.message : t('auth.uploadError');
   } finally {
     uploadingHome.value = false;
     input.value = '';
@@ -204,7 +246,8 @@ async function onAboutFileChange(e: Event) {
   try {
     form.value.aboutImageUrl = await uploadFile(file);
   } catch (err) {
-    uploadError.value = err instanceof Error ? err.message : t('auth.uploadError');
+    uploadError.value =
+      err instanceof Error ? err.message : t('auth.uploadError');
   } finally {
     uploadingAbout.value = false;
     input.value = '';
@@ -219,13 +262,17 @@ const form = ref({
   aboutImageUrl: '',
 });
 
-watch(settings, (s) => {
-  form.value.navbarColor = s.navbarColor || '';
-  form.value.footerColor = s.footerColor || '';
-  form.value.backgroundColor = s.backgroundColor || '';
-  form.value.homeImageUrl = s.homeImageUrl || '';
-  form.value.aboutImageUrl = s.aboutImageUrl || '';
-}, { immediate: true });
+watch(
+  settings,
+  (s) => {
+    form.value.navbarColor = s.navbarColor || '';
+    form.value.footerColor = s.footerColor || '';
+    form.value.backgroundColor = s.backgroundColor || '';
+    form.value.homeImageUrl = s.homeImageUrl || '';
+    form.value.aboutImageUrl = s.aboutImageUrl || '';
+  },
+  { immediate: true },
+);
 
 onMounted(async () => {
   await fetchUser();
@@ -244,7 +291,9 @@ async function save() {
       aboutImageUrl: form.value.aboutImageUrl || null,
     });
     savedMessage.value = true;
-    setTimeout(() => { savedMessage.value = false; }, 3000);
+    setTimeout(() => {
+      savedMessage.value = false;
+    }, 3000);
   } catch {
     // show error if needed
   } finally {
@@ -262,5 +311,7 @@ async function save() {
   border-radius: 8px;
   cursor: pointer;
 }
-.gap-2 { gap: 8px; }
+.gap-2 {
+  gap: 8px;
+}
 </style>
