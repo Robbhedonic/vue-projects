@@ -93,7 +93,7 @@ const projects = [
     titleKey: 'portfolio.films.title',
     descriptionKey: 'portfolio.films.description',
     image: filmsHouseImg,
-    link: 'https://films-house.vercel.app/',
+    link: 'https://movie-star-react.vercel.app/',
   },
 ];
 
