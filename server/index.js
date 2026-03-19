@@ -4,13 +4,22 @@ import cors from 'cors';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import multer from 'multer';
-import { readFile, writeFile, mkdir } from 'fs/promises';
+import { mkdir } from 'fs/promises';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import {
+  DEFAULT_PREFERENCES,
+  ensureOwnerAccount,
+  findUserByEmail,
+  findUserById,
+  getStorageMode,
+  getUsersCount,
+  initializeStorage,
+  loadUserSettings,
+  saveUserSettings,
+} from './lib/storage.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = join(__dirname, 'data');
-const USERS_FILE = join(DATA_DIR, 'users.json');
 const UPLOADS_DIR = join(__dirname, 'uploads');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'change-me-in-production';
@@ -52,25 +61,6 @@ const upload = multer({
 
 app.use('/uploads', express.static(UPLOADS_DIR));
 
-async function ensureDataDir() {
-  await mkdir(DATA_DIR, { recursive: true });
-}
-
-async function readUsers() {
-  try {
-    const raw = await readFile(USERS_FILE, 'utf-8');
-    const data = JSON.parse(raw);
-    return Array.isArray(data.users) ? data.users : [];
-  } catch {
-    return [];
-  }
-}
-
-async function writeUsers(users) {
-  await ensureDataDir();
-  await writeFile(USERS_FILE, JSON.stringify({ users }, null, 2), 'utf-8');
-}
-
 function authMiddleware(req, res, next) {
   const auth = req.headers.authorization;
   const token = auth?.startsWith('Bearer ') ? auth.slice(7) : null;
@@ -86,39 +76,6 @@ function authMiddleware(req, res, next) {
   }
 }
 
-// Create owner account on first run (only account allowed)
-async function ensureOwner() {
-  try {
-    if (!OWNER_EMAIL || !OWNER_PASSWORD) {
-      console.log('Owner not created: set OWNER_EMAIL and OWNER_PASSWORD in server/.env');
-      return;
-    }
-    if (OWNER_PASSWORD.length < 6) {
-      console.log('Owner not created: OWNER_PASSWORD must be at least 6 characters (current length: ' + OWNER_PASSWORD.length + ')');
-      return;
-    }
-    const users = await readUsers();
-    if (users.length > 0) {
-      console.log('Owner already exists. Users in DB:', users.length);
-      return;
-    }
-    const hash = await bcrypt.hash(OWNER_PASSWORD, 10);
-    const owner = {
-      id: crypto.randomUUID(),
-      email: OWNER_EMAIL,
-      passwordHash: hash,
-      name: OWNER_EMAIL.split('@')[0],
-      createdAt: new Date().toISOString(),
-      preferences: {},
-    };
-    await writeUsers([owner]);
-    console.log('Owner account created for', OWNER_EMAIL);
-  } catch (err) {
-    console.error('ensureOwner error:', err);
-    throw err;
-  }
-}
-
 // Health check (to verify backend is reachable)
 app.get('/api/health', (_req, res) => {
   res.json({ ok: true });
@@ -127,10 +84,11 @@ app.get('/api/health', (_req, res) => {
 // Setup status: is owner configured and does the account exist?
 app.get('/api/setup-status', async (_req, res) => {
   try {
-    const users = await readUsers();
+    const usersCount = await getUsersCount();
     res.json({
       ownerConfigured: !!(OWNER_EMAIL && OWNER_PASSWORD && OWNER_PASSWORD.length >= 6),
-      usersCount: users.length,
+      usersCount,
+      storageMode: getStorageMode(),
     });
   } catch (err) {
     console.error('setup-status error:', err);
@@ -157,8 +115,7 @@ app.post('/api/auth/login', async (req, res) => {
       return sendError(400, 'Email and password are required');
     }
 
-    const users = await readUsers();
-    const user = users.find((u) => u.email.toLowerCase() === emailNorm);
+    const user = await findUserByEmail(emailNorm);
     if (!user) {
       return sendError(401, 'Invalid email or password');
     }
@@ -202,21 +159,12 @@ app.post('/api/auth/login', async (req, res) => {
 
 // GET /api/me (protected)
 app.get('/api/me', authMiddleware, async (req, res) => {
-  const users = await readUsers();
-  const user = users.find((u) => u.id === req.user.sub);
+  const user = await findUserById(req.user.sub);
   if (!user) {
     return res.status(404).json({ error: 'User not found' });
   }
   res.json({ user: { id: user.id, email: user.email, name: user.name } });
 });
-
-const DEFAULT_PREFERENCES = {
-  navbarColor: null,
-  footerColor: null,
-  backgroundColor: null,
-  homeImageUrl: null,
-  aboutImageUrl: null,
-};
 
 function sanitizePreferences(body) {
   const prefs = { ...DEFAULT_PREFERENCES };
@@ -237,10 +185,8 @@ function sanitizePreferences(body) {
 // GET /api/me/settings (protected)
 app.get('/api/me/settings', authMiddleware, async (req, res) => {
   try {
-    const users = await readUsers();
-    const user = users.find((u) => u.id === req.user.sub);
-    if (!user) return res.status(404).json({ error: 'User not found' });
-    const prefs = { ...DEFAULT_PREFERENCES, ...(user.preferences || {}) };
+    const prefs = await loadUserSettings(req.user.sub);
+    if (!prefs) return res.status(404).json({ error: 'User not found' });
     res.json({ settings: prefs });
   } catch (err) {
     console.error('GET settings error:', err);
@@ -251,13 +197,10 @@ app.get('/api/me/settings', authMiddleware, async (req, res) => {
 // PUT /api/me/settings (protected)
 app.put('/api/me/settings', authMiddleware, async (req, res) => {
   try {
-    const users = await readUsers();
-    const idx = users.findIndex((u) => u.id === req.user.sub);
-    if (idx === -1) return res.status(404).json({ error: 'User not found' });
     const updated = sanitizePreferences(req.body);
-    users[idx].preferences = { ...(users[idx].preferences || {}), ...updated };
-    await writeUsers(users);
-    res.json({ settings: users[idx].preferences });
+    const saved = await saveUserSettings(req.user.sub, updated);
+    if (!saved) return res.status(404).json({ error: 'User not found' });
+    res.json({ settings: saved });
   } catch (err) {
     console.error('PUT settings error:', err);
     res.status(500).json({ error: err.message });
@@ -283,12 +226,14 @@ app.use((err, _req, res, _next) => {
   res.status(500).json({ error: err.message || 'Internal server error' });
 });
 
-ensureOwner()
+initializeStorage()
   .then(async () => {
-    const users = await readUsers();
+    await ensureOwnerAccount({ ownerEmail: OWNER_EMAIL, ownerPassword: OWNER_PASSWORD });
+    const usersCount = await getUsersCount();
     app.listen(PORT, '0.0.0.0', () => {
       console.log(`Server running at http://0.0.0.0:${PORT}`);
-      console.log(`Owner configured: ${OWNER_EMAIL ? 'yes' : 'no'}. Users in DB: ${users.length}`);
+      console.log(`Storage mode: ${getStorageMode()}`);
+      console.log(`Owner configured: ${OWNER_EMAIL ? 'yes' : 'no'}. Users in storage: ${usersCount}`);
     });
   })
   .catch((err) => {
