@@ -1,7 +1,11 @@
 <template>
   <v-container id="qualification" class="py-16">
-    <h2 class="text-h4 text-center font-weight-bold mb-2">{{ t('qualification.title') }}</h2>
-    <p class="text-center text-subtitle-1 mb-10">{{ t('qualification.subtitle') }}</p>
+    <h2 class="text-h4 text-center font-weight-bold mb-2">
+      {{ t('qualification.title') }}
+    </h2>
+    <p class="text-center text-subtitle-1 mb-10">
+      {{ t('qualification.subtitle') }}
+    </p>
 
     <!-- Tabs -->
     <v-row justify="center" class="mb-4 mb-sm-6 qualification-tabs">
@@ -47,9 +51,24 @@ const tabs = [
 
 const education = [
   {
-    title: 'Frontend Developer',
+    title: 'Backend Development',
+    subtitle: 'Sweden - Sundsgardens folkhogskola',
+    date: '2026 - Spring',
+  },
+  {
+    title: 'Samhallsvetenskap',
+    subtitle: 'Sweden - Komvux',
+    date: 'August 2025 - October 2025',
+  },
+  {
+    title: 'TypeScript Course',
+    subtitle: 'Online Course',
+    date: 'January 2025 - April 2025',
+  },
+  {
+    title: 'Frontend Development',
     subtitle: 'Sweden - Nackademin',
-    date: '2024 - 2025',
+    date: '2023 - 2025',
   },
   {
     title: 'Swedish Language',
@@ -63,16 +82,26 @@ const education = [
   },
   {
     title: 'Business Administration Management Finance',
-    subtitle: 'Universidad Tecnológica de Chile, INACAP',
+    subtitle: 'Technological University of Chile, INACAP',
     date: '2013 - 2016',
   },
 ];
 
 const work = [
   {
+    title: 'Freelance Fullstack Developer',
+    subtitle: 'Independent',
+    date: 'March 2026 - Present',
+  },
+  {
+    title: 'Junior Developer Intern',
+    subtitle: 'Sweden - Onify',
+    date: 'December 2024 - May 2025',
+  },
+  {
     title: 'Multitask Restaurant Worker',
     subtitle: 'Sweden - Hawaii Poke',
-    date: '2022 - 2024',
+    date: '2022 - 2026',
   },
   {
     title: 'Food Runner',
@@ -83,6 +112,11 @@ const work = [
     title: 'Sales Executive',
     subtitle: 'Chile - Caja Los Andes',
     date: '2018 - 2019',
+  },
+  {
+    title: 'Personal Operator and Supervisor',
+    subtitle: 'Chile - Lider Walmart',
+    date: '2012 - 2016',
   },
   {
     title: 'Administrator and Store Manager',
