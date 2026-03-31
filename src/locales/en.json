@@ -60,13 +60,15 @@
     "title": "About Me",
     "intro1": "I am a Fullstack Developer with a diverse skill set, actively seeking a work opportunity.",
     "intro2": "I am deeply passionate about culture, art, and innovation.",
+    "profileStory": "As a self-taught software developer, I have gained practical experience by building and maintaining real-world applications, such as a portfolio website and various client projects. Over the past months, I have strengthened my skills in fullstack development, focusing on Vue.js, Node.js, and modern web technologies. I continuously expand my knowledge through hands-on coding, online courses, and personal challenges. My goal is to keep growing as a developer and contribute to impactful, innovative projects.",
     "yearsStudies": "Years of studies",
     "completedProjects": "Completed projects",
     "skillsCount": "Skills",
     "viewCv": "View CV",
     "curriculumVitae": "Curriculum Vitae",
     "downloadCv": "Download CV",
-    "close": "Close"
+    "close": "Close",
+    "fullProfile": "I am a Fullstack Developer with a diverse skill set, actively seeking a work opportunity.\n\nI am deeply passionate about culture, art, and innovation.\n\nAs a self-taught software developer, I have gained practical experience by building and maintaining real-world applications, such as a portfolio website and various client projects. Over the past months, I have strengthened my skills in fullstack development, focusing on Vue.js, Node.js, and modern web technologies.\n\nI continuously expand my knowledge through hands-on coding, online courses, and personal challenges. My goal is to keep growing as a developer and contribute to impactful, innovative projects."
   },
   "services": {
     "title": "Services",
@@ -75,20 +77,27 @@
     "close": "Close",
     "fullstack": {
       "title": "Fullstack Developer",
-      "summary": "Full web development, UI and user experience.",
+      "summary": "Comprehensive web development: frontend, backend, APIs, and deployment. Specialized in building robust, scalable, and user-friendly applications.",
       "details": [
-        "User interface development",
-        "Web pages and applications development",
-        "User experience optimization"
+        "Frontend: Vue.js, React, responsive design, accessibility, and performance optimization.",
+        "Backend: Node.js, Express, RESTful APIs, authentication, and database integration (SQL/NoSQL).",
+        "DevOps: Deployment, CI/CD, cloud services (Vercel, Netlify), and version control (Git).",
+        "Testing: Unit, integration, and end-to-end testing for reliable applications.",
+        "User experience: UI/UX best practices, usability improvements, and accessibility compliance."
       ]
     },
     "business": {
       "title": "Business Admin & Management",
-      "summary": "Strategy, sales and financial analysis consulting.",
+      "summary": "Business management with a focus on organizational strategy, finance, marketing, sales, people management, project management, data analytics, sustainability, innovation, entrepreneurship, and digital skills. Specialized in developing sustainable businesses.",
       "details": [
-        "Marketing and sales",
-        "Growth strategy consulting",
-        "Financial planning and analysis"
+        "Recruitment and performance evaluation in real companies, using digital platforms and complying with local regulations.",
+        "Preparation and analysis of financial and accounting reports for decision-making in SMEs and organizations.",
+        "Development and execution of digital marketing and sales campaigns, applying market analysis tools and CRM systems.",
+        "Implementation of compensation and people development programs, adapted to organizational needs and current labor laws.",
+        "Financial statement evaluation to support business decisions, project management, and risk assessment in real contexts.",
+        "Design and management of marketing plans based on market research and digital tools.",
+        "Strategic management for continuous improvement and achievement of organizational objectives, using IT and adapting to changing environments.",
+        "Transversal skills: teamwork, effective communication, problem-solving, innovation, entrepreneurship, continuous learning, and ethical decision-making for sustainable business development."
       ]
     },
     "design": {

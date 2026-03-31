@@ -12,11 +12,8 @@
       </v-col>
       <v-col cols="12" md="8" class="text-center">
         <h2 class="text-h3 font-weight-bold mb-2">{{ t('about.title') }}</h2>
-        <p class="mb-4">
-          {{ t('about.intro1') }}
-        </p>
         <p class="mb-6">
-          {{ t('about.intro2') }}
+          {{ t('about.fullProfile') }}
         </p>
 
         <!-- Info blocks -->
@@ -56,7 +53,9 @@
             "
           >
             <v-toolbar flat color="primary" dark>
-              <v-toolbar-title>{{ t('about.curriculumVitae') }}</v-toolbar-title>
+              <v-toolbar-title>{{
+                t('about.curriculumVitae')
+              }}</v-toolbar-title>
               <v-spacer />
               <v-btn icon @click="toggleFullscreen">
                 <v-icon>
@@ -108,8 +107,11 @@ function toggleFullscreen() {
   isFullScreen.value = !isFullScreen.value;
 }
 
-const defaultAboutImg = new URL('../assets/img/jungle.png', import.meta.url).href;
-const aboutImageUrl = computed(() => settings.value.aboutImageUrl || defaultAboutImg);
+const defaultAboutImg = new URL('../assets/img/jungle.png', import.meta.url)
+  .href;
+const aboutImageUrl = computed(
+  () => settings.value.aboutImageUrl || defaultAboutImg,
+);
 const cvPdf = new URL('../assets/pdf/Roberto-Carcamo-CV.pdf', import.meta.url)
   .href;
 </script>
