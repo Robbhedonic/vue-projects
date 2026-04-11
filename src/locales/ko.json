@@ -67,12 +67,20 @@
     "business": {
       "title": "비즈니스 관리",
       "summary": "전략, 영업 및 재무 분석 컨설팅.",
-      "details": ["마케팅 및 영업", "성장 전략 컨설팅", "재무 계획 및 분석"]
+      "details": [
+        "마케팅 및 영업",
+        "성장 전략 컨설팅",
+        "재무 계획 및 분석"
+      ]
     },
     "design": {
       "title": "디자인 및 브랜드",
       "summary": "브랜드 전략 및 시각적 아이덴티티.",
-      "details": ["브랜드 전략", "브랜드 가이드라인", "시각적 아이덴티티"]
+      "details": [
+        "브랜드 전략",
+        "브랜드 가이드라인",
+        "시각적 아이덴티티"
+      ]
     }
   },
   "contact": {
@@ -166,6 +174,7 @@
   "projectsPage": {
     "title": "프로젝트",
     "subtitle": "주요 프로젝트 및 최근 작업",
-    "viewProject": "프로젝트 보기"
+    "viewProject": "프로젝트 보기",
+    "technologies": "Technologies"
   }
 }

@@ -76,7 +76,11 @@
     "design": {
       "title": "Design og merkevare",
       "summary": "Merkevarestrategi og visuell identitet.",
-      "details": ["Merkevarestrategi", "Merkevarehåndbok", "Visuell identitet"]
+      "details": [
+        "Merkevarestrategi",
+        "Merkevarehåndbok",
+        "Visuell identitet"
+      ]
     }
   },
   "contact": {
@@ -170,6 +174,7 @@
   "projectsPage": {
     "title": "Prosjekter",
     "subtitle": "Utvalgte prosjekter og nylig arbeid",
-    "viewProject": "Se prosjekt"
+    "viewProject": "Se prosjekt",
+    "technologies": "Technologies"
   }
 }

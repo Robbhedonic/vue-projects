@@ -174,6 +174,7 @@
   "projectsPage": {
     "title": "Projekt",
     "subtitle": "Utvalda projekt och senaste arbeten",
-    "viewProject": "Visa projekt"
+    "viewProject": "Visa projekt",
+    "technologies": "Technologies"
   }
 }

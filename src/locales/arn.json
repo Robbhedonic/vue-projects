@@ -76,7 +76,11 @@
     "design": {
       "title": "Adkintun ka marka",
       "summary": "Marka nütram ka adkintun norüm.",
-      "details": ["Marka nütram", "Marka chillka", "Adkintun norüm"]
+      "details": [
+        "Marka nütram",
+        "Marka chillka",
+        "Adkintun norüm"
+      ]
     }
   },
   "contact": {
@@ -170,6 +174,7 @@
   "projectsPage": {
     "title": "Wirin",
     "subtitle": "Wirin ka wüño kelluael",
-    "viewProject": "Wirin püramün"
+    "viewProject": "Wirin püramün",
+    "technologies": "Technologies"
   }
 }

@@ -103,7 +103,11 @@
     "design": {
       "title": "Design & Brand",
       "summary": "Brand strategy and visual identity.",
-      "details": ["Brand strategy", "Brand guidelines", "Visual identity"]
+      "details": [
+        "Brand strategy",
+        "Brand guidelines",
+        "Visual identity"
+      ]
     }
   },
   "contact": {
@@ -176,6 +180,14 @@
     "films": {
       "title": "Films House",
       "description": "Movie platform project built with modern frontend tools."
+    },
+    "calorie": {
+      "title": "Calorie Calculator",
+      "description": "Mobile calorie tracking app built with React Native and TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Employee Scheduling",
+      "description": "Fullstack employee scheduling app built with Angular, TypeScript, and SQL."
     }
   },
   "projectSection": {
@@ -189,6 +201,7 @@
   "projectsPage": {
     "title": "Projects",
     "subtitle": "Featured projects and recent work",
-    "viewProject": "View project"
+    "viewProject": "View project",
+    "technologies": "Technologies"
   }
 }

@@ -76,7 +76,11 @@
     "design": {
       "title": "Design og brand",
       "summary": "Brandstrategi og visuel identitet.",
-      "details": ["Brandstrategi", "Brandmanual", "Visuel identitet"]
+      "details": [
+        "Brandstrategi",
+        "Brandmanual",
+        "Visuel identitet"
+      ]
     }
   },
   "contact": {
@@ -170,6 +174,7 @@
   "projectsPage": {
     "title": "Projekter",
     "subtitle": "Udvalgte projekter og seneste arbejde",
-    "viewProject": "Se projekt"
+    "viewProject": "Se projekt",
+    "technologies": "Technologies"
   }
 }

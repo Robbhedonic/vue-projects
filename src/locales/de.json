@@ -76,7 +76,11 @@
     "design": {
       "title": "Design & Marke",
       "summary": "Markenstrategie und visuelle Identität.",
-      "details": ["Markenstrategie", "Markenrichtlinien", "Visuelle Identität"]
+      "details": [
+        "Markenstrategie",
+        "Markenrichtlinien",
+        "Visuelle Identität"
+      ]
     }
   },
   "contact": {
@@ -170,6 +174,7 @@
   "projectsPage": {
     "title": "Projekte",
     "subtitle": "Ausgewählte Projekte und aktuelle Arbeiten",
-    "viewProject": "Projekt ansehen"
+    "viewProject": "Projekt ansehen",
+    "technologies": "Technologies"
   }
 }

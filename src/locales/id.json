@@ -76,7 +76,11 @@
     "design": {
       "title": "Desain & Merek",
       "summary": "Strategi merek dan identitas visual.",
-      "details": ["Strategi merek", "Pedoman merek", "Identitas visual"]
+      "details": [
+        "Strategi merek",
+        "Pedoman merek",
+        "Identitas visual"
+      ]
     }
   },
   "contact": {
@@ -170,6 +174,7 @@
   "projectsPage": {
     "title": "Proyek",
     "subtitle": "Proyek pilihan dan pekerjaan terbaru",
-    "viewProject": "Lihat proyek"
+    "viewProject": "Lihat proyek",
+    "technologies": "Technologies"
   }
 }
