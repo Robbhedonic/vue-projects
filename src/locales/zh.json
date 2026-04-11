@@ -141,6 +141,14 @@
     "films": {
       "title": "电影平台",
       "description": "使用现代前端技术构建的电影平台项目。"
+    },
+    "calorie": {
+      "title": "卡路里计算器",
+      "description": "使用React Native和TypeScript构建的移动端卡路里追踪应用。"
+    },
+    "employeeScheduling": {
+      "title": "员工排班",
+      "description": "使用Angular、TypeScript和SQL构建的全栈员工排班应用。"
     }
   },
   "projectSection": {

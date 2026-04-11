@@ -145,6 +145,14 @@
     "films": {
       "title": "영화 플랫폼",
       "description": "현대적인 프론트엔드 도구로 구축된 영화 플랫폼 프로젝트입니다."
+    },
+    "calorie": {
+      "title": "칼로리 계산기",
+      "description": "React Native와 TypeScript로 구축된 모바일 칼로리 추적 앱입니다."
+    },
+    "employeeScheduling": {
+      "title": "직원 스케줄링",
+      "description": "Angular, TypeScript, SQL로 구축된 풀스택 직원 스케줄링 앱입니다."
     }
   },
   "projectSection": {

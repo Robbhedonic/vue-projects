@@ -149,6 +149,14 @@
     "films": {
       "title": "Platform Film",
       "description": "Proyek platform film yang dibangun dengan alat frontend modern."
+    },
+    "calorie": {
+      "title": "Kalkulator Kalori",
+      "description": "Aplikasi pelacak kalori mobile dibuat dengan React Native dan TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Penjadwalan Karyawan",
+      "description": "Aplikasi fullstack penjadwalan karyawan dibangun dengan Angular, TypeScript dan SQL."
     }
   },
   "projectSection": {

@@ -145,6 +145,14 @@
     "films": {
       "title": "የፊልም መድረክ",
       "description": "በዘመናዊ frontend መሳሪያዎች የተገነባ የፊልም ፕላትፎርም ፕሮጀክት።"
+    },
+    "calorie": {
+      "title": "ሒሳብ ካሎሪ",
+      "description": "ሞባይል ካሎሪ ትራኪንግ መተግበሪያ ብ React Native እና TypeScript ተሰርቷール。"
+    },
+    "employeeScheduling": {
+      "title": "ሸዱዊልን ሰራተኞች",
+      "description": "ፉልስታክ ሸዱዊሊንግ ናይ ሰራተኞች ኣፕ ብ Angular, TypeScript እና SQL ተሰርቷール。"
     }
   },
   "projectSection": {

@@ -149,6 +149,14 @@
     "films": {
       "title": "फिल्म प्लेटफ़ॉर्म",
       "description": "आधुनिक फ्रंटएंड टूल्स के साथ बनाया गया फ़िल्म प्लेटफ़ॉर्म प्रोजेक्ट।"
+    },
+    "calorie": {
+      "title": "कैलोरी कैलकुलेटर",
+      "description": "React Native और TypeScript के साथ बनाया गया मोबाइल कैलोरी ट्रैकिंग ऐप।"
+    },
+    "employeeScheduling": {
+      "title": "कर्मचारी शेड्यूलिंग",
+      "description": "Angular, TypeScript और SQL के साथ बनाया गया फुलस्टैक कर्मचारी शेड्यूलिंग ऐप।"
     }
   },
   "projectSection": {

@@ -153,6 +153,14 @@
     "films": {
       "title": "映画プラットフォーム",
       "description": "最新のフロントエンド技術で構築された映画プラットフォームプロジェクト。"
+    },
+    "calorie": {
+      "title": "カロリー計算機",
+      "description": "React NativeとTypeScriptで構築されたモバイルカロリー追跡アプリ。"
+    },
+    "employeeScheduling": {
+      "title": "従業員スケジューリング",
+      "description": "Angular、TypeScript、SQLで構築されたフルスタック従業員スケジューリングアプリ。"
     }
   },
   "projectSection": {

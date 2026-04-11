@@ -153,6 +153,14 @@
     "films": {
       "title": "Elokuva-alusta",
       "description": "Elokuva-alustaprojekti rakennettu moderneilla frontend-työkaluilla."
+    },
+    "calorie": {
+      "title": "Kalorilaskuri",
+      "description": "Mobiili kalorien seurantasovellus React Native ja TypeScript -teknologioilla."
+    },
+    "employeeScheduling": {
+      "title": "Työvuorosuunnittelu",
+      "description": "Fullstack työvuorosuunnittelusovellus Angular, TypeScript ja SQL -teknologioilla."
     }
   },
   "projectSection": {

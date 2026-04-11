@@ -153,6 +153,14 @@
     "films": {
       "title": "Jukwaa la Filamu",
       "description": "Mradi wa jukwaa la filamu uliotengenezwa kwa zana za kisasa za frontend."
+    },
+    "calorie": {
+      "title": "Kikokotoo cha Kalori",
+      "description": "Programu ya simu ya kufuatilia kalori iliyojengwa na React Native na TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Ratiba ya Wafanyakazi",
+      "description": "Programu ya fullstack ya ratiba ya wafanyakazi iliyojengwa na Angular, TypeScript na SQL."
     }
   },
   "projectSection": {

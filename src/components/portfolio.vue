@@ -69,6 +69,14 @@ const pokemonImg = new URL('../assets/img/pokemon.jpeg', import.meta.url).href;
 const firstWebsiteImg = new URL('../assets/img/f-w.jpeg', import.meta.url).href;
 const filmsHouseImg = new URL('../assets/img/films-house.jpeg', import.meta.url)
   .href;
+const calorieImg = new URL(
+  '../assets/img/calorie-calculator.jpeg',
+  import.meta.url,
+).href;
+const employeeImg = new URL(
+  '../assets/img/employee-scheduling.jpeg',
+  import.meta.url,
+).href;
 
 const projects = [
   {
@@ -94,6 +102,18 @@ const projects = [
     descriptionKey: 'portfolio.films.description',
     image: filmsHouseImg,
     link: 'https://movie-star-react.vercel.app/',
+  },
+  {
+    titleKey: 'portfolio.calorie.title',
+    descriptionKey: 'portfolio.calorie.description',
+    image: calorieImg,
+    link: 'https://calorie-calculator-indol.vercel.app/',
+  },
+  {
+    titleKey: 'portfolio.employeeScheduling.title',
+    descriptionKey: 'portfolio.employeeScheduling.description',
+    image: employeeImg,
+    link: 'https://employee-scheduling-delta.vercel.app/login',
   },
 ];
 

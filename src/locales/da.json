@@ -149,6 +149,14 @@
     "films": {
       "title": "Filmplatform",
       "description": "Filmplatform bygget med moderne frontend-værktøjer."
+    },
+    "calorie": {
+      "title": "Kalorieberegner",
+      "description": "Mobil kalorietracking-app bygget med React Native og TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Medarbejderplanlægning",
+      "description": "Fullstack medarbejderplanlægningsapp bygget med Angular, TypeScript og SQL."
     }
   },
   "projectSection": {

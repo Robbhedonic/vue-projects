@@ -153,6 +153,14 @@
     "films": {
       "title": "Films House",
       "description": "Filmplattform byggd med moderna frontend-verktyg."
+    },
+    "calorie": {
+      "title": "Kalorikalkylator",
+      "description": "Mobil kalorispårningsapp byggd med React Native och TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Medarbetarschemaläggning",
+      "description": "Fullstack medarbetarschemaläggningsapp byggd med Angular, TypeScript och SQL."
     }
   },
   "projectSection": {

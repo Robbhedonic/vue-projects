@@ -149,6 +149,14 @@
     "films": {
       "title": "Filme ñi plataforma",
       "description": "Filme ñi plataforma, küme modern frontend herramientas mu."
+    },
+    "calorie": {
+      "title": "Calculadora de Calorías",
+      "description": "Aplicación móvil de conteo de calorías con React Native y TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Planificación de Empleados",
+      "description": "Aplicación fullstack de planificación de empleados con Angular, TypeScript y SQL."
     }
   },
   "projectSection": {

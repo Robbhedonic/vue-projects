@@ -153,6 +153,14 @@
     "films": {
       "title": "Кино-платформа",
       "description": "Проект платформы для фильмов, созданный с использованием современных frontend-инструментов."
+    },
+    "calorie": {
+      "title": "Калькулятор калорий",
+      "description": "Мобильное приложение для отслеживания калорий на React Native и TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Расписание сотрудников",
+      "description": "Fullstack-приложение для расписания сотрудников на Angular, TypeScript и SQL."
     }
   },
   "projectSection": {

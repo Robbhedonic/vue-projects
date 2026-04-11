@@ -149,6 +149,14 @@
     "films": {
       "title": "Films House",
       "description": "Filmplattform, entwickelt mit modernen Frontend-Tools."
+    },
+    "calorie": {
+      "title": "Kalorienrechner",
+      "description": "Mobile Kalorienverfolgungsapp entwickelt mit React Native und TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Mitarbeiterplanung",
+      "description": "Fullstack-App zur Mitarbeiterplanung mit Angular, TypeScript und SQL."
     }
   },
   "projectSection": {

@@ -167,6 +167,14 @@
     "films": {
       "title": "Films House",
       "description": "Plataforma de cine desarrollada con herramientas modernas de frontend."
+    },
+    "calorie": {
+      "title": "Calculadora de Calorías",
+      "description": "App móvil de seguimiento de calorías con React Native y TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Gestión de Horarios",
+      "description": "App fullstack de gestión de horarios de empleados con Angular, TypeScript y SQL."
     }
   },
   "projectSection": {

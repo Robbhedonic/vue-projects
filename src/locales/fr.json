@@ -153,6 +153,14 @@
     "films": {
       "title": "Plateforme de Films",
       "description": "Projet de plateforme de films développé avec des outils frontend modernes."
+    },
+    "calorie": {
+      "title": "Calculateur de Calories",
+      "description": "Application mobile de suivi des calories avec React Native et TypeScript."
+    },
+    "employeeScheduling": {
+      "title": "Planification des Employés",
+      "description": "Application fullstack de planification d'employés avec Angular, TypeScript et SQL."
     }
   },
   "projectSection": {

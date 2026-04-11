@@ -153,6 +153,14 @@
     "films": {
       "title": "ফিল্ম প্ল্যাটফর্ম",
       "description": "আধুনিক ফ্রন্টএন্ড টুলস ব্যবহার করে তৈরি করা একটি ফিল্ম প্ল্যাটফর্ম প্রকল্প।"
+    },
+    "calorie": {
+      "title": "ক্যালোরি ক্যালকুলেটর",
+      "description": "React Native এবং TypeScript দিয়ে তৈরি মোবাইল ক্যালোরি ট্র্যাকিং অ্যাপ।"
+    },
+    "employeeScheduling": {
+      "title": "কর্মচারী সময়সূচী",
+      "description": "Angular, TypeScript এবং SQL দিয়ে তৈরি ফুলস্ট্যাক কর্মচারী সময়সূচী অ্যাপ।"
     }
   },
   "projectSection": {
