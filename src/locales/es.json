@@ -94,11 +94,7 @@
     "design": {
       "title": "Diseño y Marca",
       "summary": "Estrategia de marca e identidad visual.",
-      "details": [
-        "Estrategia de marca",
-        "Manual de marca",
-        "Identidad visual"
-      ]
+      "details": ["Estrategia de marca", "Manual de marca", "Identidad visual"]
     }
   },
   "contact": {
@@ -193,6 +189,6 @@
     "title": "Proyectos",
     "subtitle": "Proyectos destacados y trabajos recientes",
     "viewProject": "Ver proyecto",
-    "technologies": "Technologies"
+    "technologies": "Tecnologias"
   }
 }
