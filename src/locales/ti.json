@@ -155,8 +155,8 @@
       "description": "ፉልስታክ ሸዱዊሊንግ ናይ ሰራተኞች ኣፕ ብ Angular, TypeScript እና SQL ተሰርቷール。"
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "ናይ ኩነታት ኣየር መተግበሪ",
+      "description": "ናይ ኩነታት ኣየር መተግበሪ ብ Vue እና API ምውህዳድ ተሰሪሑ።"
     }
   },
   "projectSection": {

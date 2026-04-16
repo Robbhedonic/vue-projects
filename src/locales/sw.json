@@ -163,8 +163,8 @@
       "description": "Programu ya fullstack ya ratiba ya wafanyakazi iliyojengwa na Angular, TypeScript na SQL."
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "Programu ya Hali ya Hewa",
+      "description": "Programu ya hali ya hewa iliyojengwa kwa Vue na ujumuishaji wa API."
     }
   },
   "projectSection": {

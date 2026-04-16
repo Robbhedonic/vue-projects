@@ -159,8 +159,8 @@
       "description": "Angular، TypeScript اور SQL کے ساتھ بنائی گئی فل اسٹیک ملازم شیڈولنگ ایپ۔"
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "موسم ایپ",
+      "description": "Vue اور API انٹیگریشن کے ساتھ بنائی گئی موسم ایپ۔"
     }
   },
   "projectSection": {

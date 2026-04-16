@@ -155,8 +155,8 @@
       "description": "Angular, TypeScript, SQL로 구축된 풀스택 직원 스케줄링 앱입니다."
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "날씨 앱",
+      "description": "Vue와 API 연동으로 만든 날씨 앱입니다."
     }
   },
   "projectSection": {

@@ -159,8 +159,8 @@
       "description": "Aplicación fullstack de planificación de empleados con Angular, TypeScript y SQL."
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "App del Clima",
+      "description": "Aplicacion del clima creada con Vue e integracion de API."
     }
   },
   "projectSection": {

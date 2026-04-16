@@ -151,8 +151,8 @@
       "description": "使用Angular、TypeScript和SQL构建的全栈员工排班应用。"
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "天气应用",
+      "description": "使用 Vue 和 API 集成构建的天气应用。"
     }
   },
   "projectSection": {

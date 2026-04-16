@@ -159,8 +159,8 @@
       "description": "Aplikasi fullstack penjadwalan karyawan dibangun dengan Angular, TypeScript dan SQL."
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "Aplikasi Cuaca",
+      "description": "Aplikasi cuaca yang dibuat dengan Vue dan integrasi API."
     }
   },
   "projectSection": {

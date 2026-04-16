@@ -163,8 +163,8 @@
       "description": "Angular、TypeScript、SQLで構築されたフルスタック従業員スケジューリングアプリ。"
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "天気アプリ",
+      "description": "Vue と API 連携で構築した天気アプリ。"
     }
   },
   "projectSection": {

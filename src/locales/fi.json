@@ -163,8 +163,8 @@
       "description": "Fullstack työvuorosuunnittelusovellus Angular, TypeScript ja SQL -teknologioilla."
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "Saasovellus",
+      "description": "Saasovellus rakennettu Vue:lla ja API-integraatiolla."
     }
   },
   "projectSection": {

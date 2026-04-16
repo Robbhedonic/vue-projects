@@ -159,8 +159,8 @@
       "description": "Angular, TypeScript और SQL के साथ बनाया गया फुलस्टैक कर्मचारी शेड्यूलिंग ऐप।"
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "मौसम ऐप",
+      "description": "Vue और API इंटीग्रेशन के साथ बनाया गया मौसम ऐप।"
     }
   },
   "projectSection": {

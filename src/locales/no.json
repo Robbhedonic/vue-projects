@@ -159,8 +159,8 @@
       "description": "Fullstack ansattplanleggingsapp bygget med Angular, TypeScript og SQL."
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "Vaerapp",
+      "description": "Vaerapp bygget med Vue og API-integrasjon."
     }
   },
   "projectSection": {

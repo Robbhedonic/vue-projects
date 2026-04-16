@@ -163,8 +163,8 @@
       "description": "تطبيق متكامل لجدولة الموظفين مبني بـ Angular وTypeScript وSQL."
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "تطبيق الطقس",
+      "description": "تطبيق طقس مبني باستخدام Vue وتكامل API."
     }
   },
   "projectSection": {

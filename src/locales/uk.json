@@ -163,8 +163,8 @@
       "description": "Fullstack-застосунок для розкладу співробітників на Angular, TypeScript та SQL."
     },
     "weatherApp": {
-      "title": "Weather App",
-      "description": "Weather app built with Vue and API integration."
+      "title": "Погодний застосунок",
+      "description": "Погодний застосунок, створений на Vue з інтеграцією API."
     }
   },
   "projectSection": {
