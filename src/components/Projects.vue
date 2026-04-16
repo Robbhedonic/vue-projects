@@ -80,7 +80,8 @@ const projects = [
     titleKey: 'portfolio.quiz.title',
     descriptionKey: 'portfolio.quiz.description',
     image: quizImg,
-    link: 'https://robbhedonic.github.io/JavascriptQuiz1/',
+
+    link: 'https://robbhedonic.github.io/JavascriptQuiz/',
     tech: ['JavaScript', 'HTML', 'CSS'],
   },
   {
@@ -117,6 +118,13 @@ const projects = [
     image: employeeImg,
     link: 'https://employee-scheduling-delta.vercel.app/login',
     tech: ['Angular', 'TypeScript', 'SQL'],
+  },
+  {
+    titleKey: 'portfolio.weatherApp.title',
+    descriptionKey: 'portfolio.weatherApp.description',
+    image: employeeImg,
+    link: 'https://robbhedonic.github.io/Weather-App.Vue.js/',
+    tech: ['Vue', 'TypeScript', 'Javascript'],
   },
 ];
 </script>
