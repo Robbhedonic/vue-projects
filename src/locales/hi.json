@@ -76,11 +76,7 @@
     "design": {
       "title": "डिज़ाइन और ब्रांड",
       "summary": "ब्रांड रणनीति और विज़ुअल पहचान।",
-      "details": [
-        "ब्रांड रणनीति",
-        "ब्रांड दिशानिर्देश",
-        "विज़ुअल पहचान"
-      ]
+      "details": ["ब्रांड रणनीति", "ब्रांड दिशानिर्देश", "विज़ुअल पहचान"]
     }
   },
   "contact": {
@@ -161,6 +157,10 @@
     "employeeScheduling": {
       "title": "कर्मचारी शेड्यूलिंग",
       "description": "Angular, TypeScript और SQL के साथ बनाया गया फुलस्टैक कर्मचारी शेड्यूलिंग ऐप।"
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

@@ -161,6 +161,10 @@
     "employeeScheduling": {
       "title": "কর্মচারী সময়সূচী",
       "description": "Angular, TypeScript এবং SQL দিয়ে তৈরি ফুলস্ট্যাক কর্মচারী সময়সূচী অ্যাপ।"
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

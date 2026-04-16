@@ -76,11 +76,7 @@
     "design": {
       "title": "Design og merkevare",
       "summary": "Merkevarestrategi og visuell identitet.",
-      "details": [
-        "Merkevarestrategi",
-        "Merkevarehåndbok",
-        "Visuell identitet"
-      ]
+      "details": ["Merkevarestrategi", "Merkevarehåndbok", "Visuell identitet"]
     }
   },
   "contact": {
@@ -161,6 +157,10 @@
     "employeeScheduling": {
       "title": "Ansattplanlegging",
       "description": "Fullstack ansattplanleggingsapp bygget med Angular, TypeScript og SQL."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

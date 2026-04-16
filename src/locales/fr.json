@@ -161,6 +161,10 @@
     "employeeScheduling": {
       "title": "Planification des Employés",
       "description": "Application fullstack de planification d'employés avec Angular, TypeScript et SQL."
+    },
+    "weatherApp": {
+      "title": "Application Meteo",
+      "description": "Application meteo developpee avec Vue et integration API."
     }
   },
   "projectSection": {

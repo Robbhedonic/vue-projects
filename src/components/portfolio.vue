@@ -85,19 +85,19 @@ const projects = [
     titleKey: 'portfolio.quiz.title',
     descriptionKey: 'portfolio.quiz.description',
     image: quizImg,
-    link: 'https://robbhedonic.github.io/JavascriptQuiz1/',
+    link: 'https://robbhedonic.github.io/JavascriptQuiz/',
   },
   {
     titleKey: 'portfolio.pokemon.title',
     descriptionKey: 'portfolio.pokemon.description',
     image: pokemonImg,
-    link: 'https://robbhedonic.github.io/Pokemon-Application/',
+    link: 'https://robbhedonic.github.io/Pokemon-Application-Game-JS/',
   },
   {
     titleKey: 'portfolio.firstWebsite.title',
     descriptionKey: 'portfolio.firstWebsite.description',
     image: firstWebsiteImg,
-    link: 'https://robbhedonic.github.io/index.html',
+    link: 'https://robbhedonic.github.io/First-Website-JS/',
   },
   {
     titleKey: 'portfolio.films.title',

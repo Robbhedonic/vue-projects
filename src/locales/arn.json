@@ -76,11 +76,7 @@
     "design": {
       "title": "Adkintun ka marka",
       "summary": "Marka nütram ka adkintun norüm.",
-      "details": [
-        "Marka nütram",
-        "Marka chillka",
-        "Adkintun norüm"
-      ]
+      "details": ["Marka nütram", "Marka chillka", "Adkintun norüm"]
     }
   },
   "contact": {
@@ -161,6 +157,10 @@
     "employeeScheduling": {
       "title": "Planificación de Empleados",
       "description": "Aplicación fullstack de planificación de empleados con Angular, TypeScript y SQL."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

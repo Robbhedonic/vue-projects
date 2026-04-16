@@ -76,11 +76,7 @@
     "design": {
       "title": "ڈیزائن اور برانڈ",
       "summary": "برانڈ کی حکمت عملی اور بصری شناخت۔",
-      "details": [
-        "برانڈ کی حکمت عملی",
-        "برانڈ گائیڈ لائنز",
-        "بصری شناخت"
-      ]
+      "details": ["برانڈ کی حکمت عملی", "برانڈ گائیڈ لائنز", "بصری شناخت"]
     }
   },
   "contact": {
@@ -161,6 +157,10 @@
     "employeeScheduling": {
       "title": "ملازم شیڈولنگ",
       "description": "Angular، TypeScript اور SQL کے ساتھ بنائی گئی فل اسٹیک ملازم شیڈولنگ ایپ۔"
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

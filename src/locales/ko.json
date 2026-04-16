@@ -67,20 +67,12 @@
     "business": {
       "title": "비즈니스 관리",
       "summary": "전략, 영업 및 재무 분석 컨설팅.",
-      "details": [
-        "마케팅 및 영업",
-        "성장 전략 컨설팅",
-        "재무 계획 및 분석"
-      ]
+      "details": ["마케팅 및 영업", "성장 전략 컨설팅", "재무 계획 및 분석"]
     },
     "design": {
       "title": "디자인 및 브랜드",
       "summary": "브랜드 전략 및 시각적 아이덴티티.",
-      "details": [
-        "브랜드 전략",
-        "브랜드 가이드라인",
-        "시각적 아이덴티티"
-      ]
+      "details": ["브랜드 전략", "브랜드 가이드라인", "시각적 아이덴티티"]
     }
   },
   "contact": {
@@ -161,6 +153,10 @@
     "employeeScheduling": {
       "title": "직원 스케줄링",
       "description": "Angular, TypeScript, SQL로 구축된 풀스택 직원 스케줄링 앱입니다."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

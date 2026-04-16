@@ -161,6 +161,10 @@
     "employeeScheduling": {
       "title": "Medarbetarschemaläggning",
       "description": "Fullstack medarbetarschemaläggningsapp byggd med Angular, TypeScript och SQL."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

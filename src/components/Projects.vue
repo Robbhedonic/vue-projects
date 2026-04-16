@@ -90,7 +90,7 @@ const projects = [
     titleKey: 'portfolio.pokemon.title',
     descriptionKey: 'portfolio.pokemon.description',
     image: pokemonImg,
-    link: 'https://robbhedonic.github.io/Pokemon-Application/',
+    link: 'https://robbhedonic.github.io/Pokemon-Application-Game-JS/',
     tech: ['JavaScript', 'REST API', 'HTML', 'CSS'],
   },
   {

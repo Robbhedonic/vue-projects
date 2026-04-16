@@ -161,6 +161,10 @@
     "employeeScheduling": {
       "title": "Ratiba ya Wafanyakazi",
       "description": "Programu ya fullstack ya ratiba ya wafanyakazi iliyojengwa na Angular, TypeScript na SQL."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

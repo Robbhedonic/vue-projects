@@ -103,11 +103,7 @@
     "design": {
       "title": "Design & Brand",
       "summary": "Brand strategy and visual identity.",
-      "details": [
-        "Brand strategy",
-        "Brand guidelines",
-        "Visual identity"
-      ]
+      "details": ["Brand strategy", "Brand guidelines", "Visual identity"]
     }
   },
   "contact": {
@@ -188,6 +184,10 @@
     "employeeScheduling": {
       "title": "Employee Scheduling",
       "description": "Fullstack employee scheduling app built with Angular, TypeScript, and SQL."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

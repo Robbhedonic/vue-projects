@@ -175,6 +175,10 @@
     "employeeScheduling": {
       "title": "Gestión de Horarios",
       "description": "App fullstack de gestión de horarios de empleados con Angular, TypeScript y SQL."
+    },
+    "weatherApp": {
+      "title": "App del Clima",
+      "description": "Aplicacion del clima creada con Vue e integracion de API."
     }
   },
   "projectSection": {

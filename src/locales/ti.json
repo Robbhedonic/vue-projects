@@ -67,20 +67,12 @@
     "business": {
       "title": "ንግዲ ኣስተዳዳሪን ምሕደራን",
       "summary": "ስትራተጂ፣ መሸጣ ከምኡውን ፋይናንሻዊ ትንተና ምኽሪ።",
-      "details": [
-        "ማርኬቲንግ ከምኡውን መሸጣ",
-        "ዕብየት ስትራተጂ ምኽሪ",
-        "ፋይናንሻዊ ውጥን ከምኡውን ትንተና"
-      ]
+      "details": ["ማርኬቲንግ ከምኡውን መሸጣ", "ዕብየት ስትራተጂ ምኽሪ", "ፋይናንሻዊ ውጥን ከምኡውን ትንተና"]
     },
     "design": {
       "title": "ዲዛይን ከምኡውን ብራንድ",
       "summary": "ብራንድ ስትራተጂ ከምኡውን ርእይቶ መለስያ።",
-      "details": [
-        "ብራንድ ስትራተጂ",
-        "ብራንድ መምርሒ",
-        "ርእይቶ መለስያ"
-      ]
+      "details": ["ብራንድ ስትራተጂ", "ብራንድ መምርሒ", "ርእይቶ መለስያ"]
     }
   },
   "contact": {
@@ -161,6 +153,10 @@
     "employeeScheduling": {
       "title": "ሸዱዊልን ሰራተኞች",
       "description": "ፉልስታክ ሸዱዊሊንግ ናይ ሰራተኞች ኣፕ ብ Angular, TypeScript እና SQL ተሰርቷール。"
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

@@ -76,11 +76,7 @@
     "design": {
       "title": "Design og brand",
       "summary": "Brandstrategi og visuel identitet.",
-      "details": [
-        "Brandstrategi",
-        "Brandmanual",
-        "Visuel identitet"
-      ]
+      "details": ["Brandstrategi", "Brandmanual", "Visuel identitet"]
     }
   },
   "contact": {
@@ -161,6 +157,10 @@
     "employeeScheduling": {
       "title": "Medarbejderplanlægning",
       "description": "Fullstack medarbejderplanlægningsapp bygget med Angular, TypeScript og SQL."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

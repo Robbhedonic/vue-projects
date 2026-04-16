@@ -76,11 +76,7 @@
     "design": {
       "title": "Design & Marke",
       "summary": "Markenstrategie und visuelle Identität.",
-      "details": [
-        "Markenstrategie",
-        "Markenrichtlinien",
-        "Visuelle Identität"
-      ]
+      "details": ["Markenstrategie", "Markenrichtlinien", "Visuelle Identität"]
     }
   },
   "contact": {
@@ -161,6 +157,10 @@
     "employeeScheduling": {
       "title": "Mitarbeiterplanung",
       "description": "Fullstack-App zur Mitarbeiterplanung mit Angular, TypeScript und SQL."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

@@ -161,6 +161,10 @@
     "employeeScheduling": {
       "title": "従業員スケジューリング",
       "description": "Angular、TypeScript、SQLで構築されたフルスタック従業員スケジューリングアプリ。"
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

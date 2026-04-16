@@ -161,6 +161,10 @@
     "employeeScheduling": {
       "title": "Расписание сотрудников",
       "description": "Fullstack-приложение для расписания сотрудников на Angular, TypeScript и SQL."
+    },
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Weather app built with Vue and API integration."
     }
   },
   "projectSection": {

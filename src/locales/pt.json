@@ -76,11 +76,7 @@
     "design": {
       "title": "Design e Marca",
       "summary": "Estratégia de marca e identidade visual.",
-      "details": [
-        "Estratégia de marca",
-        "Manual da marca",
-        "Identidade visual"
-      ]
+      "details": ["Estratégia de marca", "Manual da marca", "Identidade visual"]
     }
   },
   "contact": {
@@ -161,6 +157,10 @@
     "employeeScheduling": {
       "title": "Gestão de Escalas",
       "description": "Aplicativo fullstack de agendamento de funcionários com Angular, TypeScript e SQL."
+    },
+    "weatherApp": {
+      "title": "App de Clima",
+      "description": "Aplicativo de clima desenvolvido com Vue e integracao de API."
     }
   },
   "projectSection": {
