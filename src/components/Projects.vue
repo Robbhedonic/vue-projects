@@ -75,6 +75,8 @@ const employeeImg = new URL(
   import.meta.url,
 ).href;
 
+const weatherImg = new URL('../assets/img/weather-app.jpeg', import.meta.url)
+  .href;
 const projects = [
   {
     titleKey: 'portfolio.quiz.title',
@@ -122,7 +124,7 @@ const projects = [
   {
     titleKey: 'portfolio.weatherApp.title',
     descriptionKey: 'portfolio.weatherApp.description',
-    image: employeeImg,
+    image: weatherImg,
     link: 'https://robbhedonic.github.io/Weather-App.Vue.js/',
     tech: ['Vue', 'TypeScript', 'Javascript'],
   },

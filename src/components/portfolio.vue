@@ -77,6 +77,8 @@ const employeeImg = new URL(
   '../assets/img/employee-scheduling.jpeg',
   import.meta.url,
 ).href;
+const weatherImg = new URL('../assets/img/weather-app.jpeg', import.meta.url)
+  .href;
 
 const projects = [
   {
@@ -114,6 +116,12 @@ const projects = [
     descriptionKey: 'portfolio.employeeScheduling.description',
     image: employeeImg,
     link: 'https://employee-scheduling-delta.vercel.app/login',
+  },
+  {
+    titleKey: 'portfolio.weatherApp.title',
+    descriptionKey: 'portfolio.weatherApp.description',
+    image: weatherImg,
+    link: 'https://robbhedonic.github.io/Weather-App.Vue.js/',
   },
 ];
 
