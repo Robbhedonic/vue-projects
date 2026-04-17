@@ -61,24 +61,6 @@ const weatherImg = new URL('../assets/img/weather-app.jpeg', import.meta.url)
 
 const projects = [
   {
-    titleKey: 'portfolio.quiz.title',
-    descriptionKey: 'portfolio.quiz.description',
-    image: quizImg,
-    link: 'https://robbhedonic.github.io/JavascriptQuiz/',
-  },
-  {
-    titleKey: 'portfolio.pokemon.title',
-    descriptionKey: 'portfolio.pokemon.description',
-    image: pokemonImg,
-    link: 'https://robbhedonic.github.io/Pokemon-Application-Game-JS/',
-  },
-  {
-    titleKey: 'portfolio.firstWebsite.title',
-    descriptionKey: 'portfolio.firstWebsite.description',
-    image: firstWebsiteImg,
-    link: 'https://robbhedonic.github.io/First-Website-JS/',
-  },
-  {
     titleKey: 'portfolio.films.title',
     descriptionKey: 'portfolio.films.description',
     image: filmsHouseImg,
@@ -95,6 +77,24 @@ const projects = [
     descriptionKey: 'portfolio.employeeScheduling.description',
     image: employeeImg,
     link: 'https://employee-scheduling-delta.vercel.app/login',
+  },
+  {
+    titleKey: 'portfolio.quiz.title',
+    descriptionKey: 'portfolio.quiz.description',
+    image: quizImg,
+    link: 'https://robbhedonic.github.io/JavascriptQuiz/',
+  },
+  {
+    titleKey: 'portfolio.pokemon.title',
+    descriptionKey: 'portfolio.pokemon.description',
+    image: pokemonImg,
+    link: 'https://robbhedonic.github.io/Pokemon-Application-Game-JS/',
+  },
+  {
+    titleKey: 'portfolio.firstWebsite.title',
+    descriptionKey: 'portfolio.firstWebsite.description',
+    image: firstWebsiteImg,
+    link: 'https://robbhedonic.github.io/First-Website-JS/',
   },
   {
     titleKey: 'portfolio.weatherApp.title',

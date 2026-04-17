@@ -79,6 +79,27 @@ const weatherImg = new URL('../assets/img/weather-app.jpeg', import.meta.url)
   .href;
 const projects = [
   {
+    titleKey: 'portfolio.films.title',
+    descriptionKey: 'portfolio.films.description',
+    image: filmsHouseImg,
+    link: 'https://movie-star-react.vercel.app/',
+    tech: ['React', 'TypeScript', 'REST API'],
+  },
+  {
+    titleKey: 'portfolio.calorie.title',
+    descriptionKey: 'portfolio.calorie.description',
+    image: calorieImg,
+    link: 'https://calorie-calculator-indol.vercel.app/',
+    tech: ['React Native', 'TypeScript'],
+  },
+  {
+    titleKey: 'portfolio.employeeScheduling.title',
+    descriptionKey: 'portfolio.employeeScheduling.description',
+    image: employeeImg,
+    link: 'https://employee-scheduling-delta.vercel.app/login',
+    tech: ['Angular', 'TypeScript', 'SQL'],
+  },
+  {
     titleKey: 'portfolio.quiz.title',
     descriptionKey: 'portfolio.quiz.description',
     image: quizImg,
@@ -99,27 +120,6 @@ const projects = [
     image: firstWebsiteImg,
     link: 'https://robbhedonic.github.io/index.html',
     tech: ['HTML', 'CSS', 'JavaScript'],
-  },
-  {
-    titleKey: 'portfolio.films.title',
-    descriptionKey: 'portfolio.films.description',
-    image: filmsHouseImg,
-    link: 'https://movie-star-react.vercel.app/',
-    tech: ['React', 'TypeScript', 'REST API'],
-  },
-  {
-    titleKey: 'portfolio.calorie.title',
-    descriptionKey: 'portfolio.calorie.description',
-    image: calorieImg,
-    link: 'https://calorie-calculator-indol.vercel.app/',
-    tech: ['React Native', 'TypeScript'],
-  },
-  {
-    titleKey: 'portfolio.employeeScheduling.title',
-    descriptionKey: 'portfolio.employeeScheduling.description',
-    image: employeeImg,
-    link: 'https://employee-scheduling-delta.vercel.app/login',
-    tech: ['Angular', 'TypeScript', 'SQL'],
   },
   {
     titleKey: 'portfolio.weatherApp.title',
