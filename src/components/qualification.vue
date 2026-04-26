@@ -51,6 +51,11 @@ const tabs = [
 
 const education = [
   {
+    title: 'Cloud Development',
+    subtitle: 'NBI/Handelsakademin',
+    date: 'April 2026 - October 2026',
+  },
+  {
     title: 'Backend Development',
     subtitle: 'Sweden - Sundsgardens folkhogskola',
     date: '2026 - Spring',
