@@ -57,8 +57,8 @@ const education = [
   },
   {
     title: 'Backend Development',
-    subtitle: 'Sweden - Sundsgardens folkhogskola',
-    date: '2026 - Spring',
+    subtitle: 'Sweden - Sundsgårdens Folkhögskola',
+    date: 'Spring 2026 (January 2026 - June 2026)',
   },
   {
     title: 'Samhallsvetenskap',
